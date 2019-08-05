@@ -1,0 +1,22 @@
+{
+  "name": "deckerweb/toolbar-extras-givewp",
+  "description": "WordPress plugin to leverage the Toolbar for managing your donations and donors with the Give Donations plugin.",
+  "keywords": ["toolbar", "adminbar", "admin bar", "give", "givewp", "manage", "donations", "donors", "add-on"],
+  "type": "wordpress-plugin",
+  "homepage": "https://github.com/deckerweb/toolbar-extras-givewp",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "David Decker",
+      "homepage": "https://toolbarextras.com/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/deckerweb/toolbar-extras-givewp/issues",
+    "source": "https://github.com/deckerweb/toolbar-extras-givewp"
+  },
+  "require": {
+    "php": ">=5.6"
+  }
+}

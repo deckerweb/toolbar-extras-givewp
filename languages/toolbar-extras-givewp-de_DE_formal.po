@@ -1,0 +1,2057 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Toolbar Extras for Give Donations\n"
+"POT-Creation-Date: 2019-08-06 00:07+0200\n"
+"PO-Revision-Date: 2019-08-06 00:08+0200\n"
+"Last-Translator: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
+"Language-Team: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
+"Language: de_DE@formal\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: toolbar-extras-givewp.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: includes/admin/admin-extras.php:39
+msgid "First Step: Setup Environment to use the plugin"
+msgstr "Erster Schritt: Umgebung zur Verwendung des Plugins einrichten"
+
+#: includes/admin/admin-extras.php:40
+msgid "First Step: Setup Environment"
+msgstr "Erster Schritt: Umgebung einrichten"
+
+#: includes/admin/admin-extras.php:51
+msgid "Give Donations - Transaction History"
+msgstr "Spenden - Transaktionsverlauf"
+
+#: includes/admin/admin-extras.php:52
+#: includes/admin/views/settings-tab-givewp.php:142
+msgid "Donations"
+msgstr "Spenden"
+
+#: includes/admin/admin-extras.php:58
+msgid "Toolbar Settings for Give Donations"
+msgstr "Toolbar Extras für Give Spenden"
+
+#: includes/admin/admin-extras.php:59
+msgid "Toolbar Settings"
+msgstr "Toolbar Einstellungen"
+
+#: includes/admin/admin-extras.php:112
+msgctxt "Plugins page listing"
+msgid "Support"
+msgstr "Support"
+
+#: includes/admin/admin-extras.php:120
+msgctxt "Plugins page listing"
+msgid "Facebook Group"
+msgstr "Facebook Gruppe"
+
+#: includes/admin/admin-extras.php:127
+msgctxt "Plugins page listing"
+msgid "Translations"
+msgstr "Übersetzungen"
+
+#: includes/admin/admin-extras.php:135
+msgctxt "Plugins page listing"
+msgid "Donate"
+msgstr "Spenden"
+
+#: includes/admin/admin-extras.php:142
+msgctxt "Plugins page listing"
+msgid "Join our Newsletter"
+msgstr "Newsletter jetzt!"
+
+#. translators: %s - 5 stars icons
+#: includes/admin/admin-extras.php:187
+#, php-format
+msgid "%s rating"
+msgstr "%s Bewertung"
+
+#. translators: 1 - Toolbar Extras for Give Donations / 2 - label "5 star rating"
+#: includes/admin/admin-extras.php:193
+#, php-format
+msgid ""
+"Enjoyed %1$s? Please leave us a %2$s. We really appreciate your support!"
+msgstr ""
+"Gefällt Ihnen %1$s? Dann geben Sie uns bitte eine %2$s. Wir schätzen Ihre "
+"Unterstützung!"
+
+#. Plugin Name of the plugin/theme
+#: includes/admin/admin-extras.php:194 includes/admin/admin-extras.php:228
+#: includes/admin/tbexgive-settings.php:624
+#: includes/admin/views/help-content-addon.php:33
+#: includes/admin/views/help-content-addon.php:63 uninstall.php:42
+#: uninstall.php:52
+msgid "Toolbar Extras for Give Donations"
+msgstr "Toolbar Extras für Give Spenden"
+
+#: includes/admin/admin-extras.php:228
+msgid "Add-On Plugin"
+msgstr "Add-On-Plugin"
+
+#: includes/admin/admin-extras.php:234
+msgid "Add-On Plugin version"
+msgstr "Add-On Plugin-Version"
+
+#: includes/admin/admin-extras.php:238
+msgid "Required Base Plugin version"
+msgstr "Erforderliche Version des Basis-Plugins"
+
+#: includes/admin/admin-extras.php:242
+msgid "Donations item priority"
+msgstr "Spenden-Element Priorität"
+
+#: includes/admin/admin-extras.php:246
+msgid "Donations item custom URL"
+msgstr "Spenden-Element individuelle URL"
+
+#: includes/admin/admin-extras.php:250
+msgid "Display Featured Form item"
+msgstr "Ausgewählte Formularkampagne anzeigen"
+
+#: includes/admin/admin-extras.php:254
+msgid "Featured Form ID"
+msgstr "Ausgewählte Formular-ID"
+
+#: includes/admin/admin-extras.php:258
+msgid "Featured Form item priority"
+msgstr "Ausgewähltes Formular-Element Priorität"
+
+#: includes/admin/admin-extras.php:262
+msgid "Featured Form custom URL"
+msgstr "Ausgewähltes Formular individuelle URL"
+
+#: includes/admin/admin-extras.php:266
+msgid "Use Add-On Test Mode tweaks"
+msgstr "Anpassungen für Testmodus vom Add-On verwenden"
+
+#: includes/admin/admin-extras.php:270
+msgid "Remove TBEX Build Group"
+msgstr "TBEX Erschaffen-Gruppe entfernen"
+
+#: includes/admin/admin-extras.php:280
+msgid "Give Test Mode active"
+msgstr "Give-Testmodus aktiv"
+
+#: includes/admin/admin-extras.php:284
+msgid "Give Forms Single Permalinks active"
+msgstr "Give-Formulare Einzel-Permalinks aktiv"
+
+#: includes/admin/admin-help.php:86
+msgid "Add-On: GiveWP"
+msgstr "Add-On: GiveWP"
+
+#: includes/admin/givewp-settings-tab.php:30 toolbar-extras-givewp.php:246
+#: toolbar-extras-givewp.php:265 toolbar-extras-givewp.php:311
+msgid "Toolbar Extras"
+msgstr "Toolbar Extras"
+
+#: includes/admin/tbexgive-settings.php:33
+msgctxt "Toolbar item label"
+msgid "Donations"
+msgstr "Spenden"
+
+#: includes/admin/tbexgive-settings.php:41
+msgctxt "Toolbar item label"
+msgid "Give"
+msgstr "Give"
+
+#: includes/admin/tbexgive-settings.php:59
+#: includes/admin/views/settings-tab-givewp.php:786
+msgctxt "Toolbar item label"
+msgid "Give Test Mode Active"
+msgstr "Give-Testmodus aktiv"
+
+#: includes/admin/tbexgive-settings.php:126
+msgid "For Donations Top-Level Item"
+msgstr "Für Spenden-Element der obersten Ebene"
+
+#: includes/admin/tbexgive-settings.php:133
+msgid "Name of Donations Top-Level Item"
+msgstr "Name Spenden-Element der obersten Ebene"
+
+#: includes/admin/tbexgive-settings.php:142
+msgid "Which icon to use for the Donations item?"
+msgstr "Welches Icon soll für das Spenden-Element verwendet werden?"
+
+#: includes/admin/tbexgive-settings.php:151
+msgid "Pick a Dashicon Icon for the Donations item"
+msgstr "Ein Dashicon-Icon für das Spenden-Element auswählen"
+
+#: includes/admin/tbexgive-settings.php:160
+msgid "Priority of Donations item"
+msgstr "Priorität des Spenden-Elements"
+
+#: includes/admin/tbexgive-settings.php:169
+msgid "Use custom URL for Donations Item?"
+msgstr "Eine individuelle URL für das Spenden-Element verwenden?"
+
+#: includes/admin/tbexgive-settings.php:178
+#: includes/admin/tbexgive-settings.php:313
+msgid "Set link target?"
+msgstr "Linkziel festlegen?"
+
+#: includes/admin/tbexgive-settings.php:189
+msgid "For GiveWP"
+msgstr "Für GiveWP"
+
+#: includes/admin/tbexgive-settings.php:196
+msgid "Name of GiveWP"
+msgstr "Name von GiveWP"
+
+#: includes/admin/tbexgive-settings.php:207
+msgid "Featured Form Campaign"
+msgstr "Ausgewählte Formularkampagne"
+
+#: includes/admin/tbexgive-settings.php:214
+msgid "Display featured form campaign?"
+msgstr "Ausgewählte Formularkampagne anzeigen?"
+
+#: includes/admin/tbexgive-settings.php:223
+msgid "Select a featured form"
+msgstr "Ein ausgewähltes Formular festlegen"
+
+#: includes/admin/tbexgive-settings.php:232
+msgid "Which title to use?"
+msgstr "Welcher Titel soll verwendet werden?"
+
+#: includes/admin/tbexgive-settings.php:241
+#: includes/admin/tbexgive-settings.php:347
+msgid "Set a custom title for top-level item"
+msgstr "Einen individuellen Titel für das Top-Level-Element festlegen"
+
+#: includes/admin/tbexgive-settings.php:250
+msgid "Display income (earnings) after Form title?"
+msgstr "Einnahmen nach Formulartitel anzeigen?"
+
+#: includes/admin/tbexgive-settings.php:259
+msgid "Which icon to use for the featured form item?"
+msgstr ""
+"Welches Icon soll für das ausgewählte Formular-Element verwendet werden?"
+
+#: includes/admin/tbexgive-settings.php:268
+msgid "Pick a Dashicon Icon for the featured form item"
+msgstr "Ein Dashicon-Icon für das Featured-Formular-Element auswählen"
+
+#: includes/admin/tbexgive-settings.php:277
+msgid "Priority of featured form item"
+msgstr "Priorität des ausgewählten Formular-Elements"
+
+#: includes/admin/tbexgive-settings.php:286
+msgid "Set custom background color for featured form item"
+msgstr ""
+"Eine individuelle Hintergrundfarbe für das ausgewählte Formular-Element "
+"festlegen"
+
+#: includes/admin/tbexgive-settings.php:295
+msgid "Which URL to use for featured form item"
+msgstr "Welche URL soll für das ausgewählte Formular-Element verwendet werden?"
+
+#: includes/admin/tbexgive-settings.php:304
+msgid "Set a custom URL for featured form item"
+msgstr "Eine individuelle URL für das ausgewählte Formular-Element festlegen"
+
+#: includes/admin/tbexgive-settings.php:325
+msgid "Give Test Mode"
+msgstr "Give-Testmodus"
+
+#: includes/admin/tbexgive-settings.php:338
+msgid "Use tweaks for Test Mode?"
+msgstr "Anpassungen für Testmodus verwenden?"
+
+#: includes/admin/tbexgive-settings.php:356
+msgid "Which icon to use for the Test Mode item?"
+msgstr "Welches Icon soll für das Testmodus-Element verwendet werden?"
+
+#: includes/admin/tbexgive-settings.php:365
+msgid "Pick a Dashicon Icon for the Test Mode item"
+msgstr "Ein Dashicon-Icon für das Testmodus-Element auswählen"
+
+#: includes/admin/tbexgive-settings.php:376
+msgid "Various Tweaks"
+msgstr "Verschiedene Anpassungen"
+
+#: includes/admin/tbexgive-settings.php:383
+msgid "Set background color, icon and special text for Toolbar"
+msgstr "Hintergrundfarbe, Icon und speziellen Text für die Toolbar festlegen"
+
+#. translators: %s - label, "Build" (for "Build Group")
+#: includes/admin/tbexgive-settings.php:393
+#, php-format
+msgid "Remove %s Group from Toolbar Extras?"
+msgstr "Die %s-Gruppe von Toolbar Extras entfernen?"
+
+#: includes/admin/tbexgive-settings.php:393
+msgid "Build"
+msgstr "Erschaffen"
+
+#: includes/admin/tbexgive-settings.php:402
+msgid "Unload all GiveWP Translations?"
+msgstr "Alle Übersetzungen von GiveWP nicht laden?"
+
+#: includes/admin/tbexgive-settings.php:411
+msgid "Unload Toolbar Extras for GiveWP Add-On Translations?"
+msgstr "Übersetzungen von Toolbar Extras für GiveWP nicht laden?"
+
+#. translators: Settings tab title in WP-Admin
+#: includes/admin/tbexgive-settings.php:580
+#: includes/admin/tbexgive-settings.php:682
+msgctxt "Plugin settings tab title"
+msgid "GiveWP"
+msgstr "GiveWP"
+
+#: includes/admin/tbexgive-settings.php:624
+#: includes/admin/views/help-content-addon.php:33
+msgid "Add-On"
+msgstr "Add-On"
+
+#: includes/admin/tbexgive-settings.php:629
+#, php-format
+msgid ""
+"This Add-On brings the settings and items of the %s to your Toolbar, "
+"including current active GiveWP Add-Ons."
+msgstr ""
+"Dieses Add-On bringt die Einstellungen und Elemente des %s in Ihre Toolbar, "
+"einschließlich der derzeit aktiven GiveWP-spezifischen Add-Ons."
+
+#: includes/admin/tbexgive-settings.php:630
+msgid "Give Donations"
+msgstr "Give Spenden"
+
+#: includes/admin/tbexgive-settings.php:632
+msgid ""
+"Below you will find lots of settings to customize your experience for "
+"managing donation campaigns with GiveWP even faster."
+msgstr ""
+"Nachfolgend finden Sie viele Einstellungen, mit denen Sie Ihre Erfahrung für "
+"die noch schnellere Verwaltung von Spendenkampagnen mit GiveWP anpassen "
+"können."
+
+#: includes/admin/tbexgive-settings.php:655
+msgctxt "For Toolbar Extras Plugin"
+msgid "GiveWP Add-On"
+msgstr "GiveWP Add-On"
+
+#. translators: Title attribute for Toolbar Extras "GiveWP Add-On" settings link
+#: includes/admin/tbexgive-settings.php:660
+msgctxt "For Toolbar Extras Plugin"
+msgid "GiveWP Add-On for Toolbar Extras"
+msgstr "GiveWP Add-On für Toolbar Extras"
+
+#: includes/admin/tbexgive-settings.php:681
+msgid "Go to the Toolbar Extras GiveWP Add-On settings tab"
+msgstr "Gehen Sie zum Toolbar Extras Einstellungen-Tab „GiveWP Add-On“"
+
+#: includes/admin/tbexgive-settings.php:708
+msgctxt "Admin menu title"
+msgid "Give Toolbar"
+msgstr "Give Toolbar"
+
+#: includes/admin/tbexgive-settings.php:734
+msgid "GiveWP Green"
+msgstr "GiveWP Grün"
+
+#: includes/admin/views/help-content-addon.php:37
+msgid "Setting Give Name"
+msgstr "Einstellung Name von Give"
+
+#: includes/admin/views/help-content-addon.php:38
+msgid ""
+"This affects the Give name in various instances of the Toolbar and the Admin "
+"area."
+msgstr ""
+"Dies wirkt sich auf den Namen Give in verschiedenen Instanzen der Toolbar "
+"sowie des Admin-Bereichs aus."
+
+#: includes/admin/views/help-content-addon.php:45
+msgid "Settings > Toolbar Extras > Tab: General > Section: Links Behavior"
+msgstr ""
+"Einstellungen > Toolbar Extras > Tab: Allgemeine Einstellungen > Bereich: "
+"Verhalten von Links"
+
+#: includes/admin/views/help-content-addon.php:50
+msgid "How can I disable the link attributes (tooltips)?"
+msgstr "Wie kann ich die Link-Attribute (Tooltips) deaktivieren?"
+
+#: includes/admin/views/help-content-addon.php:53
+msgid "Go to"
+msgstr "Gehen Sie zu"
+
+#: includes/admin/views/help-content-addon.php:59
+msgid "Add-On Support Info"
+msgstr "Add-On Support-Informationen"
+
+#. translators: 1 - plugin name, "Toolbar Extras for Give Donations" / 2 - company name, "GiveWP/ Impress.org, LLC" / 3 - product name, "Give Donations (GiveWP)"
+#: includes/admin/views/help-content-addon.php:62
+#, php-format
+msgid ""
+"Please note, the %1$s Add-On plugin is not officially endorsed by %2$s. It "
+"is an independently developed solution by the community for the community. "
+"Therefore our support is connected to the Add-On itself, to the Toolbar and "
+"the things around it, not the inner meanings of %3$s."
+msgstr ""
+"Bitte beachten Sie, dass das %1$s Add-On Plugin nicht offiziell von %2$s "
+"unterstützt wird. Es ist eine von der Community unabhängig entwickelte "
+"Lösung für die Community. Daher gilt unser Support dem Add-On selbst, sowie "
+"der Toolbar und den Dingen, die damit verbunden sind, nicht der inneren "
+"Bedeutung von %3$s."
+
+#: includes/admin/views/help-content-addon.php:64
+msgid "GiveWP/ Impress.org, LLC"
+msgstr "GiveWP/ Impress.org, LLC"
+
+#: includes/admin/views/help-content-addon.php:65
+msgid "Give Donations (GiveWP)"
+msgstr "Give Spenden (GiveWP)"
+
+#: includes/admin/views/help-content-addon.php:70
+msgid "Important plugin links:"
+msgstr "Wichtige Plugin-Links:"
+
+#: includes/admin/views/help-content-addon.php:72
+msgid "Plugin website"
+msgstr "Plugin-Website"
+
+#: includes/admin/views/help-content-addon.php:74
+msgctxt "Help tab info"
+msgid "FAQ"
+msgstr "Häufige Fragen (FAQ)"
+
+#: includes/admin/views/help-content-addon.php:76
+msgctxt "Help tab info"
+msgid "Support"
+msgstr "Support"
+
+#: includes/admin/views/help-content-addon.php:78
+msgctxt "Help tab info"
+msgid "Facebook Group"
+msgstr "Facebook-Gruppe"
+
+#: includes/admin/views/help-content-addon.php:80
+msgctxt "Help tab info"
+msgid "Translations"
+msgstr "Übersetzungen"
+
+#: includes/admin/views/help-content-addon.php:82
+msgctxt "Help tab info"
+msgid "Donate"
+msgstr "Spenden"
+
+#: includes/admin/views/help-content-addon.php:84
+msgctxt "Help tab info"
+msgid "Join our Newsletter"
+msgstr "Newsletter jetzt!"
+
+#: includes/admin/views/settings-tab-givewp.php:29
+msgid "Set options for the main, top-level Donations for GiveWP in the Toolbar"
+msgstr ""
+"Legen Sie Optionen für das GiveWP-Hauptelement in der obersten Ebene (Top-"
+"Level) der Toolbar fest"
+
+#: includes/admin/views/settings-tab-givewp.php:45
+msgid "Set some things for Give Donations itself."
+msgstr "Einige Dinge für Give Spenden selbst festlegen."
+
+#: includes/admin/views/settings-tab-givewp.php:61
+msgid ""
+"Optionally display one specific form campaign as featured top-level item in "
+"the Toolbar."
+msgstr ""
+"Optional können Sie eine bestimmte Formularkampagne als Element der obersten "
+"Ebene (Top-Level) in der Toolbar anzeigen."
+
+#: includes/admin/views/settings-tab-givewp.php:80
+msgid "in the GiveWP settings"
+msgstr "in den GiveWP-Einstellungen"
+
+#. translators: %s - label for "in the GiveWP settings" (linked)
+#: includes/admin/views/settings-tab-givewp.php:85
+#, php-format
+msgid "You can easily switch between Live and Test Mode %s."
+msgstr "Sie können %s einfach zwischen dem Live- und Testmodus wechseln."
+
+#: includes/admin/views/settings-tab-givewp.php:92
+msgid "Set a few tweaks for the Give Test Mode."
+msgstr "Einige Anpassungen für den Give-Testmodus einstellen."
+
+#: includes/admin/views/settings-tab-givewp.php:110
+msgid ""
+"Determine which menu items should be removed and set other additional tweaks."
+msgstr ""
+"Legen Sie fest, welche Menüpunkte entfernt werden sollen und stellen Sie "
+"weitere zusätzliche Optimierungen ein."
+
+#. translators: %s - a Dashicons CSS class name
+#: includes/admin/views/settings-tab-givewp.php:141
+#: includes/admin/views/settings-tab-givewp.php:168
+#: includes/admin/views/settings-tab-givewp.php:208
+#: includes/admin/views/settings-tab-givewp.php:234
+#: includes/admin/views/settings-tab-givewp.php:270
+#: includes/admin/views/settings-tab-givewp.php:306
+#: includes/admin/views/settings-tab-givewp.php:333
+#: includes/admin/views/settings-tab-givewp.php:369
+#: includes/admin/views/settings-tab-givewp.php:436
+#: includes/admin/views/settings-tab-givewp.php:461
+#: includes/admin/views/settings-tab-givewp.php:486
+#: includes/admin/views/settings-tab-givewp.php:515
+#: includes/admin/views/settings-tab-givewp.php:544
+#: includes/admin/views/settings-tab-givewp.php:584
+#: includes/admin/views/settings-tab-givewp.php:610
+#: includes/admin/views/settings-tab-givewp.php:657
+#: includes/admin/views/settings-tab-givewp.php:692
+#: includes/admin/views/settings-tab-givewp.php:728
+#: includes/admin/views/settings-tab-givewp.php:760
+#: includes/admin/views/settings-tab-givewp.php:785
+#: includes/admin/views/settings-tab-givewp.php:814
+#: includes/admin/views/settings-tab-givewp.php:854
+#: includes/admin/views/settings-tab-givewp.php:888
+#: includes/admin/views/settings-tab-givewp.php:924
+#: includes/admin/views/settings-tab-givewp.php:962
+#, php-format
+msgid "Default: %s"
+msgstr "Standard: %s"
+
+#: includes/admin/views/settings-tab-givewp.php:162
+#: includes/admin/views/settings-tab-givewp.php:538
+#: includes/admin/views/settings-tab-givewp.php:808
+msgid "None"
+msgstr "Keins"
+
+#: includes/admin/views/settings-tab-givewp.php:163
+#: includes/admin/views/settings-tab-givewp.php:169
+#: includes/admin/views/settings-tab-givewp.php:539
+#: includes/admin/views/settings-tab-givewp.php:545
+#: includes/admin/views/settings-tab-givewp.php:809
+msgid "GiveWP Logo Icon"
+msgstr "GiveWP Logo-Icon"
+
+#: includes/admin/views/settings-tab-givewp.php:164
+#: includes/admin/views/settings-tab-givewp.php:540
+#: includes/admin/views/settings-tab-givewp.php:810
+msgid "Dashicon Icon"
+msgstr "Dashicon-Icon"
+
+#. translators: %s - a Dashicons CSS class name
+#: includes/admin/views/settings-tab-givewp.php:202
+#: includes/admin/views/settings-tab-givewp.php:578
+#: includes/admin/views/settings-tab-givewp.php:848
+#, php-format
+msgid "Current: %s"
+msgstr "Aktuell: %s"
+
+#: includes/admin/views/settings-tab-givewp.php:239
+#: includes/admin/views/settings-tab-givewp.php:615
+msgid ""
+"The default value means display at far right of the left Toolbar section/ "
+"column."
+msgstr ""
+"Der Standardwert bedeutet eine Anzeige ganz rechts innerhalb des linken "
+"Toolbar-Bereichs/ der linken Spalte."
+
+#: includes/admin/views/settings-tab-givewp.php:239
+#: includes/admin/views/settings-tab-givewp.php:615
+msgid ""
+"The smaller the value gets the more on the left the item will be displayed."
+msgstr ""
+"Je kleiner der Wert wird, desto weiter links wird das Element erscheinen."
+
+#: includes/admin/views/settings-tab-givewp.php:262
+msgid "Donations History Admin URL"
+msgstr "Spendenhistorie-Admin-URL"
+
+#. translators: %s - string "Donations History Admin URL" (linked)
+#. translators: %s - string "Form Donation History Admin URL" (linked)
+#: includes/admin/views/settings-tab-givewp.php:278
+#: includes/admin/views/settings-tab-givewp.php:700
+#, php-format
+msgid ""
+"When you let the above field empty the default %s will be used. Only when "
+"you enter a valid custom URL, that will actually be used. That could be a "
+"full external URL or even a (full) frontend or backend URL from your "
+"WordPress install. In most cases it should be efficient to use the default "
+"behavior."
+msgstr ""
+"Wenn Sie das obige Feld leer lassen, wird der standardmäßige %s verwendet. "
+"Nur wenn Sie eine gültige URL eingeben, wird diese tatsächlich verwendet. "
+"Das kann eine komplette externe URL oder sogar eine (komplette) Frontend- "
+"oder Admin-URL von Ihrer WordPress-Installation sein. In den meisten Fällen "
+"sollte es effizient sein, das Standardverhalten zu verwenden."
+
+#: includes/admin/views/settings-tab-givewp.php:301
+#: includes/admin/views/settings-tab-givewp.php:307
+#: includes/admin/views/settings-tab-givewp.php:723
+#: includes/admin/views/settings-tab-givewp.php:729
+msgid "Same Tab/ Window"
+msgstr "Gleicher/s Tab/ Fenster"
+
+#: includes/admin/views/settings-tab-givewp.php:302
+#: includes/admin/views/settings-tab-givewp.php:724
+msgid "New Tab/ Window"
+msgstr "Neuer/s Tab/ Fenster"
+
+#: includes/admin/views/settings-tab-givewp.php:334
+#: includes/string-switcher.php:26
+msgid "Give"
+msgstr "Give"
+
+#: includes/admin/views/settings-tab-givewp.php:339
+msgid ""
+"This label will be used on various locations for the Toolbar items of this "
+"Add-On."
+msgstr ""
+"Diese Beschriftung wird an verschiedenen Stellen für die Toolbar-Elemente "
+"von diesem Add-Ons verwendet."
+
+#: includes/admin/views/settings-tab-givewp.php:403
+msgid "Please select a form"
+msgstr "Bitte wählen Sie ein Formular aus"
+
+#: includes/admin/views/settings-tab-givewp.php:427
+msgid "No GiveWP Donation forms available"
+msgstr "Keine Give Spendenformulare verfügbar"
+
+#: includes/admin/views/settings-tab-givewp.php:437
+msgid "(none)"
+msgstr "(keins)"
+
+#: includes/admin/views/settings-tab-givewp.php:456
+#: includes/admin/views/settings-tab-givewp.php:462
+msgid "Form Title"
+msgstr "Formular Titel"
+
+#: includes/admin/views/settings-tab-givewp.php:457
+msgid "Use a Custom Title"
+msgstr "Einen individuellen Titel verwenden"
+
+#: includes/admin/views/settings-tab-givewp.php:520
+msgid ""
+"Show the the complete donation income the above chosen featured form has "
+"generated so far. So you can immediately see the current status of your "
+"campaign - in the Admin Dashboard and on the frontend. Very useful."
+msgstr ""
+"Zeigen Sie den vollständigen Spendenbetrag an, den das oben gewählte "
+"Formular bisher generiert hat. So sehen Sie sofort den aktuellen Status "
+"Ihrer Kampagne - im Admin Dashboard und im Frontend. Sehr nützlich."
+
+#: includes/admin/views/settings-tab-givewp.php:652
+#: includes/admin/views/settings-tab-givewp.php:658
+msgid "Form Default"
+msgstr "Formular-Standard"
+
+#: includes/admin/views/settings-tab-givewp.php:653
+msgid "Custom URL"
+msgstr "Eigene URL"
+
+#: includes/admin/views/settings-tab-givewp.php:684
+msgid "Form Donation History Admin URL"
+msgstr "Formular-Spendenhistorie-Admin-URL"
+
+#. translators: %s - label, "Build Group"
+#: includes/admin/views/settings-tab-givewp.php:895
+#, php-format
+msgid ""
+"For focussing fully on donation management you can even remove Toolbar "
+"Extras' own %s top-level item. Otherwise it is recommended to keep this item."
+msgstr ""
+"Um sich ganz auf das Spendenmanagement zu konzentrieren, können Sie sogar "
+"das eigene %s Top-Level-Element von Toolbar Extras entfernen. Andernfalls "
+"wird empfohlen, dieses Element zu belassen."
+
+#: includes/admin/views/settings-tab-givewp.php:896
+msgid "Build Group"
+msgstr "Erschaffen-Gruppe"
+
+#: includes/admin/views/settings-tab-givewp.php:929
+msgid ""
+"This tweak unloads the translations for Give Donations. So all strings fall "
+"back to their English default strings."
+msgstr ""
+"Diese Anpassung verhindert das Laden der Übersetzungen für Give Spenden "
+"(GiveWP). Somit werden automatisch die englischsprachigen Original-Strings "
+"geladen."
+
+#. translators: %s - text domain strings, for example 'givewp'
+#: includes/admin/views/settings-tab-givewp.php:934
+#, php-format
+msgid "Effected text domains: %s"
+msgstr "Betroffene Textdomains: %s"
+
+#: includes/admin/views/settings-tab-givewp.php:967
+msgid ""
+"This tweak unloads the translations for Toolbar Extras for Give Donations "
+"Add-On, so it falls back to the English default strings."
+msgstr ""
+"Diese Anpassung verhindert das Laden der Übersetzungen für Toolbar Extras "
+"für Give Spenden. Somit werden automatisch die englischsprachigen Original-"
+"Strings geladen."
+
+#. translators: %s - a text domain string, 'toolbar-extras-givewp'
+#: includes/admin/views/settings-tab-givewp.php:972
+#, php-format
+msgid "Effected text domain: %s"
+msgstr "Betroffene Textdomain: %s"
+
+#: includes/functions-global.php:123
+#: includes/givewp-official/items-givewp-core.php:356
+msgctxt "Time range for filtering"
+msgid "Today"
+msgstr "Heute"
+
+#: includes/functions-global.php:124
+#: includes/givewp-official/items-givewp-core.php:357
+msgctxt "Time range for filtering"
+msgid "Yesterday"
+msgstr "Gestern"
+
+#: includes/functions-global.php:125
+#: includes/givewp-official/items-givewp-core.php:358
+msgctxt "Time range for filtering"
+msgid "This Week"
+msgstr "Diese Woche"
+
+#: includes/functions-global.php:126
+#: includes/givewp-official/items-givewp-core.php:359
+msgctxt "Time range for filtering"
+msgid "Last Week"
+msgstr "Letzte Woche"
+
+#: includes/functions-global.php:127
+#: includes/givewp-official/items-givewp-core.php:360
+msgctxt "Time range for filtering"
+msgid "This Month"
+msgstr "Aktueller Monat"
+
+#: includes/functions-global.php:128
+#: includes/givewp-official/items-givewp-core.php:361
+msgctxt "Time range for filtering"
+msgid "Last Month"
+msgstr "Letzter Monat"
+
+#: includes/functions-global.php:129
+#: includes/givewp-official/items-givewp-core.php:362
+msgctxt "Time range for filtering"
+msgid "This Quarter"
+msgstr "Dieses Quartal"
+
+#: includes/functions-global.php:130
+#: includes/givewp-official/items-givewp-core.php:363
+msgctxt "Time range for filtering"
+msgid "Last Quarter"
+msgstr "Letztes Quartal"
+
+#: includes/functions-global.php:131
+#: includes/givewp-official/items-givewp-core.php:364
+msgctxt "Time range for filtering"
+msgid "This Year"
+msgstr "Dieses Jahr"
+
+#: includes/functions-global.php:132
+#: includes/givewp-official/items-givewp-core.php:365
+msgctxt "Time range for filtering"
+msgid "Last Year"
+msgstr "Letztes Jahr"
+
+#: includes/givewp-addons/items-aweber.php:39
+#: includes/givewp-addons/items-aweber.php:43
+msgid "AWeber"
+msgstr "AWeber"
+
+#: includes/givewp-addons/items-aweber.php:52
+#: includes/givewp-addons/items-aweber.php:56
+#: includes/givewp-addons/items-constant-contact.php:52
+#: includes/givewp-addons/items-constant-contact.php:56
+#: includes/givewp-addons/items-convertkit.php:52
+#: includes/givewp-addons/items-convertkit.php:56
+#: includes/givewp-addons/items-fee-recovery.php:50
+#: includes/givewp-addons/items-fee-recovery.php:54
+#: includes/givewp-addons/items-fee-recovery.php:70
+#: includes/givewp-addons/items-fee-recovery.php:83
+#: includes/givewp-addons/items-form-field-manager.php:52
+#: includes/givewp-addons/items-form-field-manager.php:56
+#: includes/givewp-addons/items-gift-aid.php:51
+#: includes/givewp-addons/items-gift-aid.php:55
+#: includes/givewp-addons/items-google-analytics.php:52
+#: includes/givewp-addons/items-google-analytics.php:56
+#: includes/givewp-addons/items-mailchimp.php:52
+#: includes/givewp-addons/items-mailchimp.php:56
+#: includes/givewp-addons/items-tributes.php:51
+#: includes/givewp-addons/items-tributes.php:55
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/givewp-addons/items-aweber.php:65
+msgid "My AWeber Dashboard"
+msgstr "Mein AWeber Dashboard"
+
+#: includes/givewp-addons/items-aweber.php:69
+msgid "My AWeber Dashboard (aweber.com)"
+msgstr "Mein AWeber Dashboard (aweber.com)"
+
+#: includes/givewp-addons/items-constant-contact.php:39
+#: includes/givewp-addons/items-constant-contact.php:43
+msgid "Constant Contact"
+msgstr "Constant Contact"
+
+#: includes/givewp-addons/items-constant-contact.php:65
+msgid "My Constant Contact Dashboard"
+msgstr "Mein Constant Contact Dashboard"
+
+#: includes/givewp-addons/items-constant-contact.php:69
+msgid "My Constant Contact Dashboard (constantcontact.com)"
+msgstr "Mein Constant Contact Dashboard (constantcontact.com)"
+
+#: includes/givewp-addons/items-convertkit.php:39
+#: includes/givewp-addons/items-convertkit.php:43
+msgid "ConvertKit"
+msgstr "ConvertKit"
+
+#: includes/givewp-addons/items-convertkit.php:65
+msgid "My ConvertKit Dashboard"
+msgstr "Mein ConvertKit Dashboard"
+
+#: includes/givewp-addons/items-convertkit.php:69
+msgid "My ConvertKit Dashboard (app.convertkit.com)"
+msgstr "Mein ConvertKit Dashboard (app.convertkit.com)"
+
+#: includes/givewp-addons/items-email-template.php:39
+msgid "HTML Email Template"
+msgstr "HTML-Template"
+
+#: includes/givewp-addons/items-email-template.php:43
+msgid "Give Donation Email Template"
+msgstr "Give Spenden-E-Mail-Template"
+
+#: includes/givewp-addons/items-email-template.php:52
+msgid "General Template Options"
+msgstr "Allgemeine Template-Einstellungen"
+
+#: includes/givewp-addons/items-email-template.php:56
+msgid "Edit &amp; Preview General Email Template Options"
+msgstr "Bearbeiten und Anpassen von allgemeinen E-Mail-Template-Optionen"
+
+#: includes/givewp-addons/items-email-template.php:65
+msgid "Email Header"
+msgstr "Email Kopfzeile"
+
+#: includes/givewp-addons/items-email-template.php:69
+msgid "Edit &amp; Preview Email Header"
+msgstr "Bearbeiten &amp; Vorschau E-Mail-Header"
+
+#: includes/givewp-addons/items-email-template.php:78
+msgid "Email Footer"
+msgstr "E-Mail-Signatur"
+
+#: includes/givewp-addons/items-email-template.php:82
+msgid "Edit &amp; Preview Email Footer"
+msgstr "Bearbeiten &amp; Vorschau E-Mail-Footer"
+
+#: includes/givewp-addons/items-email-template.php:91
+msgid "Email Content (Body)"
+msgstr "E-Mail-Inhalt (Body)"
+
+#: includes/givewp-addons/items-email-template.php:95
+msgid "Edit &amp; Preview Email Content (Body)"
+msgstr "Bearbeiten &amp; Vorschau des E-Mail-Inhalts (Body)"
+
+#: includes/givewp-addons/items-email-template.php:104
+#: includes/givewp-addons/items-email-template.php:108
+msgid "Give Template Options"
+msgstr "Give Template-Optionen"
+
+#: includes/givewp-addons/items-fee-recovery.php:37
+#: includes/givewp-addons/items-fee-recovery.php:41
+msgid "Fee Recovery"
+msgstr "Gebührendeckung"
+
+#: includes/givewp-addons/items-fee-recovery.php:66
+msgid "Report: Fee Income"
+msgstr "Bericht: Gebühreneinnahmen"
+
+#: includes/givewp-addons/items-fee-recovery.php:79
+msgid "Report: Fee Conversion"
+msgstr "Bericht: Gebührenumwandlung"
+
+#: includes/givewp-addons/items-form-field-manager.php:39
+#: includes/givewp-addons/items-form-field-manager.php:43
+msgid "Form Field Manager"
+msgstr "Formularfelder bearbeiten"
+
+#: includes/givewp-addons/items-gift-aid.php:38
+#: includes/givewp-addons/items-gift-aid.php:42
+msgid "Gift Aid"
+msgstr "Geschenk-Hilfe"
+
+#: includes/givewp-addons/items-gift-aid.php:66
+msgid "Report: Gift Aid Donations"
+msgstr "Bericht: Geschenk-Hilfe-Spenden"
+
+#: includes/givewp-addons/items-gift-aid.php:70
+msgid "Report: All Gift Aid Donations"
+msgstr "Bericht: Alle Geschenk-Hilfe-Spenden"
+
+#: includes/givewp-addons/items-gift-aid.php:81
+msgid "UK Gift Aid Program"
+msgstr "Britisches Geschenk-Hilfe-Programm"
+
+#: includes/givewp-addons/items-gift-aid.php:85
+msgid "United Kingdom Government: Gift Aid Program Info"
+msgstr "Regierung des Vereinigten Königreichs: Geschenk-Hilfe-Programm Info"
+
+#: includes/givewp-addons/items-google-analytics.php:39
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: includes/givewp-addons/items-google-analytics.php:43
+msgid "Google Analytics Donation Tracking"
+msgstr "Google Analytics Spenden-Tracking"
+
+#: includes/givewp-addons/items-google-analytics.php:65
+msgid "My Google Analytics Dashboard"
+msgstr "Mein Google Analytics Dashboard"
+
+#: includes/givewp-addons/items-google-analytics.php:69
+msgid "My Google Analytics Dashboard (analytics.google.com)"
+msgstr "Mein Google Analytics Dashboard (analytics.google.com)"
+
+#: includes/givewp-addons/items-mailchimp-for-wp.php:38
+#: includes/givewp-addons/items-mailchimp-for-wp.php:42
+msgid "Mailchimp for WP"
+msgstr "Mailchimp für WP"
+
+#: includes/givewp-addons/items-mailchimp-for-wp.php:51
+#: includes/givewp-addons/items-mailchimp-for-wp.php:55
+msgid "Give Integration"
+msgstr "Give Integration"
+
+#: includes/givewp-addons/items-mailchimp-for-wp.php:64
+#: includes/givewp-addons/items-mailchimp.php:65
+msgid "My Mailchimp Audience"
+msgstr "Mein Mailchimp-Publikum"
+
+#: includes/givewp-addons/items-mailchimp-for-wp.php:68
+#: includes/givewp-addons/items-mailchimp.php:69
+msgid "My Mailchimp Audience (mailchimp.com)"
+msgstr "Mein Mailchimp Publikum (mailchimp.com)"
+
+#: includes/givewp-addons/items-mailchimp-for-wp.php:77
+#: includes/givewp-addons/items-mailchimp.php:78
+msgid "My Mailchimp Campaigns"
+msgstr "Meine Mailchimp-Kampagnen"
+
+#: includes/givewp-addons/items-mailchimp-for-wp.php:81
+#: includes/givewp-addons/items-mailchimp.php:82
+msgid "My Mailchimp Campaigns (mailchimp.com)"
+msgstr "Meine Mailchimp-Kampagnen (mailchimp.com)"
+
+#: includes/givewp-addons/items-mailchimp.php:39
+#: includes/givewp-addons/items-mailchimp.php:43
+msgid "Mailchimp"
+msgstr "Mailchimp"
+
+#: includes/givewp-addons/items-manual-donations.php:39
+#: includes/givewp-addons/items-manual-donations.php:43
+msgid "Manual Donations"
+msgstr "Manuelle Spenden"
+
+#: includes/givewp-addons/items-manual-donations.php:52
+msgid "New Manual Donation"
+msgstr "Neue manuelle Spende"
+
+#: includes/givewp-addons/items-manual-donations.php:56
+msgid "Add new Manual Donation Payment"
+msgstr "Neue manuelle Spendenzahlung hinzufügen"
+
+#: includes/givewp-addons/items-manual-donations.php:104
+msgid "Manual Donation"
+msgstr "Manuelle Spende"
+
+#: includes/givewp-addons/items-manual-donations.php:106
+msgid "Give Manual Donation Payment"
+msgstr "Give Manuelle Spendenzahlung"
+
+#: includes/givewp-addons/items-payments-paypal-pro.php:39
+msgid "PayPal Pro Payments"
+msgstr "PayPal Pro Zahlungen"
+
+#: includes/givewp-addons/items-payments-paypal-pro.php:43
+#: includes/givewp-addons/items-recurring-donations.php:42
+msgid "PayPal Pro Payment Gateway"
+msgstr "PayPal Pro Zahlungs-Gateway"
+
+#: includes/givewp-addons/items-payments-paypal-pro.php:52
+#: includes/givewp-addons/items-payments-paypal-pro.php:56
+#: includes/givewp-addons/items-payments-paypal-pro.php:105
+#: includes/givewp-addons/items-payments-paypal-pro.php:109
+msgid "PayPal Pro Settings"
+msgstr "PayPal Pro-Einstellungen"
+
+#: includes/givewp-addons/items-payments-paypal-pro.php:65
+#: includes/givewp-addons/items-payments-paypal-pro.php:69
+msgid "Website Payments Pro (REST API)"
+msgstr "Website Payments Pro (REST API)"
+
+#: includes/givewp-addons/items-payments-paypal-pro.php:78
+#: includes/givewp-addons/items-payments-paypal-pro.php:82
+msgid "Website Payments Pro (NVP API)"
+msgstr "Website Payments Pro (NVP API)"
+
+#: includes/givewp-addons/items-payments-paypal-pro.php:91
+msgid "My PayPal Pro Account"
+msgstr "Mein PayPal Pro-Konto"
+
+#: includes/givewp-addons/items-payments-paypal-pro.php:95
+msgid "My PayPal Pro Account (paypal.com)"
+msgstr "Mein PayPal Pro-Konto (paypal.com)"
+
+#: includes/givewp-addons/items-payments-stripe.php:39
+msgid "Stripe Payments"
+msgstr "Stripe Zahlungen"
+
+#: includes/givewp-addons/items-payments-stripe.php:43
+msgid "Stripe Payment Gateway"
+msgstr "Stripe Zahlungsart"
+
+#: includes/givewp-addons/items-payments-stripe.php:52
+#: includes/givewp-addons/items-payments-stripe.php:56
+#: includes/givewp-official/items-givewp-core.php:1251
+#: includes/givewp-official/items-givewp-core.php:1255
+msgid "Stripe Settings"
+msgstr "Stripe Einstellungen"
+
+#: includes/givewp-addons/items-payments-stripe.php:65
+#: includes/givewp-addons/items-payments-stripe.php:69
+msgid "Stripe + Plaid Settings"
+msgstr "Stripe- und Plaid-Einstellungen"
+
+#: includes/givewp-addons/items-payments-stripe.php:78
+#: includes/givewp-addons/items-payments-stripe.php:82
+#: includes/givewp-official/items-givewp-core.php:1426
+msgid "Advanced Settings"
+msgstr "Erweiterte Einstellungen"
+
+#: includes/givewp-addons/items-payments-stripe.php:91
+msgid "My Stripe Dashboard"
+msgstr "Mein Stripe-Dashboard"
+
+#: includes/givewp-addons/items-payments-stripe.php:95
+msgid "My Stripe Dashboard (stripe.com)"
+msgstr "Mein Stripe-Dashboard (stripe.com)"
+
+#: includes/givewp-addons/items-payments-stripe.php:104
+#: includes/givewp-addons/items-payments-stripe.php:108
+msgid "Stripe Logs"
+msgstr "Stripe-Protokolle"
+
+#: includes/givewp-addons/items-pdf-receipts.php:38
+#: includes/givewp-addons/items-pdf-receipts.php:42
+msgid "PDF Receipts"
+msgstr "PDF-Belege"
+
+#: includes/givewp-addons/items-pdf-receipts.php:51
+msgid "Template Builder"
+msgstr "Template Builder"
+
+#: includes/givewp-addons/items-pdf-receipts.php:55
+msgid "Template Builder &amp; Settings"
+msgstr "Template Builder &amp; Einstellungen"
+
+#: includes/givewp-addons/items-pdf-receipts.php:64
+msgid "Preview PDF Receipt"
+msgstr "PDF-Beleg-Vorschau"
+
+#: includes/givewp-addons/items-pdf-receipts.php:68
+msgid "Preview PDF Receipt - Opens PDF File"
+msgstr "Vorschau des PDF-Belegs - Öffnet die PDF-Datei"
+
+#: includes/givewp-addons/items-recurring-donations.php:38
+msgid "Recurring Donations"
+msgstr "Wiederkehrende Spenden"
+
+#: includes/givewp-addons/items-recurring-donations.php:51
+#: includes/givewp-official/items-givewp-core.php:265
+#: includes/items-formfeat.php:201
+msgid "Subscriptions"
+msgstr "Abonnements"
+
+#: includes/givewp-addons/items-recurring-donations.php:55
+msgid "Subscriptions - Recurring Donations Overview"
+msgstr "Abonnements - Übersicht über wiederkehrende Spenden"
+
+#: includes/givewp-addons/items-recurring-donations.php:66
+msgid "Report: Renewal Donations"
+msgstr "Bericht: Wiederholte Spenden"
+
+#: includes/givewp-addons/items-recurring-donations.php:70
+msgid "Report: All Renewal Donations"
+msgstr "Bericht: Alle wiederholten Spenden"
+
+#: includes/givewp-addons/items-recurring-donations.php:81
+#: includes/givewp-addons/items-recurring-donations.php:85
+msgid "Logs: Recurring Emails"
+msgstr "Protokolle: Wiederkehrende E-Mails"
+
+#: includes/givewp-addons/items-recurring-donations.php:94
+#: includes/givewp-addons/items-recurring-donations.php:98
+msgid "Logs: Synchronizer"
+msgstr "Protokolle: Synchronisierung"
+
+#: includes/givewp-addons/items-recurring-donations.php:107
+#: includes/givewp-addons/items-recurring-donations.php:111
+msgid "Help Docs"
+msgstr "Hilfe-Dokumente"
+
+#: includes/givewp-addons/items-tributes.php:38
+#: includes/givewp-addons/items-tributes.php:42
+#: includes/givewp-official/items-givewp-core.php:630
+msgid "Tributes"
+msgstr "Tribute"
+
+#: includes/givewp-addons/items-tributes.php:67
+msgid "Report: Tribute Donations"
+msgstr "Bericht: Tribute-Spenden"
+
+#: includes/givewp-addons/items-tributes.php:71
+msgid "Report: All Tribute Donations"
+msgstr "Bericht: Alle Tribute-Spenden"
+
+#: includes/givewp-addons/items-tributes.php:80
+#: includes/givewp-addons/items-tributes.php:84
+msgid "Report: Mail a Card"
+msgstr "Bericht: Eine Karte versenden"
+
+#: includes/givewp-addons/items-tributes.php:93
+#: includes/givewp-addons/items-tributes.php:97
+msgid "Report: eCards"
+msgstr "Bericht: eCards"
+
+#: includes/givewp-official/items-givewp-core.php:52
+#: includes/items-formfeat.php:171
+msgid "Donation Transactions"
+msgstr "Spendentransaktionen"
+
+#: includes/givewp-official/items-givewp-core.php:56
+#: includes/items-formfeat.php:175
+msgid "Donation Transactions - Payment History"
+msgstr "Spendentransaktionen - Zahlungsverhalten"
+
+#: includes/givewp-official/items-givewp-core.php:65
+#: includes/givewp-official/items-givewp-core.php:69
+msgid "All Donations"
+msgstr "Alle Zuwendungen"
+
+#: includes/givewp-official/items-givewp-core.php:78
+#: includes/givewp-official/items-givewp-core.php:82
+msgid "Abandoned Donations"
+msgstr "Abgebrochene Vorgänge"
+
+#: includes/givewp-official/items-givewp-core.php:91
+#: includes/givewp-official/items-givewp-core.php:1580
+msgid "Import Donations"
+msgstr "Spenden importieren"
+
+#: includes/givewp-official/items-givewp-core.php:95
+#: includes/givewp-official/items-givewp-core.php:1584
+msgid "Import Donations from CSV File"
+msgstr "Spenden aus CSV-Datei importieren"
+
+#: includes/givewp-official/items-givewp-core.php:118
+msgid "List Donations per Form"
+msgstr "Spenden pro Formular auflisten"
+
+#: includes/givewp-official/items-givewp-core.php:122
+msgid "List all Donations per Form Campaign"
+msgstr "Liste aller Spenden pro Formularkampagne"
+
+#: includes/givewp-official/items-givewp-core.php:140
+#: includes/givewp-official/items-givewp-core.php:245
+msgid "All Donors for Form Campaign"
+msgstr "Alle Spender für Formularkampagne"
+
+#: includes/givewp-official/items-givewp-core.php:158
+#: includes/givewp-official/items-givewp-core.php:2185
+#: includes/items-formfeat.php:185
+msgid "Donors"
+msgstr "Spender"
+
+#: includes/givewp-official/items-givewp-core.php:162
+#: includes/items-formfeat.php:189
+msgid "All Donors - User Data"
+msgstr "Alle Spender - Benutzerdaten"
+
+#: includes/givewp-official/items-givewp-core.php:172
+msgid "All Donors"
+msgstr "Alle Spender"
+
+#: includes/givewp-official/items-givewp-core.php:176
+msgid "All Donors for any Campaign - User Data"
+msgstr "Alle Spender für jede Kampagne - Benutzerdaten"
+
+#: includes/givewp-official/items-givewp-core.php:192
+msgid "Donor Users (WP)"
+msgstr "Spender (WP-Benutzer)"
+
+#: includes/givewp-official/items-givewp-core.php:196
+msgid "All Give Donors - WordPress User Accounts"
+msgstr "Alle Give-Spender - WordPress-Benutzerkonten"
+
+#: includes/givewp-official/items-givewp-core.php:223
+msgid "List Donors per Form"
+msgstr "Spender pro Formular auflisten"
+
+#: includes/givewp-official/items-givewp-core.php:227
+msgid "List all Donors per Form Campaign"
+msgstr "Liste aller Spender pro Formularkampagne"
+
+#: includes/givewp-official/items-givewp-core.php:269
+#: includes/items-formfeat.php:205
+msgid "All Subscriptions - Recurring Donations"
+msgstr "Alle Abonnements - Wiederkehrende Spenden"
+
+#: includes/givewp-official/items-givewp-core.php:278
+msgid "All Subscriptions"
+msgstr "Alle Abonnemente"
+
+#: includes/givewp-official/items-givewp-core.php:282
+msgid "All Subscriptions - Recurring Donations Overview"
+msgstr "Alle Abonnements - Übersicht über wiederkehrende Spenden"
+
+#: includes/givewp-official/items-givewp-core.php:305
+msgid "List Subscriptions per Form"
+msgstr "Abonnements pro Formular auflisten"
+
+#: includes/givewp-official/items-givewp-core.php:309
+msgid "View all Subscriptions per Form Campaign"
+msgstr "Alle Abonnements pro Formularkampagne anzeigen"
+
+#: includes/givewp-official/items-givewp-core.php:327
+msgid "All Subscriptions for Form Campaign"
+msgstr "Alle Abonnements für Formularkampagne"
+
+#: includes/givewp-official/items-givewp-core.php:346
+#: includes/items-formfeat.php:219
+msgid "Reports"
+msgstr "Berichte"
+
+#: includes/givewp-official/items-givewp-core.php:350
+#: includes/items-formfeat.php:223
+msgid "All Reports - Donation Statistics &amp; Analytics"
+msgstr "Alle Berichte - Spendenstatistik &amp; Analytik"
+
+#: includes/givewp-official/items-givewp-core.php:375
+msgid "Income"
+msgstr "Einnahmen"
+
+#: includes/givewp-official/items-givewp-core.php:379
+msgid "Income - Earnings"
+msgstr "Einnahmen - Verdienst"
+
+#: includes/givewp-official/items-givewp-core.php:388
+#: includes/givewp-official/items-givewp-core.php:392
+#: includes/givewp-official/items-givewp-core.php:440
+#: includes/givewp-official/items-givewp-core.php:444
+#: includes/givewp-official/items-givewp-core.php:522
+#: includes/givewp-official/items-givewp-core.php:526
+#: includes/givewp-official/items-givewp-core.php:571
+#: includes/givewp-official/items-givewp-core.php:575
+#: includes/givewp-official/items-givewp-core.php:734
+#: includes/givewp-official/items-givewp-core.php:738
+#: includes/items-formfeat.php:232 includes/items-formfeat.php:236
+msgid "Overview"
+msgstr "Übersicht"
+
+#. translators: %s - label of time range, for example "Yesterday"
+#: includes/givewp-official/items-givewp-core.php:410
+#: includes/items-formfeat.php:254
+#, php-format
+msgid "Income %s"
+msgstr "Einnahmen %s"
+
+#: includes/givewp-official/items-givewp-core.php:427
+msgid "Renewal Donations"
+msgstr "Wiederholte Spenden"
+
+#: includes/givewp-official/items-givewp-core.php:431
+msgid "All Renewal Donations"
+msgstr "Alle Wiederkehrenden Spenden"
+
+#. translators: %s - label of time range, for example "Yesterday"
+#: includes/givewp-official/items-givewp-core.php:462
+#, php-format
+msgid "Renewal Donations %s"
+msgstr "Wiederholte Spenden %s"
+
+#: includes/givewp-official/items-givewp-core.php:478
+msgid "Donation Methods"
+msgstr "Spendenmethoden"
+
+#: includes/givewp-official/items-givewp-core.php:482
+msgid "Donation Methods - Payment Gateways"
+msgstr "Spendenmethoden - Zahlungs-Gateways"
+
+#: includes/givewp-official/items-givewp-core.php:492
+msgid "All Forms"
+msgstr "Alle Formulare"
+
+#: includes/givewp-official/items-givewp-core.php:496
+msgid "All Forms Overview - Per Form Reports"
+msgstr "Alle Formulare im Überblick - Berichte pro Formular"
+
+#: includes/givewp-official/items-givewp-core.php:509
+msgid "Fee Recovery: Income"
+msgstr "Gebührendeckung: Einnahmen"
+
+#: includes/givewp-official/items-givewp-core.php:513
+msgid "Fee Recovery: Income Reports"
+msgstr "Gebührendeckung: Einnahmen-Berichte"
+
+#. translators: %s - label of time range, for example "Yesterday"
+#: includes/givewp-official/items-givewp-core.php:544
+#, php-format
+msgid "Fee Recovery Income %s"
+msgstr "Gebührendeckung Einkommen %s"
+
+#: includes/givewp-official/items-givewp-core.php:558
+msgid "Fee Recovery: Conversion"
+msgstr "Gebührendeckung: Umwandlung"
+
+#: includes/givewp-official/items-givewp-core.php:562
+msgid "Fee Recovery: Conversion Reports"
+msgstr "Gebührendeckung: Umwandlungs-Berichte"
+
+#. translators: %s - label of time range, for example "Yesterday"
+#: includes/givewp-official/items-givewp-core.php:593
+#, php-format
+msgid "Fee Recovery Conversion %s"
+msgstr "Gebührendeckung Umwandlung %s"
+
+#: includes/givewp-official/items-givewp-core.php:612
+msgid "Gift Aid Donations"
+msgstr "Geschenk-Hilfe-Spenden"
+
+#: includes/givewp-official/items-givewp-core.php:616
+msgid "All Gift Aid Donations"
+msgstr "Alle Geschenk-Hilfe-Spenden"
+
+#: includes/givewp-official/items-givewp-core.php:634
+msgid "All Tributes related Reports"
+msgstr "Alle Tribute-bezogenen Berichte"
+
+#: includes/givewp-official/items-givewp-core.php:644
+msgid "Tribute Donations"
+msgstr "Tribute-Spenden"
+
+#: includes/givewp-official/items-givewp-core.php:648
+msgid "All Tribute Donations"
+msgstr "Alle Tribute-Spenden"
+
+#: includes/givewp-official/items-givewp-core.php:658
+#: includes/givewp-official/items-givewp-core.php:662
+msgid "Mail a Card"
+msgstr "Eine Karte versenden"
+
+#: includes/givewp-official/items-givewp-core.php:672
+#: includes/givewp-official/items-givewp-core.php:676
+msgid "eCards"
+msgstr "eCards"
+
+#: includes/givewp-official/items-givewp-core.php:701
+msgid "List Reports per Form"
+msgstr "Berichte pro Formular auflisten"
+
+#: includes/givewp-official/items-givewp-core.php:705
+msgid "View full Reports per Form Campaign"
+msgstr "Vollständige Berichte pro Formularkampagne anzeigen"
+
+#: includes/givewp-official/items-givewp-core.php:725
+msgid "Full Report for Form Campaign"
+msgstr "Vollständiger Bericht für Formularkampagne"
+
+#. translators: %s - label of time range, for example "Yesterday"
+#: includes/givewp-official/items-givewp-core.php:756
+#, php-format
+msgid "Income %s for"
+msgstr "Einkommen %s für"
+
+#: includes/givewp-official/items-givewp-core.php:782
+msgid "Campaigns (Forms)"
+msgstr "Kampagnen (Formulare)"
+
+#: includes/givewp-official/items-givewp-core.php:786
+msgid "Campaigns - Donation Forms"
+msgstr "Kampagnen - Spendenformulare"
+
+#: includes/givewp-official/items-givewp-core.php:797
+#: includes/givewp-official/items-givewp-core.php:801
+msgid "All Donation Forms"
+msgstr "Alle Spendenformulare"
+
+#: includes/givewp-official/items-givewp-core.php:810
+#: includes/givewp-official/items-givewp-core.php:814
+msgid "New Donation Form"
+msgstr "Neues Spendenformular"
+
+#: includes/givewp-official/items-givewp-core.php:826
+#: includes/givewp-official/items-givewp-core.php:830
+msgid "Campaign Categories"
+msgstr "Kampagnen Kategorien"
+
+#: includes/givewp-official/items-givewp-core.php:844
+#: includes/givewp-official/items-givewp-core.php:848
+msgid "Campaign Tags"
+msgstr "Kampagnen Schlagwörter"
+
+#: includes/givewp-official/items-givewp-core.php:878
+msgid "Edit Donation Forms"
+msgstr "Spendenformulare bearbeiten"
+
+#: includes/givewp-official/items-givewp-core.php:882
+msgid "Edit Give Donation Forms"
+msgstr "Give-Spendenformulare bearbeiten"
+
+#: includes/givewp-official/items-givewp-core.php:892
+msgid "Filter Per Goal"
+msgstr "Filter nach Ziel"
+
+#: includes/givewp-official/items-givewp-core.php:896
+msgid "Filter Per Campaign Goal"
+msgstr "Filter pro Kampagnenziel"
+
+#: includes/givewp-official/items-givewp-core.php:905
+msgid "Goal Achieved"
+msgstr "Ziel erreicht"
+
+#: includes/givewp-official/items-givewp-core.php:909
+msgid "Campaign Goal Achieved"
+msgstr "Kampagnenziel erreicht"
+
+#: includes/givewp-official/items-givewp-core.php:918
+msgid "Goal In Progress"
+msgstr "Ziel im Gange"
+
+#: includes/givewp-official/items-givewp-core.php:922
+msgid "Campaign Goal In Progress"
+msgstr "Kampagnenziel im Gange"
+
+#: includes/givewp-official/items-givewp-core.php:931
+msgid "Goal Not Set"
+msgstr "Ziel nicht festgelegt"
+
+#: includes/givewp-official/items-givewp-core.php:935
+msgid "Campaign Goal Not Set"
+msgstr "Kampagnenziel nicht festgelegt"
+
+#: includes/givewp-official/items-givewp-core.php:944
+msgid "Any Goal Status"
+msgstr "Jeder Zielstatus"
+
+#: includes/givewp-official/items-givewp-core.php:948
+msgid "Any Campaign Goal Status"
+msgstr "Jeder Kampagnenzielstatus"
+
+#: includes/givewp-official/items-givewp-core.php:982
+#: includes/givewp-official/items-givewp-core.php:994
+msgid "Edit Form"
+msgstr "Formular bearbeiten"
+
+#: includes/givewp-official/items-givewp-core.php:998
+msgid "Edit Form in Campaign Form Builder"
+msgstr "Formular im Kampagnen-Formular-Builder bearbeiten"
+
+#: includes/givewp-official/items-givewp-core.php:1012
+#: includes/items-formfeat.php:290
+msgid "View Frontend"
+msgstr "Frontend anzeigen"
+
+#: includes/givewp-official/items-givewp-core.php:1016
+#: includes/items-formfeat.php:294
+msgid "View Form on Frontend (Live Preview)"
+msgstr "Formular im Frontend anzeigen (Live-Vorschau)"
+
+#: includes/givewp-official/items-givewp-core.php:1028
+msgid "Donations for this Form"
+msgstr "Spenden für dieses Formular"
+
+#: includes/givewp-official/items-givewp-core.php:1032
+msgid "Donations for this specific Form"
+msgstr "Spenden für dieses spezielle Formular"
+
+#: includes/givewp-official/items-givewp-core.php:1042
+msgid "Donors for this Form"
+msgstr "Spender für dieses Formular"
+
+#: includes/givewp-official/items-givewp-core.php:1046
+msgid "Donors for this specific Form"
+msgstr "Spender für dieses spezielle Formular"
+
+#: includes/givewp-official/items-givewp-core.php:1058
+msgid "Subscriptions for this Form"
+msgstr "Abonnements für dieses Formular"
+
+#: includes/givewp-official/items-givewp-core.php:1062
+msgid "Subscriptions for this specific Form"
+msgstr "Abonnements für dieses spezifische Formular"
+
+#: includes/givewp-official/items-givewp-core.php:1074
+msgid "Reports for this Form"
+msgstr "Berichte für dieses Formular"
+
+#: includes/givewp-official/items-givewp-core.php:1078
+msgid "Reports for this specific Form"
+msgstr "Berichte für dieses spezielle Formular"
+
+#: includes/givewp-official/items-givewp-core.php:1133
+#: includes/givewp-official/items-givewp-core.php:1137
+msgid "General"
+msgstr "Allgemein"
+
+#: includes/givewp-official/items-givewp-core.php:1146
+#: includes/givewp-official/items-givewp-core.php:1150
+msgid "General Settings"
+msgstr "Allgemeine Einstellungen"
+
+#: includes/givewp-official/items-givewp-core.php:1159
+#: includes/givewp-official/items-givewp-core.php:1163
+msgid "Currency Settings"
+msgstr "Währungseinstellungen"
+
+#: includes/givewp-official/items-givewp-core.php:1172
+msgid "Access Control"
+msgstr "Zugriffskontrolle"
+
+#: includes/givewp-official/items-givewp-core.php:1176
+msgid "Access Control Settings"
+msgstr "Zugriffseinstellungen"
+
+#: includes/givewp-official/items-givewp-core.php:1185
+msgid "Sequential Ordering"
+msgstr "Sequentielle Bestellung"
+
+#: includes/givewp-official/items-givewp-core.php:1189
+msgid "Sequential Ordering Settings"
+msgstr "Einstellungen für die sequentielle Bestellung"
+
+#: includes/givewp-official/items-givewp-core.php:1199
+#: includes/givewp-official/items-givewp-core.php:1203
+msgid "Payment Gateways"
+msgstr "Zahlungsarten"
+
+#: includes/givewp-official/items-givewp-core.php:1212
+#: includes/givewp-official/items-givewp-core.php:1216
+msgid "Gateways Settings"
+msgstr "Gateways Einstellungen"
+
+#: includes/givewp-official/items-givewp-core.php:1225
+msgid "PayPal Standard"
+msgstr "PayPal Standard"
+
+#: includes/givewp-official/items-givewp-core.php:1229
+msgid "PayPal Standard Settings"
+msgstr "PayPal Standard Einstellungen"
+
+#: includes/givewp-official/items-givewp-core.php:1238
+msgid "Offline Donations"
+msgstr "Offline Spenden"
+
+#: includes/givewp-official/items-givewp-core.php:1242
+msgid "Offline Donations Settings"
+msgstr "Einstellungen für Offline-Spenden"
+
+#: includes/givewp-official/items-givewp-core.php:1289
+#: includes/givewp-official/items-givewp-core.php:1293
+msgid "Display Options"
+msgstr "Anzeigeoptionen"
+
+#: includes/givewp-official/items-givewp-core.php:1302
+#: includes/givewp-official/items-givewp-core.php:1306
+msgid "Display Settings"
+msgstr "Anzeigeeinstellungen"
+
+#: includes/givewp-official/items-givewp-core.php:1315
+#: includes/givewp-official/items-givewp-core.php:1319
+msgid "Post Types"
+msgstr "Inhaltstypen"
+
+#: includes/givewp-official/items-givewp-core.php:1328
+#: includes/givewp-official/items-givewp-core.php:1332
+msgid "Taxonomies"
+msgstr "Taxonomien"
+
+#: includes/givewp-official/items-givewp-core.php:1341
+#: includes/givewp-official/items-givewp-core.php:1345
+msgid "Terms and Conditions"
+msgstr "Allgemeine Geschäftsbedingungen"
+
+#: includes/givewp-official/items-givewp-core.php:1355
+msgid "Emails"
+msgstr "E-Mails"
+
+#: includes/givewp-official/items-givewp-core.php:1359
+msgid "Edit and Customize Email Templates"
+msgstr "Bearbeiten und Anpassen von E-Mail-Vorlagen"
+
+#: includes/givewp-official/items-givewp-core.php:1368
+msgid "Donor Emails"
+msgstr "Spender-E-Mails"
+
+#: includes/givewp-official/items-givewp-core.php:1372
+msgid "Edit and Customize Donor Emails"
+msgstr "Bearbeiten und Anpassen von Spender-E-Mails"
+
+#: includes/givewp-official/items-givewp-core.php:1381
+msgid "Admin Emails"
+msgstr "Admin E-Mails"
+
+#: includes/givewp-official/items-givewp-core.php:1385
+msgid "Edit and Customize Admin Emails"
+msgstr "Bearbeiten und Anpassen von Admin-E-Mails"
+
+#: includes/givewp-official/items-givewp-core.php:1394
+#: includes/givewp-official/items-givewp-core.php:1398
+msgid "Email Settings"
+msgstr "E-Mail Einstellungen"
+
+#: includes/givewp-official/items-givewp-core.php:1407
+#: includes/givewp-official/items-givewp-core.php:1411
+msgid "Contact Information"
+msgstr "Kontaktinformationen"
+
+#: includes/givewp-official/items-givewp-core.php:1422
+msgid "Advanced"
+msgstr "Erweitert"
+
+#: includes/givewp-official/items-givewp-core.php:1435
+#: includes/givewp-official/items-givewp-core.php:1439
+msgid "Advanced Options"
+msgstr "Erweiterte Optionen"
+
+#: includes/givewp-official/items-givewp-core.php:1448
+#: includes/givewp-official/items-givewp-core.php:1452
+#: includes/givewp-official/items-givewp-core.php:1659
+msgid "Stripe"
+msgstr "Stripe"
+
+#: includes/givewp-official/items-givewp-core.php:1462
+#: includes/givewp-official/items-givewp-core.php:1466
+msgid "Licenses"
+msgstr "Lizenzen"
+
+#: includes/givewp-official/items-givewp-core.php:1478
+msgid "Toolbar Options"
+msgstr "Toolbar-Optionen"
+
+#: includes/givewp-official/items-givewp-core.php:1482
+msgid "Toolbar Options and Tweaks"
+msgstr "Toolbar-Optionen und -Anpassungen"
+
+#: includes/givewp-official/items-givewp-core.php:1509
+#: includes/givewp-official/items-givewp-core.php:1513
+msgid "Export"
+msgstr "Export"
+
+#: includes/givewp-official/items-givewp-core.php:1522
+msgid "All Tasks"
+msgstr "Alle Aufgaben"
+
+#: includes/givewp-official/items-givewp-core.php:1526
+msgid "All Export Tasks"
+msgstr "Alle Exportaufgaben"
+
+#: includes/givewp-official/items-givewp-core.php:1535
+msgid "Donation History as CSV"
+msgstr "Spendenhistorie als CSV"
+
+#: includes/givewp-official/items-givewp-core.php:1539
+msgid "Export Donation History as CSV File"
+msgstr "Spendenhistorie als CSV-Datei exportieren"
+
+#: includes/givewp-official/items-givewp-core.php:1553
+msgid "Donations &amp; Income as PDF"
+msgstr "Spenden &amp; Einnahmen als PDF"
+
+#: includes/givewp-official/items-givewp-core.php:1557
+msgid "Export Donations and Income as PDF File"
+msgstr "Spenden und Einnahmen als PDF-Datei exportieren"
+
+#: includes/givewp-official/items-givewp-core.php:1567
+#: includes/givewp-official/items-givewp-core.php:1571
+msgid "Import"
+msgstr "Import"
+
+#: includes/givewp-official/items-givewp-core.php:1593
+msgid "Import Give Settings"
+msgstr "Give Einstellungen importieren"
+
+#: includes/givewp-official/items-givewp-core.php:1597
+msgid "Import Give Settings from JSON File"
+msgstr "Give Einstellungen aus JSON-Datei importieren"
+
+#: includes/givewp-official/items-givewp-core.php:1607
+#: includes/givewp-official/items-givewp-core.php:1611
+msgid "Logs"
+msgstr "Protokolle"
+
+#: includes/givewp-official/items-givewp-core.php:1620
+msgid "Payment Errors"
+msgstr "Zahlungsfehler"
+
+#: includes/givewp-official/items-givewp-core.php:1624
+msgid "Logs of Payment Gateway Errors"
+msgstr "Protokolle von Fehlern des Zahlungsdienstleisters"
+
+#: includes/givewp-official/items-givewp-core.php:1633
+msgid "API Requests"
+msgstr "API-Anfragen"
+
+#: includes/givewp-official/items-givewp-core.php:1637
+msgid "Logs of API Requests"
+msgstr "Protokolle von API-Anfragen"
+
+#: includes/givewp-official/items-givewp-core.php:1646
+#: includes/givewp-official/items-givewp-core.php:1729
+msgid "Updates"
+msgstr "Updates"
+
+#: includes/givewp-official/items-givewp-core.php:1650
+msgid "Logs of Updates"
+msgstr "Protokolle von Aktualisierungen"
+
+#: includes/givewp-official/items-givewp-core.php:1663
+msgid "Logs of Stripe Payment Gateway"
+msgstr "Protokolle des Stripe-Zahlungsdienstleisters"
+
+#: includes/givewp-official/items-givewp-core.php:1673
+#: includes/givewp-official/items-givewp-core.php:1677
+msgid "Generate API Keys"
+msgstr "Generieren von API-Schlüsseln"
+
+#: includes/givewp-official/items-givewp-core.php:1687
+msgid "Data Tools"
+msgstr "Datenwerkzeuge"
+
+#: includes/givewp-official/items-givewp-core.php:1691
+msgid "Data Tools (Recounts etc.)"
+msgstr "Datenwerkzeuge (Zählungen etc.)"
+
+#: includes/givewp-official/items-givewp-core.php:1701
+msgid "System Info"
+msgstr "Systeminformationen"
+
+#: includes/givewp-official/items-givewp-core.php:1705
+msgid "Get System Report for Support and Debugging"
+msgstr "Systembericht für Support und Debugging anfordern"
+
+#: includes/givewp-official/items-givewp-core.php:1733
+msgid "List of available Add-On Updates"
+msgstr "Liste der verfügbaren Add-On-Aktualisierungen"
+
+#: includes/givewp-official/items-givewp-core.php:1742
+msgid "Run Updates"
+msgstr "Aktualisierungen durchführen"
+
+#: includes/givewp-official/items-givewp-core.php:1746
+msgid "Run Add-On Updates Now"
+msgstr "Führen Sie jetzt Add-On-Aktualisierungen durch"
+
+#: includes/givewp-official/items-givewp-core.php:1755
+#: includes/givewp-official/items-givewp-core.php:1759
+msgid "Update Logs"
+msgstr "Aktualisierungsprotokolle"
+
+#: includes/givewp-official/items-givewp-core.php:1768
+#: includes/givewp-official/items-givewp-core.php:1772
+msgid "Add-On Licenses"
+msgstr "Add-On-Lizenzen"
+
+#. translators: %s - Word "Give"
+#: includes/givewp-official/items-givewp-core.php:1831
+#, php-format
+msgid "Getting Started - Learn %s Tutorials"
+msgstr "Erste Schritte - %s lernen Anleitungen"
+
+#: includes/givewp-official/items-givewp-core.php:1861
+msgid "Bug Reports &amp; Feature Requests"
+msgstr "Fehlerberichte &amp; Feature-Anfragen"
+
+#: includes/givewp-official/items-givewp-core.php:1866
+msgid "Bug Reports &amp; Feature Requests via GitHub Issues"
+msgstr "Fehlerberichte &amp; Feature-Anfragen via GitHub Issues"
+
+#: includes/givewp-official/items-givewp-core.php:1892
+msgid "Snippet Library"
+msgstr "Snippet-Bibliothek"
+
+#: includes/givewp-official/items-givewp-core.php:1897
+msgid "Snippet Library for Customizing Give Donations"
+msgstr "Snippet-Bibliothek zum Anpassen von Give Spenden"
+
+#: includes/givewp-official/items-givewp-core.php:1939
+#: includes/givewp-official/items-givewp-core.php:1944
+msgid "Give Stories"
+msgstr "Give Geschichten"
+
+#: includes/givewp-official/items-givewp-core.php:1953
+#: includes/givewp-official/items-givewp-core.php:1958
+msgid "Giving Tuesday"
+msgstr "Spendabler Dienstag"
+
+#: includes/givewp-official/items-givewp-core.php:1967
+#: includes/givewp-official/items-givewp-core.php:1972
+msgid "Nonprofit 101"
+msgstr "Gemeinnützig A-Z"
+
+#: includes/givewp-official/items-givewp-core.php:1994
+msgid "About Give Donations"
+msgstr "Über Give Spenden"
+
+#: includes/givewp-official/items-givewp-core.php:1998
+msgid "About Give Donations - Getting Started"
+msgstr "Über Give Spenden - Erste Schritte"
+
+#: includes/givewp-official/items-givewp-core.php:2007
+#: includes/givewp-official/items-givewp-core.php:2020
+msgid "Getting Started"
+msgstr "Erste Schritte"
+
+#: includes/givewp-official/items-givewp-core.php:2011
+#: includes/givewp-official/items-givewp-core.php:2024
+msgid "Getting Started with Give Donations"
+msgstr "Erste Schritte mit Give Spenden"
+
+#: includes/givewp-official/items-givewp-core.php:2033
+msgid "What's New"
+msgstr "Was ist neu?"
+
+#: includes/givewp-official/items-givewp-core.php:2037
+msgid "What's New - Changelog"
+msgstr "Was ist neu - Versionshistorie"
+
+#: includes/givewp-official/items-givewp-core.php:2046
+#: includes/givewp-official/items-givewp-core.php:2050
+msgid "Credits &amp; Contributors"
+msgstr "Dank &amp; Mitwirkende"
+
+#: includes/givewp-official/items-givewp-core.php:2059
+msgid "Translations"
+msgstr "Übersetzungen"
+
+#: includes/givewp-official/items-givewp-core.php:2063
+msgid "Help Translate Give Donations Plugin"
+msgstr "Helfen Sie beim Übersetzen des Give Spenden-Plugins"
+
+#: includes/givewp-official/items-givewp-core.php:2092
+msgid "Give Donation Form"
+msgstr "Give Spendenformular"
+
+#: includes/givewp-official/items-givewp-core.php:2095
+msgid "Give Donation Form/ Campaign"
+msgstr "Give Spendenformular/ -kampagne"
+
+#: includes/givewp-official/items-givewp-core.php:2122
+msgid "Donation Managers"
+msgstr "Spendenmanager"
+
+#: includes/givewp-official/items-givewp-core.php:2127
+msgid "Give Donation Managers"
+msgstr "Give Spendenmanager"
+
+#: includes/givewp-official/items-givewp-core.php:2143
+msgid "Donation Workers"
+msgstr "Spenden-Mitarbeiter"
+
+#: includes/givewp-official/items-givewp-core.php:2148
+msgid "Give Donation Workers"
+msgstr "Give Spenden-Mitarbeiter"
+
+#: includes/givewp-official/items-givewp-core.php:2164
+msgid "Donation Accountants"
+msgstr "Spendenbuchhalter"
+
+#: includes/givewp-official/items-givewp-core.php:2169
+msgid "Give Donation Accountants"
+msgstr "Give Spendenbuchhalter"
+
+#: includes/givewp-official/items-givewp-core.php:2190
+msgid "Give Donors"
+msgstr "Give Spender"
+
+#. translators: 1 - label for "Give" / 2 - label for "Donations"
+#: includes/items-donations.php:61
+#, php-format
+msgid "%1$s %2$s Management"
+msgstr "Verwaltung von %1$s %2$s"
+
+#. translators: %s - label, form title or custom text
+#: includes/items-formfeat.php:99
+#, php-format
+msgid "Featured Donation Form Campaign: %s"
+msgstr "Ausgewählte Formularkampagne: %s"
+
+#: includes/items-formfeat.php:272 includes/items-formfeat.php:276
+msgid "Edit Form Campaign"
+msgstr "Formularkampagne bearbeiten"
+
+#: includes/items-plugins-givewp-addons.php:205
+msgid "Add-Ons"
+msgstr "Add-Ons"
+
+#: includes/items-plugins-givewp-addons.php:209
+msgid "Settings from Add-On Plugins"
+msgstr "Einstellungen von Add-On-Plugins"
+
+#: includes/items-testmode.php:46
+msgid "Give Test Mode Active"
+msgstr "Give-Testmodus aktiv"
+
+#: includes/items-testmode.php:77
+msgid "Give Test Mode Active - No Live Transactions will be processed"
+msgstr "Give-Testmodus aktiv - Es werden keine Live-Transaktionen ausgeführt"
+
+#: includes/plugin-manager.php:49
+msgid "Add-On for Give Donations"
+msgstr "Add-On für Give Spenden"
+
+#: includes/plugin-manager.php:53
+msgctxt "Plugin Name"
+msgid "Give Donations"
+msgstr "Give Spenden"
+
+#: includes/plugin-manager.php:59
+msgid "Required base plugin for this Add-On to have any impact"
+msgstr ""
+"Erforderliches Basis-Plugin für dieses Add-On, damit dies überhaupt einen "
+"Effekt hat"
+
+#: includes/plugin-manager.php:64
+msgctxt "Plugin Name"
+msgid "Mailchimp for WordPress"
+msgstr "Mailchimp für WordPress"
+
+#: includes/plugin-manager.php:70
+msgid ""
+"Highly recommended extension to integrate Give Donations with your lists in "
+"Mailchimp Email Marketing"
+msgstr ""
+"Sehr empfehlenswerte Erweiterung zur Integration von Give Spenden mit Ihren "
+"Listenin Mailchimp E-Mail-Marketing"
+
+#. translators: %s - Word Give
+#: includes/string-switcher.php:54
+#, php-format
+msgid "%s Donations"
+msgstr "%s Spenden"
+
+#. translators: %s - Word Give
+#: includes/string-switcher.php:79
+#, php-format
+msgid "%s Resources"
+msgstr "%s Ressourcen"
+
+#. translators: %s - Word Give
+#: includes/string-switcher.php:104
+#, php-format
+msgid "%s Community"
+msgstr "%s Community"
+
+#. translators: %s - Word Give
+#: includes/string-switcher.php:129
+#, php-format
+msgid "%s Settings"
+msgstr "%s Einstellungen"
+
+#. translators: %s - Word Give
+#: includes/string-switcher.php:154
+#, php-format
+msgid "%s Tools"
+msgstr "%s Werkzeuge"
+
+#. translators: %s - Word Give
+#: includes/string-switcher.php:179
+#, php-format
+msgid "%s Updates"
+msgstr "%s Updates"
+
+#: toolbar-extras-givewp.php:245
+#, php-format
+msgid ""
+"The needed base plugin %s is already installed but not activated. (Toolbar "
+"Extras for Give Donations is an Add-On plugin which DEPENDS on Toolbar "
+"Extras.)"
+msgstr ""
+"Das benötigte Basis-Plugin %s ist bereits installiert, aber nicht aktiviert. "
+"(Toolbar Extras für Give Spenden ist ein Add-On-Plugin, das von Toolbar "
+"Extras abhängt.)"
+
+#: toolbar-extras-givewp.php:251
+msgid "Activate Toolbar Extras Now"
+msgstr "Toolbar Extras jetzt aktivieren"
+
+#. translators: %1$s - name of the base plugin "Toolbar Extras" / %2$s - required version of base plugin, for example: 1.4.3
+#: toolbar-extras-givewp.php:264
+#, php-format
+msgid ""
+"Toolbar Extras for Give Donations is an Add-On plugin which DEPENDS on the "
+"(free) %1$s plugin in version %2$s or higher to be installed and activated."
+msgstr ""
+"Toolbar Extras für Give Spenden ist ein Add-On-Plugin, welches davon ABHÄNGT "
+"dass das (kostenlose) Plugin %1$s in Version %2$s oder höher installiert und "
+"aktiviert worden ist."
+
+#: toolbar-extras-givewp.php:271
+msgid "Install Toolbar Extras Now"
+msgstr "Toolbar Extras jetzt installieren"
+
+#: toolbar-extras-givewp.php:310
+#, php-format
+msgid ""
+"Toolbar Extras for Give Donations is not working yet because you are using "
+"an old version of the base plugin %s."
+msgstr ""
+"Toolbar Extras für Give Spenden funktioniert noch nicht, da Sie eine alte "
+"Version des Basis-Plugins %s verwenden."
+
+#: toolbar-extras-givewp.php:316
+msgid "Update Toolbar Extras Now"
+msgstr "Toolbar Extras jetzt aktualisieren"
+
+#: uninstall.php:41
+msgid "You must be logged in to run this script."
+msgstr "Sie müssen angemeldet sein, um diese Funktion ausführen zu können."
+
+#: uninstall.php:51
+msgid "You do not have permission to run this script."
+msgstr "Sie haben keine Berechtigung, diese Funktion auszuführen."
+
+#. Plugin URI of the plugin/theme
+msgid "https://toolbarextras.com/addons/give-donations/"
+msgstr "https://toolbarextras.com/addons/give-donations/"
+
+#. Description of the plugin/theme
+msgid ""
+"WordPress plugin to leverage the Toolbar for managing your donations and "
+"donors with the Give Donations (GiveWP) plugin. - This is an Add-On plugin "
+"for Toolbar Extras."
+msgstr ""
+"WordPress Plugin, um die Toolbar für die Verwaltung Ihrer Spenden und "
+"Spender mit dem Give Spenden (GiveWP) Plugin zu nutzen. - Dies ist ein Add-"
+"On-Plugin für Toolbar Extras."
+
+#. Author of the plugin/theme
+msgid "David Decker - DECKERWEB"
+msgstr "David Decker - DECKERWEB"
+
+#. Author URI of the plugin/theme
+msgid "https://toolbarextras.com/"
+msgstr "https://toolbarextras.com/"
+
+#~ msgid "Toolbar Extras for MainWP"
+#~ msgstr "Toolbar Extras für MainWP"
