@@ -16,7 +16,7 @@
 ### 🎉 1.0.0 - 2019-08-??
 
 * *Plugin launch. Everything's new!*
-* New: 3 Free GiveWP extensions supported/ integrated
+* New: 5 Free GiveWP extensions supported/ integrated
 * New: 14 Premium GiveWP extensions supported/ integrated
 
 

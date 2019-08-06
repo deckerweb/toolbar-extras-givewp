@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 define( 'TBEXGIVE_PLUGIN_VERSION', '1.0.0' );
 
 /** Required base plugin version */
-define( 'TBEXGIVE_REQUIRED_BASE_PLUGIN_VERSION', '1.4.3' );
+define( 'TBEXGIVE_REQUIRED_BASE_PLUGIN_VERSION', '1.4.4' );
 
 /** Plugin directory */
 define( 'TBEXGIVE_PLUGIN_DIR', trailingslashit( dirname( __FILE__ ) ) );
@@ -495,11 +495,14 @@ function ddw_tbexgive_setup_plugin() {
 	/** Load needed files if required plugins are active */
 	if ( ddw_tbexgive_is_toolbar_extras_active() && ddw_tbexgive_is_givewp_active() ) {
 
-		/** Load all Give items, resources, Toolbar styles, supported Add-Ons */
+		/** Load all Give items, resources, Toolbar styles */
 		require_once TBEXGIVE_PLUGIN_DIR . 'includes/tbexgive-styles.php';
 		require_once TBEXGIVE_PLUGIN_DIR . 'includes/items-donations.php';
 		require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-official/givewp-resources.php';
 		require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-official/items-givewp-core.php';
+
+		/** Load supported Add-Ons */
+//
 		require_once TBEXGIVE_PLUGIN_DIR . 'includes/items-plugins-givewp-addons.php';
 
 		/** Load Featured Form items */

@@ -88,7 +88,7 @@ function ddw_tbexgive_items_givewp_donations( $admin_bar ) {
 
 
 /** Set toolbar groups as base hook places */
-add_action( 'admin_bar_menu', 'ddw_tbexgive_donation_items_base_groups', 99 );
+add_action( 'admin_bar_menu', 'ddw_tbexgive_donation_items_base_groups' );
 /**
  * Set base groups for our Toolbar main item as "hook places".
  *   Set additional action hooks to enable custom groups.
@@ -119,7 +119,7 @@ function ddw_tbexgive_donation_items_base_groups( $admin_bar ) {
 		)
 	);
 
-	do_action( 'tbexgive/donation_options/after_group' );
+	do_action( 'tbexgive/donation_options/after_group', $admin_bar );
 
 	/** Group: Donation Resources */
 	$admin_bar->add_group(

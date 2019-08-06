@@ -125,6 +125,18 @@ if ( defined( 'GIVE_GOOGLE_ANALYTICS_VERSION' ) ) {
 }
 
 
+/**
+ * Plugin: Members - GiveWP Integration (Premium, by Justin Tadlock)
+ *   (including its base plugin "Members" by the same author, but free)
+ *   Note: Special case, needs to load before all other Add-Ons!
+ * @since 1.0.0
+ * @see plugin main file, /toolbar-extras-givewp.php
+ */
+		if ( class_exists( 'Members_Plugin' ) ) {
+			require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-members-permissions.php';
+		}
+
+
 
 /**
  * 3rd GROUP: Marketing, Emails:

@@ -1,7 +1,7 @@
 === Toolbar Extras for Give Donations - Manage GiveWP Donation Campaigns Even Faster ===
 Contributors: daveshine, deckerweb, wpautobahn, toolbarextras
 Donate link: https://www.paypal.me/deckerweb
-Tags: toolbar, adminbar, admin bar, givewp, donations, donate, donation, campagin, manage, deckerweb, ddwtoolbar
+Tags: toolbar, adminbar, admin bar, givewp, donations, fundraising, donate, donation, campagin, manage, deckerweb, ddwtoolbar
 Requires at least: 4.7
 Tested up to: 5.2
 Requires PHP: 5.6
@@ -9,12 +9,13 @@ Stable tag: 1.0.0
 License: GPL-2.0-or-later
 License URI: https://opensource.org/licenses/GPL-2.0
 
-Managing Donations with GiveWP? Your work will get easier & faster with this Toolbar Extras Add-On. Extension support baked right in.
+Managing Donations with GiveWP? Here's to easier & faster fundraising with this Toolbar Extras Add-On. Extension support baked right in.
 
 == Description ==
 
 🚀 Quick Access to Your Donation Campaigns with Give directly from your Toolbar. View and edit your donation transactions, donors and form campaigns. Access reports and typical filter views directly from the Admin Bar - within the Admin or from the frontend of your site.  
-Perfect for non-profit organisation and private donation campaigns: This smart WordPress plugin just adds missed and **very useful admin links** for Give Donations to your Toolbar / Admin Bar. Save mouse travel and scrolling time. Get more productive.
+
+Perfect for non-profit organisation and private donation fundraising campaigns: This smart WordPress plugin just adds missed and **very useful admin links** for Give Donations to your Toolbar / Admin Bar. Save mouse travel and scrolling time. Get more productive.
 
 https://www.youtube.com/watch?v=SWBucl9EJBM
 
@@ -41,12 +42,7 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 * Perfect for non-profits and private donation campaigns - let the Toolbar work for you!
 * Any items are only loaded if needed
 * Fully internationalized and translateable
-
-= 🔌 Supported/ Integrated free GiveWP Add-Ons/ Extensions =
-* **Mailchimp for WP** (free, by ibericode) - *with dedicated (free) extension for GiveWP!*
-* **WP HTML Mail** (free, by Hannes Etzelstorfer/ codemiq KG) - *with dedicated (free) extension for GiveWP called **Give Donation - Email Template***
-* **Builder Template Categories** (free, by David Decker - DECKERWEB) - *categorize Give donation forms - use categories as "global" categories also with other integrations of this plugin*
-* ***Note:** Support for more free third-party Add-Ons will be added if more get released by the community*
+* Use **all the other awesome features** of Toolbar Extras base plugin - to speed up your non-donation work as well! 😉
 
 = 🔌 Supported/ Integrated Offical Premium GiveWP Add-Ons/ Extensions =
 * *All below are paid premium extensions made by GiveWP/ Impress.org, LLC!*
@@ -65,6 +61,14 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 * **AWeber**
 * **Constant Contact**
 * ***Note:** Support for more premium Add-Ons by GiveWP will be integrated/ added over time*
+
+= 🔌 Supported/ Integrated free GiveWP Add-Ons/ Extensions =
+* **Mailchimp for WP** (free, by ibericode) - *with dedicated (free) extension for GiveWP!*
+* **WP HTML Mail** (free, by Hannes Etzelstorfer/ codemiq KG) - *with dedicated (free) extension for GiveWP called **Give Donation - Email Template***
+* **Builder Template Categories** (free, by David Decker - DECKERWEB) - *categorize Give donation forms - use categories as "global" categories also with other integrations of this plugin*
+* **Members** (free, by Justin Tadlock) - *manage user roles and capabilities (permissions), including for all dedicated GiveWP roles!*
+* **Members - GiveWP Integration** (Premium, by Justin Tadlock) - *even better special GiveWP integration for the awesome Members plugin!*
+* ***Note:** Support for more free third-party Add-Ons will be added if more get released by the community*
 
 = ℹ️ Important: Required/ Recommended for plugin usage =
 * Required: User has role `Administrator` (needed capabilities `manage_options` and `manage_give_settings`)
@@ -147,7 +151,7 @@ In general it will make your donation management with Give Donations easier and 
 * You are the only user of this site/install, of course you are the Administrator (has all permissions anyway)
 * Set your 1 campaign as featured in the Toolbar, so you can watch your earnings each time you are logged in into your site
 * Focus on your campaign because all important info, views, reports, settings etc. are only 1 (ONE!) click away
-* Save time, get more focussed and more productive -- gain more time to market your campaign
+* Save time, get more focussed and more productive -- gain more time to market your campaign for personal fundraising
 
 
 = Why is Toolbar Extras plugin required? =
@@ -191,7 +195,9 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 
 == Screenshots ==
 
-1. ????
+1. Donations item - the main Toolbar item for your donation management
+
+2. Optional Featured Donation Form Campaign as top-level Toolbar item
 
 
 == Changelog ==
@@ -200,7 +206,7 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 
 = 🎉 1.0.0 - 2019-08-?? =
 * *Plugin launch. Everything's new!*
-* New: 3 Free GiveWP extensions supported/ integrated
+* New: 5 Free GiveWP extensions supported/ integrated
 * New: 14 Premium GiveWP extensions supported/ integrated
 
 
