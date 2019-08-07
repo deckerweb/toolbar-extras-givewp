@@ -23,17 +23,20 @@ function ddw_tbexgive_info_values() {
 
 	$tbexgive_info = array(
 
-		'url_translate'     => 'https://translate.wordpress.org/projects/wp-plugins/toolbar-extras-givewp',
-		'url_wporg_faq'     => 'https://wordpress.org/plugins/toolbar-extras-givewp/#faq',
-		'url_wporg_forum'   => 'https://wordpress.org/support/plugin/toolbar-extras-givewp',
-		'url_wporg_review'  => 'https://wordpress.org/support/plugin/toolbar-extras-givewp/reviews/?filter=5/#new-post',
-		'url_snippets'      => 'https://toolbarextras.com/docs-category/custom-code-snippets/',
-		'first_code'        => '2019',
-		'url_plugin'        => 'https://toolbarextras.com/addons/give-donations/',
-		'url_plugin_docs'   => 'https://toolbarextras.com/docs-category/givewp-addon/',
-		'url_plugin_faq'    => 'https://toolbarextras.com/docs-category/faqs/',
-		'url_github'        => 'https://github.com/deckerweb/toolbar-extras-givewp',
-		'url_github_issues' => 'https://github.com/deckerweb/toolbar-extras-givewp/issues',
+		'url_translate'       => 'https://translate.wordpress.org/projects/wp-plugins/toolbar-extras-givewp',
+		'url_wporg_faq'       => 'https://wordpress.org/plugins/toolbar-extras-givewp/#faq',
+		'url_wporg_forum'     => 'https://wordpress.org/support/plugin/toolbar-extras-givewp',
+		'url_wporg_review'    => 'https://wordpress.org/support/plugin/toolbar-extras-givewp/reviews/?filter=5/#new-post',
+		'url_snippets'        => 'https://toolbarextras.com/docs-category/custom-code-snippets/',
+		'first_code'          => '2019',
+		'url_plugin'          => 'https://toolbarextras.com/addons/give-donations/',
+		'url_plugin_docs'     => 'https://toolbarextras.com/docs-category/givewp-addon/',
+		'url_plugin_faq'      => 'https://toolbarextras.com/docs-category/faqs/',
+		'url_github'          => 'https://github.com/deckerweb/toolbar-extras-givewp',
+		'url_github_issues'   => 'https://github.com/deckerweb/toolbar-extras-givewp/issues',
+
+		/** For settings etc. */
+		'url_give_shortcodes' => 'https://givewp.com/documentation/core/shortcodes/',
 
 	);  // end of array
 

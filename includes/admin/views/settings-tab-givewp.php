@@ -344,6 +344,108 @@ function ddw_tbexgive_settings_cb_givewp_name() {
 
 
 /**
+ * Setting (Select): Display GiveWP Shortcode Pages items?
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbex_string_yes()
+ * @uses ddw_tbex_string_no()
+ */
+function ddw_tbexgive_settings_cb_givewp_shortcode_pages() {
+
+	$tbexgive_options = get_option( 'tbex-options-givewp' );
+
+	$shortcodes_link = sprintf(
+		'<a href="%s" target="%s" rel="%s">%s</a>',
+		ddw_tbex_get_info_url( 'url_give_shortcodes', 'givewp' ),
+		ddw_tbex_meta_target(),
+		ddw_tbex_meta_rel(),
+		sprintf(
+			/* translators: %s - label, "GiveWP" */
+			__( '%s Shortcodes', 'toolbar-extras-givewp' ),
+			'GiveWP'
+		)
+	);
+
+	$description = sprintf(
+		/* translators: 1 - label, "GiveWP Shortcodes" (linked) / 2 - Shortcode, <code>[give_login]</code> / 3 - Shortcode, <code>[give_donor_wall]</code> */
+		__( 'With this setting enabled you can optionally list pages which contain special %1$s, like, for example %2$s or %3$s.', 'toolbar-extras-givewp' ),
+		$shortcodes_link,
+		'<code>[give_login]</code>',
+		'<code>[give_donor_wall]</code>'
+	);
+
+	$description .= ' ' . sprintf(
+		/* translators: %s - label, "Pages (<code>page</code>)" */
+		__( 'This applies only for the %s post type, and if there are actually pages that have one of these Shortcodes in their content.', 'toolbar-extras-givewp' ),
+		__( 'Pages', 'toolbar-extras-givewp' ) . ' (<code>page</code>)'
+	);
+
+	$note = sprintf(
+		__( 'Note: If you have hundreds or even thousands of pages, it is recommended to deactivate this feature (set to %s), to avoid any potential performance issues.', 'toolbar-extras-givewp' ),
+		ddw_tbex_string_no( 'return', 'code' )
+	);
+
+	?>
+		<select name="tbex-options-givewp[givewp_shortcode_pages]" id="tbex-options-givewp-givewp_shortcode_pages">
+			<option value="yes" <?php selected( sanitize_key( $tbexgive_options[ 'givewp_shortcode_pages' ] ), 'yes' ); ?>><?php ddw_tbex_string_yes( 'echo' ); ?></option>
+			<option value="no" <?php selected( sanitize_key( $tbexgive_options[ 'givewp_shortcode_pages' ] ), 'no' ); ?>><?php ddw_tbex_string_no( 'echo' ); ?></option>
+		</select>
+		<label for="tbex-options-givewp[givewp_shortcode_pages]">
+			<span class="description"><?php echo sprintf(
+				__( 'Default: %s', 'toolbar-extras-givewp' ),
+				ddw_tbex_string_yes( 'return', 'code' )
+			); ?></span>
+		</label>
+		<p class="description">
+			<?php echo $description; ?>
+		</p>
+		<p class="description">
+			<?php echo $note; ?>
+		</p>
+	<?php
+
+}  // end function
+
+
+/**
+ * Setting (Select): Use Admin submenu tweak?
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbex_string_yes()
+ * @uses ddw_tbex_string_no()
+ */
+function ddw_tbexgive_settings_cb_givewp_admin_menu_tweak() {
+
+	$tbexgive_options = get_option( 'tbex-options-givewp' );
+
+	?>
+		<select name="tbex-options-givewp[givewp_admin_menu_tweak]" id="tbex-options-givewp-givewp_admin_menu_tweak">
+			<option value="yes" <?php selected( sanitize_key( $tbexgive_options[ 'givewp_admin_menu_tweak' ] ), 'yes' ); ?>><?php ddw_tbex_string_yes( 'echo' ); ?></option>
+			<option value="no" <?php selected( sanitize_key( $tbexgive_options[ 'givewp_admin_menu_tweak' ] ), 'no' ); ?>><?php ddw_tbex_string_no( 'echo' ); ?></option>
+		</select>
+		<label for="tbex-options-givewp[givewp_admin_menu_tweak]">
+			<span class="description"><?php echo sprintf(
+				__( 'Default: %s', 'toolbar-extras-givewp' ),
+				ddw_tbex_string_yes( 'return', 'code' )
+			); ?></span>
+		</label>
+		<p class="description">
+			<?php echo sprintf(
+				/* translators: 1 - label, "Add-Ons" / 2 - label, "Changelog" */
+				__( 'If enabled, this will swap out the (promotional) %1$s submenu with the (more useful) %2$s submenu - within the left-hand %3$s Admin menu.', 'toolbar-extras-givewp' ),
+				'<strong>' . __( 'Add-Ons', 'toolbar-extras-givewp' ) . '</strong>',
+				'<strong>' . __( 'Changelog', 'toolbar-extras-givewp' ) . '</strong>',
+				__( 'Donations', 'toolbar-extras-givewp' )
+			); ?>
+		</p>
+	<?php
+
+}  // end function
+
+
+/**
  * 3rd section: Featured Form item:
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 

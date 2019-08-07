@@ -138,6 +138,38 @@ function ddw_tbexgive_is_give_test_mode() {
  */
 
 /**
+ * Display optional list of GiveWP Shortcode Pages at all or not?
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbex_get_option()
+ *
+ * @return bool TRUE if setting is on 'yes', FALSE otherwise.
+ */
+function ddw_tbexgive_display_shortcode_pages() {
+
+	return ( 'yes' === ddw_tbex_get_option( 'givewp', 'givewp_shortcode_pages' ) );
+
+}  // end function
+
+
+/**
+ * Use GiveWP Admin menu tweak at all or not (Add-Ons vs. Changelog)?
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbex_get_option()
+ *
+ * @return bool TRUE if setting is on 'yes', FALSE otherwise.
+ */
+function ddw_tbexgive_use_admin_menu_tweak() {
+
+	return ( 'yes' === ddw_tbex_get_option( 'givewp', 'givewp_admin_menu_tweak' ) );
+
+}  // end function
+
+
+/**
  * Display optional a Featured Form at all or not?
  *
  * @since 1.0.0

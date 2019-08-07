@@ -57,3 +57,27 @@ if ( ! class_exists( 'DDW_TBEXGIVE_GiveWP_Settings_Tab' ) ) :
 endif;
 
 return new DDW_TBEXGIVE_GiveWP_Settings_Tab();
+
+
+
+// ------------ Test - muss in andere Datei: ---------------------------
+
+
+// Add Global Fee Recovery settings.
+add_filter( 'give-settings_get_settings_pages', 'ddw_tbexgive_givewp_settings_tab', 10, 1 );
+/**
+ * Add Give Fee Recovery setting section.
+ *
+ * @since  1.0.0
+ * @access public
+ *
+ * @param array $settings Give Settings.
+ *
+ * @return array $settings Give Settings.
+ */
+function ddw_tbexgive_givewp_settings_tab( $settings ) {
+
+	$settings[] = include TBEXGIVE_PLUGIN_DIR . '/includes/admin/givewp-settings-tab.php';
+
+	return $settings;
+}

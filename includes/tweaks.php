@@ -40,13 +40,16 @@ add_action( 'admin_menu', 'ddw_tbexgive_add_submenu_for_givewp_changelog', 1000 
  * @since 1.0.0
  *
  * @uses ddw_tbexgive_is_givewp_active()
+ * @uses ddw_tbexgive_use_admin_menu_tweak()
  * @uses ddw_tbexgive_string_givewp()
  * @uses add_submenu_page()
  */
 function ddw_tbexgive_add_submenu_for_givewp_changelog() {
 
-	/** Bail early if Give Donations not active */
-	if ( ! ddw_tbexgive_is_givewp_active() ) {
+	/** Bail early if Give Donations not active, or, if tweak should not be used */
+	if ( ! ddw_tbexgive_is_givewp_active()
+		|| ! ddw_tbexgive_use_admin_menu_tweak()
+	) {
 		return;
 	}
 
@@ -140,41 +143,47 @@ function ddw_debugging_admin_20190807_1526() {
  */
 function ddw_tbexgive_get_givewp_textdomains() {
 
-	return array(
+	return apply_filters(
+		'tbexgive/filter/givewp/textdomains',
+		array(
 
-		/** Main plugin */
-		'give',
+			/** Main plugin */
+			'give',
 
-		/** Official Add-Ons */
-		'give-annual-receipts',
-		'give-authorize',
-		'give-aweber',
-		'give-braintree',
-		'give-ccavenue',
-		'give-constant-contact',
-		'give-convertkit',
-		'give-currency-switcher',
-		'give-dwolla',
-		'give-fee-recovery',
-		'give-form-field-manager',
-		'give-gift-aid',
-		'give-gocardless',
-		'give-google-analytics',
-		'give-manual-donations',
-		'give-mailchimp',
-		'give-paymill',
-		'give-paypal-pro',
-		'give-pdf-receipts',
-		'give-per-form-gateways',
-		'give-razorpay',
-		'give-recurring',
-		'give-sofort',
-		'give-square',
-		'give-stripe',
-		'give-tributes',
-		'give-twocheckout',
-		'give-wepay',
-		'give-zapier',
+			/** Official Add-Ons */
+			'give-annual-receipts',
+			'give-authorize',
+			'give-aweber',
+			'give-braintree',
+			'give-ccavenue',
+			'give-constant-contact',
+			'give-convertkit',
+			'give-currency-switcher',
+			'give-dwolla',
+			'give-fee-recovery',
+			'give-form-field-manager',
+			'give-gift-aid',
+			'give-gocardless',
+			'give-google-analytics',
+			'give-manual-donations',
+			'give-mailchimp',
+			'give-paymill',
+			'give-paypal-pro',
+			'give-pdf-receipts',
+			'give-per-form-gateways',
+			'give-razorpay',
+			'give-recurring',
+			'give-sofort',
+			'give-square',
+			'give-stripe',
+			'give-tributes',
+			'give-twocheckout',
+			'give-wepay',
+			'give-zapier',
+
+			/** Misc Add-Ons */
+			'sss-4-givewp',
+		)
 	);
 
 }  // end function

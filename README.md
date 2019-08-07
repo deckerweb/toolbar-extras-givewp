@@ -18,7 +18,7 @@ Managing Donations with GiveWP? Here's to easier & faster fundraising with this 
 
 🚀 Quick Access to Your Donation Campaigns with Give directly from your Toolbar. View and edit your donation transactions, donors and form campaigns. Access reports and typical filter views directly from the Admin Bar - within the Admin or from the frontend of your site.  
 
-Perfect for non-profit organisation and private donation fundraising campaigns: This smart WordPress plugin just adds missed and **very useful admin links** for Give Donations to your Toolbar / Admin Bar. Save mouse travel and scrolling time. Get more productive.
+Perfect for non-profit organisations and private donation fundraising campaigns: This smart WordPress plugin just adds missed and **very useful admin links** for Give Donations to your Toolbar / Admin Bar. Save mouse travel and scrolling time. Get more productive - and focus on your campaigns instead of searching for settings ... 😉
 
 https://www.youtube.com/watch?v=SWBucl9EJBM
 
@@ -30,24 +30,25 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 
 
 ### ♥️ Features - What the Plugin Does 
-* Set a **Featured Form Campaign** as top-level item: See earnings (income) at first sight - deep links to payments, settings etc.
+* Set a **Featured Form Campaign** as top-level item: See earnings (income) at first sight - plus: deep links to payments, settings etc.
 * Bring all GiveWP Components into your Toolbar: Donation Payments, Donors, Reports, Form Campaigns, Settings, Add-Ons
 * Quick access to Reports, including typical filter views (sub views, tabs, sections)
-* Quick Jump links for all Settings, Tools, even from Give Add-Ons
-* Up to 26 Add-On settings for customizing the experience (components, features, icon, position, label, etc.)
-* Give Add-On (Extensions) directly integrated where possible and useful (only when Extension is active, of course) - for Add-On listing see below
+* All special GiveWP pages (Give Shortcodes) at your fingertips for live preview and editing
+* Quick jump links for all Settings, Tools, even from Give Add-Ons
+* Up to 28 Add-On settings for customizing the experience (components, features, icon, position, label, etc.)
+* Give Add-On (Extensions) directly integrated where possible and useful (only when Extension is active, of course) - *for Add-On listings see below*
 * Resources - deep links to GiveWP documentation (knowledge base); also for Add-Ons
 * Additional Give Toolbar settings submenu item - for WordPress Admin Menu
 
 
 ### 👍 More Benefits 
 * Non-bloated, already familiar interface (the WP Toolbar)
-* Customizeable: make it pretty with your favorite icons and use custom titles and URLs for top-level items
+* Customizeable: make it pretty with your favorite icons and use custom titles and URLs for the top-level items
 * Get more focused, save mouse travel and scrolling time, be more productive with donation management!
-* Perfect for non-profits and private donation campaigns - let the Toolbar work for you!
-* Any items are only loaded if needed
-* Fully internationalized and translateable
-* Use **all the other awesome features** of Toolbar Extras base plugin - to speed up your non-donation work as well! 😉
+* Perfect for non-profit organisations and private donation campaigns - let the Toolbar work for you!
+* Any items are only loaded when needed
+* Fully internationalized and translateable (but can be disabled if ever needed)
+* Use **all the other awesome features** of Toolbar Extras base plugin - to speed up your *non-donation work* as well! 😉
 
 
 ### 🔌 Supported/ Integrated Offical (Premium) GiveWP Add-Ons/ Extensions 

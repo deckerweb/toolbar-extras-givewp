@@ -37,8 +37,10 @@ function ddw_tbexgive_default_options_givewp() {
 			'donations_tl_url'        => '',
 			'donations_tl_target'     => '_self',
 
-			/** GiveWP "Give" name/ label */
+			/** GiveWP "Give" specific */
 			'givewp_name'             => esc_attr_x( 'Give', 'Toolbar item label', 'toolbar-extras-givewp' ),		// "Give"
+			'givewp_shortcode_pages'  => 'yes',
+			'givewp_admin_menu_tweak' => 'yes',
 
 			/** Featured Give Form/ Campaign item */
 			'formfeat_display'        => 'no',
@@ -198,6 +200,31 @@ function ddw_tbexgive_register_settings_givewp() {
 				'tbexgive_group_givewp',
 				'tbexgive-section-givewp',
 				array( 'class' => 'tbexgive-setting-givewp-name' )
+			);
+
+			add_settings_field(
+				'givewp_shortcode_pages',
+				__( 'List special GiveWP Shortcode Pages?', 'toolbar-extras-givewp' ),
+				'ddw_tbexgive_settings_cb_givewp_shortcode_pages',
+				'tbexgive_group_givewp',
+				'tbexgive-section-givewp',
+				array( 'class' => 'tbexgive-setting-givewp-shortcode-pages' )
+			);
+
+			$heading_addons_changelog = sprintf(
+				/* translators: 1 - label, "Add-Ons" / 2 - label, "Changelog" */
+				__( 'Swap out %1$s submenu, instead add %2$s submenu?', 'toolbar-extras-givewp' ),
+				'<em>' . __( 'Add-Ons', 'toolbar-extras-givewp' ) . '</em>',
+				'<em>' . __( 'Changelog', 'toolbar-extras-givewp' ) . '</em>'
+			);
+
+			add_settings_field(
+				'givewp_admin_menu_tweak',
+				$heading_addons_changelog,
+				'ddw_tbexgive_settings_cb_givewp_admin_menu_tweak',
+				'tbexgive_group_givewp',
+				'tbexgive-section-givewp',
+				array( 'class' => 'tbexgive-setting-givewp-admin-menu-tweak' )
 			);
 
 
@@ -491,6 +518,8 @@ function ddw_tbexgive_validate_settings_givewp( $input ) {
 	$select_fields = array(
 		'donations_tl_use_icon',
 		'donations_tl_target',
+		'givewp_shortcode_pages',
+		'givewp_admin_menu_tweak',
 		'formfeat_display',
 		'formfeat_title',
 		'formfeat_income',
@@ -742,27 +771,3 @@ function ddw_tbexgive_add_color_item_givewp( $color_items ) {
 	return $color_items;
 
 }  // end function
-
-
-
-// ------------ Test ---------------------------
-
-
-// Add Global Fee Recovery settings.
-add_filter( 'give-settings_get_settings_pages', 'ddw_tbexgive_givewp_settings_tab', 10, 1 );
-/**
- * Add Give Fee Recovery setting section.
- *
- * @since  1.0.0
- * @access public
- *
- * @param array $settings Give Settings.
- *
- * @return array $settings Give Settings.
- */
-function ddw_tbexgive_givewp_settings_tab( $settings ) {
-
-	$settings[] = include TBEXGIVE_PLUGIN_DIR . '/includes/admin/givewp-settings-tab.php';
-
-	return $settings;
-}

@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
- * Add "Settings" and Custom Menu" links to Plugins page.
+ * Add Add-On "Settings" links to Plugins page.
  *
  * @since 1.0.0
  *
