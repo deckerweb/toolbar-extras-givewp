@@ -75,6 +75,7 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 * [**Builder Template Categories**](https://wordpress.org/plugins/builder-template-categories/) (free, by David Decker - DECKERWEB) - *categorize Give donation forms - use categories as "global" categories also with other integrations of this plugin*
 * [**Members**](https://wordpress.org/plugins/members/) (free, by Justin Tadlock) - *manage user roles and capabilities (permissions), including for all dedicated GiveWP roles!*
 * [**Members - GiveWP Integration**](https://themehybrid.com/plugins/members-givewp-integration) (Premium, by Justin Tadlock) - *even better special GiveWP integration for the awesome Members plugin!*
+* [**Simple Social Shout for GiveWP**](https://github.com/impress-org/give-simple-social-shout) (free, by Matt Cromwell) - *adds simple social sharing buttons above your Donation Confirmation table*
 * ***Note:** Support for more free third-party Add-Ons will be added if more get released by the community*
 
 
