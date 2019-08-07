@@ -207,7 +207,7 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 
 = 🎉 1.0.0 - 2019-08-?? =
 * *Plugin launch. Everything's new!*
-* New: 6 Free GiveWP extensions supported/ integrated
+* New: 7 Free GiveWP extensions supported/ integrated
 * New: 15 Premium GiveWP extensions supported/ integrated
 
 
