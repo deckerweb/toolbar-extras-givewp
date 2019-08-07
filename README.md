@@ -62,10 +62,10 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 * **Tributes**
 * **Fee Recovery** - Recover payment gateway fees
 * **Gift Aid** - for this specific program of the UK Government
-* **Mailchimp**
-* **ConvertKit**
-* **AWeber**
-* **Constant Contact**
+* **Mailchimp** - Email marketing
+* **ConvertKit** - Email marketing
+* **AWeber** - Email marketing
+* **Constant Contact** - Email marketing
 * ***Note:** Support for more premium Add-Ons by GiveWP will be integrated/ added over time*
 
 
