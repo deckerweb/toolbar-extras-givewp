@@ -17,6 +17,9 @@ add_action( 'admin_bar_menu', 'ddw_tbexgive_aoitems_recurring_donations', 100 );
  * Items for Add-On:
  *   Give - Recurring Donations (Premium, by GiveWP/ Impress.org, LLC)
  *
+ *   Note: Viewing "Recurring Donations" (aka "Subscriptions") requires the
+ *         Give-specific capability (permission) of 'view_give_reports'.
+
  * @since 1.0.0
  *
  * @uses ddw_tbex_string_premium_addon_title_attr()
@@ -26,6 +29,11 @@ add_action( 'admin_bar_menu', 'ddw_tbexgive_aoitems_recurring_donations', 100 );
  * @param object $admin_bar Object of Toolbar nodes.
  */
 function ddw_tbexgive_aoitems_recurring_donations( $admin_bar ) {
+
+	/** Bail early if no proper permissions */
+	if ( ! current_user_can( 'view_give_reports' ) ) {
+		return $admin_bar;
+	}
 
 	/** Use Add-On hook place */
 	add_filter( 'tbexgive/filter/is_givewp_addon', '__return_empty_string' );
@@ -57,61 +65,61 @@ function ddw_tbexgive_aoitems_recurring_donations( $admin_bar ) {
 			)
 		);
 
-		if ( current_user_can( 'view_give_reports' ) ) {
+		$admin_bar->add_node(
+			array(
+				'id'     => 'ao-givewp-recurringdonations-report',
+				'parent' => 'ao-givewp-recurringdonations',
+				'title'  => esc_attr__( 'Report: Renewal Donations', 'toolbar-extras-givewp' ),
+				'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-reports&tab=subscriptions' ) ),
+				'meta'   => array(
+					'target' => '',
+					'title'  => esc_attr__( 'Report: All Renewal Donations', 'toolbar-extras-givewp' ),
+				)
+			)
+		);
+
+		if ( current_user_can( 'manage_give_settings' ) ) {
 
 			$admin_bar->add_node(
 				array(
-					'id'     => 'ao-givewp-recurringdonations-report',
+					'id'     => 'ao-givewp-recurringdonations-logs-emails',
 					'parent' => 'ao-givewp-recurringdonations',
-					'title'  => esc_attr__( 'Report: Renewal Donations', 'toolbar-extras-givewp' ),
-					'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-reports&tab=subscriptions' ) ),
+					'title'  => esc_attr__( 'Logs: Recurring Emails', 'toolbar-extras-givewp' ),
+					'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-tools&tab=logs&section=recurring_email_notices' ) ),
 					'meta'   => array(
 						'target' => '',
-						'title'  => esc_attr__( 'Report: All Renewal Donations', 'toolbar-extras-givewp' ),
+						'title'  => esc_attr__( 'Logs: Recurring Emails', 'toolbar-extras-givewp' ),
+					)
+				)
+			);
+
+			$admin_bar->add_node(
+				array(
+					'id'     => 'ao-givewp-recurringdonations-logs-synchronizer',
+					'parent' => 'ao-givewp-recurringdonations',
+					'title'  => esc_attr__( 'Logs: Synchronizer', 'toolbar-extras-givewp' ),
+					'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-tools&tab=logs&section=recurring_sync_logs' ) ),
+					'meta'   => array(
+						'target' => '',
+						'title'  => esc_attr__( 'Logs: Synchronizer', 'toolbar-extras-givewp' ),
+					)
+				)
+			);
+
+			$admin_bar->add_node(
+				array(
+					'id'     => 'ao-givewp-recurringdonations-help',
+					'parent' => 'ao-givewp-recurringdonations',
+					'title'  => esc_attr__( 'Help Docs', 'toolbar-extras-givewp' ),
+					'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=recurring' ) ),
+					'meta'   => array(
+						'target' => '',
+						'title'  => esc_attr__( 'Help Docs', 'toolbar-extras-givewp' ),
 					)
 				)
 			);
 
 		}  // end if
-
-		$admin_bar->add_node(
-			array(
-				'id'     => 'ao-givewp-recurringdonations-logs-emails',
-				'parent' => 'ao-givewp-recurringdonations',
-				'title'  => esc_attr__( 'Logs: Recurring Emails', 'toolbar-extras-givewp' ),
-				'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-tools&tab=logs&section=recurring_email_notices' ) ),
-				'meta'   => array(
-					'target' => '',
-					'title'  => esc_attr__( 'Logs: Recurring Emails', 'toolbar-extras-givewp' ),
-				)
-			)
-		);
-
-		$admin_bar->add_node(
-			array(
-				'id'     => 'ao-givewp-recurringdonations-logs-synchronizer',
-				'parent' => 'ao-givewp-recurringdonations',
-				'title'  => esc_attr__( 'Logs: Synchronizer', 'toolbar-extras-givewp' ),
-				'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-tools&tab=logs&section=recurring_sync_logs' ) ),
-				'meta'   => array(
-					'target' => '',
-					'title'  => esc_attr__( 'Logs: Synchronizer', 'toolbar-extras-givewp' ),
-				)
-			)
-		);
-
-		$admin_bar->add_node(
-			array(
-				'id'     => 'ao-givewp-recurringdonations-help',
-				'parent' => 'ao-givewp-recurringdonations',
-				'title'  => esc_attr__( 'Help Docs', 'toolbar-extras-givewp' ),
-				'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=recurring' ) ),
-				'meta'   => array(
-					'target' => '',
-					'title'  => esc_attr__( 'Help Docs', 'toolbar-extras-givewp' ),
-				)
-			)
-		);
 
 		/** Group: Plugin's resources */
 		if ( ddw_tbex_display_items_resources() ) {

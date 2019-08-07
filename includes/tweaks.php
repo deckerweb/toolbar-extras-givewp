@@ -33,6 +33,104 @@ function ddw_tbexgive_maybe_remove_toolbar_items() {
 }  // end function
 
 
+add_action( 'admin_menu', 'ddw_tbexgive_add_submenu_for_givewp_changelog', 1000 );
+/**
+ * Add additional admin menu items to make Toolbar settings more accessable.
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbexgive_is_givewp_active()
+ * @uses ddw_tbexgive_string_givewp()
+ * @uses add_submenu_page()
+ */
+function ddw_tbexgive_add_submenu_for_givewp_changelog() {
+
+	/** Bail early if Give Donations not active */
+	if ( ! ddw_tbexgive_is_givewp_active() ) {
+		return;
+	}
+
+	remove_action( 'admin_menu', 'give_add_add_ons_option_link', 999999 );
+
+	/** Add to Give's regular left-hand admin menu */
+	$menu_title = sprintf(
+		/* translators: %s - Word Give */
+		esc_html_x( '%s Changelog', 'Admin submenu title', 'toolbar-extras-givewp' ),
+		ddw_tbexgive_string_givewp()
+	);
+
+	add_submenu_page(
+		'edit.php?post_type=give_forms',
+		$menu_title,
+		$menu_title,
+		'manage_options',
+		esc_url( admin_url( 'index.php?page=give-changelog' ) )
+	);
+
+}  // end function
+
+
+add_filter( 'parent_file', 'ddw_tbexgive_parent_submenu_tweaks' );
+/**
+ * When editing an Oxygen template within the Admin, properly highlight it as
+ *   the 'submenu' of Oxygen.
+ *
+ * @since 1.0.0
+ * @since 1.1.0 Simplified and tweaked for Oxygen 2.3 or higher.
+ *
+ * @uses get_current_screen()
+ *
+ * @param string $parent_file The filename of the parent menu.
+ * @return string $parent_file The tweaked filename of the parent menu.
+ */
+function ddw_tbexgive_parent_submenu_tweaks( $parent_file ) {
+
+	if ( 'dashboard_page_give-changelog' === get_current_screen()->id ) {
+
+		$parent_file = 'edit.php?post_type=give_forms';
+		$GLOBALS[ 'submenu_file' ] = 'give-changelog';
+
+	}  // end if
+
+	return $parent_file;
+
+}  // end function
+
+
+add_filter( 'submenu_file', 'ddw_tbexgive_submenu_file_tweaks', 10, 2 );
+/**
+ * ???
+ *
+ * @since 1.0.0
+ */
+function ddw_tbexgive_submenu_file_tweaks( $submenu_file, $parent_file ){
+
+	if ( 'dashboard_page_give-changelog' === get_current_screen()->id ) {
+
+		$parent_file = 'edit.php?post_type=give_forms';
+		$submenu_file = 'index.php?page=give-changelog';
+
+	}  // end if
+
+	return $submenu_file;
+}
+
+
+//add_action( 'admin_footer', 'ddw_debugging_admin_20190807_1526', 100000 );
+function ddw_debugging_admin_20190807_1526() {
+
+	echo '<div class="admin notice error"><p>';
+
+	echo 'Debugging: ' . '';
+
+	echo '<br /><br />Array-Inhalt:<br />';
+	print_r( $GLOBALS[ 'submenu' ][ 'edit.php?post_type=give_forms' ] );
+
+	echo '</p></div>';
+
+}  // end debugging function
+
+
 /**
  * Array with all GiveWP textdomains - base plugin, and all supported extensions.
  *

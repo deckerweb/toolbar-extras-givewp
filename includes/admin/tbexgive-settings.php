@@ -695,6 +695,7 @@ add_action( 'admin_menu', 'ddw_tbexgive_add_submenu_for_givewp', 100 );
  * @since 1.0.0
  *
  * @uses ddw_tbexgive_is_givewp_active()
+ * @uses ddw_tbexgive_string_givewp()
  * @uses add_submenu_page()
  */
 function ddw_tbexgive_add_submenu_for_givewp() {
@@ -705,7 +706,11 @@ function ddw_tbexgive_add_submenu_for_givewp() {
 	}
 
 	/** Add to Give's regular left-hand admin menu */
-	$menu_title = esc_html_x( 'Give Toolbar', 'Admin menu title', 'toolbar-extras-givewp' );
+	$menu_title = sprintf(
+		/* translators: %s - Word Give */
+		esc_html_x( '%s Toolbar', 'Admin submenu title', 'toolbar-extras-givewp' ),
+		ddw_tbexgive_string_givewp()
+	);
 
 	add_submenu_page(
 		'edit.php?post_type=give_forms',

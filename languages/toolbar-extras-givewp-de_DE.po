@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Toolbar Extras for Give Donations\n"
-"POT-Creation-Date: 2019-08-07 13:54+0200\n"
-"PO-Revision-Date: 2019-08-07 13:56+0200\n"
+"POT-Creation-Date: 2019-08-07 16:03+0200\n"
+"PO-Revision-Date: 2019-08-07 16:03+0200\n"
 "Last-Translator: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language-Team: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language: de_DE\n"
@@ -352,12 +352,14 @@ msgstr "GiveWP Add-On für Toolbar Extras"
 msgid "Go to the Toolbar Extras GiveWP Add-On settings tab"
 msgstr "Gehe zum Toolbar Extras Einstellungen-Tab „GiveWP Add-On“"
 
-#: includes/admin/tbexgive-settings.php:708
-msgctxt "Admin menu title"
-msgid "Give Toolbar"
-msgstr "Give Toolbar"
+#. translators: %s - Word Give
+#: includes/admin/tbexgive-settings.php:711
+#, php-format
+msgctxt "Admin submenu title"
+msgid "%s Toolbar"
+msgstr "%s Toolbar"
 
-#: includes/admin/tbexgive-settings.php:734
+#: includes/admin/tbexgive-settings.php:739
 msgid "GiveWP Green"
 msgstr "GiveWP Grün"
 
@@ -702,282 +704,282 @@ msgid "Effected text domain: %s"
 msgstr "Betroffene Textdomain: %s"
 
 #: includes/functions-global.php:123
-#: includes/givewp-official/items-givewp-core.php:356
+#: includes/givewp-official/items-givewp-core.php:368
 msgctxt "Time range for filtering"
 msgid "Today"
 msgstr "Heute"
 
 #: includes/functions-global.php:124
-#: includes/givewp-official/items-givewp-core.php:357
+#: includes/givewp-official/items-givewp-core.php:369
 msgctxt "Time range for filtering"
 msgid "Yesterday"
 msgstr "Gestern"
 
 #: includes/functions-global.php:125
-#: includes/givewp-official/items-givewp-core.php:358
+#: includes/givewp-official/items-givewp-core.php:370
 msgctxt "Time range for filtering"
 msgid "This Week"
 msgstr "Diese Woche"
 
 #: includes/functions-global.php:126
-#: includes/givewp-official/items-givewp-core.php:359
+#: includes/givewp-official/items-givewp-core.php:371
 msgctxt "Time range for filtering"
 msgid "Last Week"
 msgstr "Letzte Woche"
 
 #: includes/functions-global.php:127
-#: includes/givewp-official/items-givewp-core.php:360
+#: includes/givewp-official/items-givewp-core.php:372
 msgctxt "Time range for filtering"
 msgid "This Month"
 msgstr "Aktueller Monat"
 
 #: includes/functions-global.php:128
-#: includes/givewp-official/items-givewp-core.php:361
+#: includes/givewp-official/items-givewp-core.php:373
 msgctxt "Time range for filtering"
 msgid "Last Month"
 msgstr "Letzter Monat"
 
 #: includes/functions-global.php:129
-#: includes/givewp-official/items-givewp-core.php:362
+#: includes/givewp-official/items-givewp-core.php:374
 msgctxt "Time range for filtering"
 msgid "This Quarter"
 msgstr "Dieses Quartal"
 
 #: includes/functions-global.php:130
-#: includes/givewp-official/items-givewp-core.php:363
+#: includes/givewp-official/items-givewp-core.php:375
 msgctxt "Time range for filtering"
 msgid "Last Quarter"
 msgstr "Letztes Quartal"
 
 #: includes/functions-global.php:131
-#: includes/givewp-official/items-givewp-core.php:364
+#: includes/givewp-official/items-givewp-core.php:376
 msgctxt "Time range for filtering"
 msgid "This Year"
 msgstr "Dieses Jahr"
 
 #: includes/functions-global.php:132
-#: includes/givewp-official/items-givewp-core.php:365
+#: includes/givewp-official/items-givewp-core.php:377
 msgctxt "Time range for filtering"
 msgid "Last Year"
 msgstr "Letztes Jahr"
 
-#: includes/givewp-addons/items-aweber.php:39
-#: includes/givewp-addons/items-aweber.php:43
+#: includes/givewp-addons/items-aweber.php:44
+#: includes/givewp-addons/items-aweber.php:48
 msgid "AWeber"
 msgstr "AWeber"
 
-#: includes/givewp-addons/items-aweber.php:52
-#: includes/givewp-addons/items-aweber.php:56
-#: includes/givewp-addons/items-constant-contact.php:52
-#: includes/givewp-addons/items-constant-contact.php:56
-#: includes/givewp-addons/items-convertkit.php:52
-#: includes/givewp-addons/items-convertkit.php:56
-#: includes/givewp-addons/items-fee-recovery.php:50
-#: includes/givewp-addons/items-fee-recovery.php:54
-#: includes/givewp-addons/items-fee-recovery.php:70
-#: includes/givewp-addons/items-fee-recovery.php:83
-#: includes/givewp-addons/items-form-field-manager.php:52
-#: includes/givewp-addons/items-form-field-manager.php:56
-#: includes/givewp-addons/items-gift-aid.php:51
-#: includes/givewp-addons/items-gift-aid.php:55
-#: includes/givewp-addons/items-google-analytics.php:52
-#: includes/givewp-addons/items-google-analytics.php:56
-#: includes/givewp-addons/items-mailchimp.php:52
-#: includes/givewp-addons/items-mailchimp.php:56
-#: includes/givewp-addons/items-simple-social-shout.php:54
-#: includes/givewp-addons/items-simple-social-shout.php:58
-#: includes/givewp-addons/items-tributes.php:51
-#: includes/givewp-addons/items-tributes.php:55
+#: includes/givewp-addons/items-aweber.php:57
+#: includes/givewp-addons/items-aweber.php:61
+#: includes/givewp-addons/items-constant-contact.php:57
+#: includes/givewp-addons/items-constant-contact.php:61
+#: includes/givewp-addons/items-convertkit.php:57
+#: includes/givewp-addons/items-convertkit.php:61
+#: includes/givewp-addons/items-fee-recovery.php:55
+#: includes/givewp-addons/items-fee-recovery.php:59
+#: includes/givewp-addons/items-fee-recovery.php:75
+#: includes/givewp-addons/items-fee-recovery.php:88
+#: includes/givewp-addons/items-form-field-manager.php:57
+#: includes/givewp-addons/items-form-field-manager.php:61
+#: includes/givewp-addons/items-gift-aid.php:56
+#: includes/givewp-addons/items-gift-aid.php:60
+#: includes/givewp-addons/items-google-analytics.php:57
+#: includes/givewp-addons/items-google-analytics.php:61
+#: includes/givewp-addons/items-mailchimp.php:57
+#: includes/givewp-addons/items-mailchimp.php:61
+#: includes/givewp-addons/items-simple-social-shout.php:59
+#: includes/givewp-addons/items-simple-social-shout.php:63
+#: includes/givewp-addons/items-tributes.php:56
+#: includes/givewp-addons/items-tributes.php:60
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: includes/givewp-addons/items-aweber.php:65
+#: includes/givewp-addons/items-aweber.php:70
 msgid "My AWeber Dashboard"
 msgstr "Mein AWeber Dashboard"
 
-#: includes/givewp-addons/items-aweber.php:69
+#: includes/givewp-addons/items-aweber.php:74
 msgid "My AWeber Dashboard (aweber.com)"
 msgstr "Mein AWeber Dashboard (aweber.com)"
 
-#: includes/givewp-addons/items-constant-contact.php:39
-#: includes/givewp-addons/items-constant-contact.php:43
+#: includes/givewp-addons/items-constant-contact.php:44
+#: includes/givewp-addons/items-constant-contact.php:48
 msgid "Constant Contact"
 msgstr "Constant Contact"
 
-#: includes/givewp-addons/items-constant-contact.php:65
+#: includes/givewp-addons/items-constant-contact.php:70
 msgid "My Constant Contact Dashboard"
 msgstr "Mein Constant Contact Dashboard"
 
-#: includes/givewp-addons/items-constant-contact.php:69
+#: includes/givewp-addons/items-constant-contact.php:74
 msgid "My Constant Contact Dashboard (constantcontact.com)"
 msgstr "Mein Constant Contact Dashboard (constantcontact.com)"
 
-#: includes/givewp-addons/items-convertkit.php:39
-#: includes/givewp-addons/items-convertkit.php:43
+#: includes/givewp-addons/items-convertkit.php:44
+#: includes/givewp-addons/items-convertkit.php:48
 msgid "ConvertKit"
 msgstr "ConvertKit"
 
-#: includes/givewp-addons/items-convertkit.php:65
+#: includes/givewp-addons/items-convertkit.php:70
 msgid "My ConvertKit Dashboard"
 msgstr "Mein ConvertKit Dashboard"
 
-#: includes/givewp-addons/items-convertkit.php:69
+#: includes/givewp-addons/items-convertkit.php:74
 msgid "My ConvertKit Dashboard (app.convertkit.com)"
 msgstr "Mein ConvertKit Dashboard (app.convertkit.com)"
 
-#: includes/givewp-addons/items-email-template.php:39
+#: includes/givewp-addons/items-email-template.php:44
 msgid "HTML Email Template"
 msgstr "HTML-Template"
 
-#: includes/givewp-addons/items-email-template.php:43
+#: includes/givewp-addons/items-email-template.php:48
 msgid "Give Donation Email Template"
 msgstr "Give Spenden-E-Mail-Template"
 
-#: includes/givewp-addons/items-email-template.php:52
+#: includes/givewp-addons/items-email-template.php:57
 msgid "General Template Options"
 msgstr "Allgemeine Template-Einstellungen"
 
-#: includes/givewp-addons/items-email-template.php:56
+#: includes/givewp-addons/items-email-template.php:61
 msgid "Edit &amp; Preview General Email Template Options"
 msgstr "Bearbeiten und Anpassen von allgemeinen E-Mail-Template-Optionen"
 
-#: includes/givewp-addons/items-email-template.php:65
+#: includes/givewp-addons/items-email-template.php:70
 msgid "Email Header"
 msgstr "Email Kopfzeile"
 
-#: includes/givewp-addons/items-email-template.php:69
+#: includes/givewp-addons/items-email-template.php:74
 msgid "Edit &amp; Preview Email Header"
 msgstr "Bearbeiten &amp; Vorschau E-Mail-Header"
 
-#: includes/givewp-addons/items-email-template.php:78
+#: includes/givewp-addons/items-email-template.php:83
 msgid "Email Footer"
 msgstr "E-Mail-Signatur"
 
-#: includes/givewp-addons/items-email-template.php:82
+#: includes/givewp-addons/items-email-template.php:87
 msgid "Edit &amp; Preview Email Footer"
 msgstr "Bearbeiten &amp; Vorschau E-Mail-Footer"
 
-#: includes/givewp-addons/items-email-template.php:91
+#: includes/givewp-addons/items-email-template.php:96
 msgid "Email Content (Body)"
 msgstr "E-Mail-Inhalt (Body)"
 
-#: includes/givewp-addons/items-email-template.php:95
+#: includes/givewp-addons/items-email-template.php:100
 msgid "Edit &amp; Preview Email Content (Body)"
 msgstr "Bearbeiten &amp; Vorschau des E-Mail-Inhalts (Body)"
 
-#: includes/givewp-addons/items-email-template.php:104
-#: includes/givewp-addons/items-email-template.php:108
+#: includes/givewp-addons/items-email-template.php:109
+#: includes/givewp-addons/items-email-template.php:113
 msgid "Give Template Options"
 msgstr "Give Template-Optionen"
 
-#: includes/givewp-addons/items-fee-recovery.php:37
-#: includes/givewp-addons/items-fee-recovery.php:41
+#: includes/givewp-addons/items-fee-recovery.php:42
+#: includes/givewp-addons/items-fee-recovery.php:46
 msgid "Fee Recovery"
 msgstr "Gebührendeckung"
 
-#: includes/givewp-addons/items-fee-recovery.php:66
+#: includes/givewp-addons/items-fee-recovery.php:71
 msgid "Report: Fee Income"
 msgstr "Bericht: Gebühreneinnahmen"
 
-#: includes/givewp-addons/items-fee-recovery.php:79
+#: includes/givewp-addons/items-fee-recovery.php:84
 msgid "Report: Fee Conversion"
 msgstr "Bericht: Gebührenumwandlung"
 
-#: includes/givewp-addons/items-form-field-manager.php:39
-#: includes/givewp-addons/items-form-field-manager.php:43
+#: includes/givewp-addons/items-form-field-manager.php:44
+#: includes/givewp-addons/items-form-field-manager.php:48
 msgid "Form Field Manager"
 msgstr "Formularfelder bearbeiten"
 
-#: includes/givewp-addons/items-gift-aid.php:38
-#: includes/givewp-addons/items-gift-aid.php:42
+#: includes/givewp-addons/items-gift-aid.php:43
+#: includes/givewp-addons/items-gift-aid.php:47
 msgid "Gift Aid"
 msgstr "Geschenk-Hilfe"
 
-#: includes/givewp-addons/items-gift-aid.php:66
+#: includes/givewp-addons/items-gift-aid.php:71
 msgid "Report: Gift Aid Donations"
 msgstr "Bericht: Geschenk-Hilfe-Spenden"
 
-#: includes/givewp-addons/items-gift-aid.php:70
+#: includes/givewp-addons/items-gift-aid.php:75
 msgid "Report: All Gift Aid Donations"
 msgstr "Bericht: Alle Geschenk-Hilfe-Spenden"
 
-#: includes/givewp-addons/items-gift-aid.php:99
+#: includes/givewp-addons/items-gift-aid.php:104
 msgid "UK Gift Aid Program"
 msgstr "Britisches Geschenk-Hilfe-Programm"
 
-#: includes/givewp-addons/items-gift-aid.php:103
+#: includes/givewp-addons/items-gift-aid.php:108
 msgid "United Kingdom Government: Gift Aid Program Info"
 msgstr "Regierung des Vereinigten Königreichs: Geschenk-Hilfe-Programm Info"
 
-#: includes/givewp-addons/items-google-analytics.php:39
+#: includes/givewp-addons/items-google-analytics.php:44
 msgid "Google Analytics"
 msgstr "Google Analytics"
 
-#: includes/givewp-addons/items-google-analytics.php:43
+#: includes/givewp-addons/items-google-analytics.php:48
 msgid "Google Analytics Donation Tracking"
 msgstr "Google Analytics Spenden-Tracking"
 
-#: includes/givewp-addons/items-google-analytics.php:65
+#: includes/givewp-addons/items-google-analytics.php:70
 msgid "My Google Analytics Dashboard"
 msgstr "Mein Google Analytics Dashboard"
 
-#: includes/givewp-addons/items-google-analytics.php:69
+#: includes/givewp-addons/items-google-analytics.php:74
 msgid "My Google Analytics Dashboard (analytics.google.com)"
 msgstr "Mein Google Analytics Dashboard (analytics.google.com)"
 
-#: includes/givewp-addons/items-mailchimp-for-wp.php:38
-#: includes/givewp-addons/items-mailchimp-for-wp.php:42
+#: includes/givewp-addons/items-mailchimp-for-wp.php:43
+#: includes/givewp-addons/items-mailchimp-for-wp.php:47
 msgid "Mailchimp for WP"
 msgstr "Mailchimp für WP"
 
-#: includes/givewp-addons/items-mailchimp-for-wp.php:51
-#: includes/givewp-addons/items-mailchimp-for-wp.php:55
+#: includes/givewp-addons/items-mailchimp-for-wp.php:56
+#: includes/givewp-addons/items-mailchimp-for-wp.php:60
 msgid "Give Integration"
 msgstr "Give Integration"
 
-#: includes/givewp-addons/items-mailchimp-for-wp.php:64
-#: includes/givewp-addons/items-mailchimp.php:65
+#: includes/givewp-addons/items-mailchimp-for-wp.php:69
+#: includes/givewp-addons/items-mailchimp.php:70
 msgid "My Mailchimp Audience"
 msgstr "Mein Mailchimp-Publikum"
 
-#: includes/givewp-addons/items-mailchimp-for-wp.php:68
-#: includes/givewp-addons/items-mailchimp.php:69
+#: includes/givewp-addons/items-mailchimp-for-wp.php:73
+#: includes/givewp-addons/items-mailchimp.php:74
 msgid "My Mailchimp Audience (mailchimp.com)"
 msgstr "Mein Mailchimp-Publikum (mailchimp.com)"
 
-#: includes/givewp-addons/items-mailchimp-for-wp.php:77
-#: includes/givewp-addons/items-mailchimp.php:78
+#: includes/givewp-addons/items-mailchimp-for-wp.php:82
+#: includes/givewp-addons/items-mailchimp.php:83
 msgid "My Mailchimp Campaigns"
 msgstr "Meine Mailchimp-Kampagnen"
 
-#: includes/givewp-addons/items-mailchimp-for-wp.php:81
-#: includes/givewp-addons/items-mailchimp.php:82
+#: includes/givewp-addons/items-mailchimp-for-wp.php:86
+#: includes/givewp-addons/items-mailchimp.php:87
 msgid "My Mailchimp Campaigns (mailchimp.com)"
 msgstr "Meine Mailchimp-Kampagnen (mailchimp.com)"
 
-#: includes/givewp-addons/items-mailchimp.php:39
-#: includes/givewp-addons/items-mailchimp.php:43
+#: includes/givewp-addons/items-mailchimp.php:44
+#: includes/givewp-addons/items-mailchimp.php:48
 msgid "Mailchimp"
 msgstr "Mailchimp"
 
-#: includes/givewp-addons/items-manual-donations.php:39
-#: includes/givewp-addons/items-manual-donations.php:43
+#: includes/givewp-addons/items-manual-donations.php:44
+#: includes/givewp-addons/items-manual-donations.php:48
 msgid "Manual Donations"
 msgstr "Manuelle Spenden"
 
-#: includes/givewp-addons/items-manual-donations.php:52
+#: includes/givewp-addons/items-manual-donations.php:57
 msgid "New Manual Donation"
 msgstr "Neue manuelle Spende"
 
-#: includes/givewp-addons/items-manual-donations.php:56
+#: includes/givewp-addons/items-manual-donations.php:61
 msgid "Add new Manual Donation Payment"
 msgstr "Neue manuelle Spendenzahlung hinzufügen"
 
-#: includes/givewp-addons/items-manual-donations.php:104
+#: includes/givewp-addons/items-manual-donations.php:111
 msgid "Manual Donation"
 msgstr "Manuelle Spende"
 
-#: includes/givewp-addons/items-manual-donations.php:106
+#: includes/givewp-addons/items-manual-donations.php:113
 msgid "Give Manual Donation Payment"
 msgstr "Give manuelle Spendenzahlung"
 
@@ -1019,997 +1021,997 @@ msgstr "Neue Benutzerrolle"
 msgid "Add New User Role"
 msgstr "Neue Benutzerrolle hinzufügen"
 
-#: includes/givewp-addons/items-payments-paypal-pro.php:39
+#: includes/givewp-addons/items-payments-paypal-pro.php:44
 msgid "PayPal Pro Payments"
 msgstr "PayPal Pro Zahlungen"
 
-#: includes/givewp-addons/items-payments-paypal-pro.php:43
-#: includes/givewp-addons/items-recurring-donations.php:42
+#: includes/givewp-addons/items-payments-paypal-pro.php:48
+#: includes/givewp-addons/items-recurring-donations.php:50
 msgid "PayPal Pro Payment Gateway"
 msgstr "PayPal Pro Zahlungsart"
 
-#: includes/givewp-addons/items-payments-paypal-pro.php:52
-#: includes/givewp-addons/items-payments-paypal-pro.php:56
-#: includes/givewp-addons/items-payments-paypal-pro.php:105
-#: includes/givewp-addons/items-payments-paypal-pro.php:109
+#: includes/givewp-addons/items-payments-paypal-pro.php:57
+#: includes/givewp-addons/items-payments-paypal-pro.php:61
+#: includes/givewp-addons/items-payments-paypal-pro.php:110
+#: includes/givewp-addons/items-payments-paypal-pro.php:114
 msgid "PayPal Pro Settings"
 msgstr "PayPal Pro-Einstellungen"
 
-#: includes/givewp-addons/items-payments-paypal-pro.php:65
-#: includes/givewp-addons/items-payments-paypal-pro.php:69
+#: includes/givewp-addons/items-payments-paypal-pro.php:70
+#: includes/givewp-addons/items-payments-paypal-pro.php:74
 msgid "Website Payments Pro (REST API)"
 msgstr "Website Payments Pro (REST API)"
 
-#: includes/givewp-addons/items-payments-paypal-pro.php:78
-#: includes/givewp-addons/items-payments-paypal-pro.php:82
+#: includes/givewp-addons/items-payments-paypal-pro.php:83
+#: includes/givewp-addons/items-payments-paypal-pro.php:87
 msgid "Website Payments Pro (NVP API)"
 msgstr "Website Payments Pro (NVP API)"
 
-#: includes/givewp-addons/items-payments-paypal-pro.php:91
+#: includes/givewp-addons/items-payments-paypal-pro.php:96
 msgid "My PayPal Pro Account"
 msgstr "Mein PayPal Pro-Konto"
 
-#: includes/givewp-addons/items-payments-paypal-pro.php:95
+#: includes/givewp-addons/items-payments-paypal-pro.php:100
 msgid "My PayPal Pro Account (paypal.com)"
 msgstr "Mein PayPal Pro-Konto (paypal.com)"
 
-#: includes/givewp-addons/items-payments-stripe.php:39
+#: includes/givewp-addons/items-payments-stripe.php:44
 msgid "Stripe Payments"
 msgstr "Stripe Zahlungen"
 
-#: includes/givewp-addons/items-payments-stripe.php:43
+#: includes/givewp-addons/items-payments-stripe.php:48
 msgid "Stripe Payment Gateway"
 msgstr "Stripe Zahlungsart"
 
-#: includes/givewp-addons/items-payments-stripe.php:52
-#: includes/givewp-addons/items-payments-stripe.php:56
-#: includes/givewp-official/items-givewp-core.php:1340
-#: includes/givewp-official/items-givewp-core.php:1344
+#: includes/givewp-addons/items-payments-stripe.php:57
+#: includes/givewp-addons/items-payments-stripe.php:61
+#: includes/givewp-official/items-givewp-core.php:1352
+#: includes/givewp-official/items-givewp-core.php:1356
 msgid "Stripe Settings"
 msgstr "Stripe Einstellungen"
 
-#: includes/givewp-addons/items-payments-stripe.php:65
-#: includes/givewp-addons/items-payments-stripe.php:69
+#: includes/givewp-addons/items-payments-stripe.php:70
+#: includes/givewp-addons/items-payments-stripe.php:74
 msgid "Stripe + Plaid Settings"
 msgstr "Stripe- und Plaid-Einstellungen"
 
-#: includes/givewp-addons/items-payments-stripe.php:78
-#: includes/givewp-addons/items-payments-stripe.php:82
-#: includes/givewp-official/items-givewp-core.php:1515
+#: includes/givewp-addons/items-payments-stripe.php:83
+#: includes/givewp-addons/items-payments-stripe.php:87
+#: includes/givewp-official/items-givewp-core.php:1527
 msgid "Advanced Settings"
 msgstr "Erweiterte Einstellungen"
 
-#: includes/givewp-addons/items-payments-stripe.php:91
+#: includes/givewp-addons/items-payments-stripe.php:96
 msgid "My Stripe Dashboard"
 msgstr "Mein Stripe-Dashboard"
 
-#: includes/givewp-addons/items-payments-stripe.php:95
+#: includes/givewp-addons/items-payments-stripe.php:100
 msgid "My Stripe Dashboard (stripe.com)"
 msgstr "Mein Stripe-Dashboard (stripe.com)"
 
-#: includes/givewp-addons/items-payments-stripe.php:104
-#: includes/givewp-addons/items-payments-stripe.php:108
+#: includes/givewp-addons/items-payments-stripe.php:109
+#: includes/givewp-addons/items-payments-stripe.php:113
 msgid "Stripe Logs"
 msgstr "Stripe-Protokolle"
 
-#: includes/givewp-addons/items-pdf-receipts.php:38
-#: includes/givewp-addons/items-pdf-receipts.php:42
+#: includes/givewp-addons/items-pdf-receipts.php:43
+#: includes/givewp-addons/items-pdf-receipts.php:47
 msgid "PDF Receipts"
 msgstr "PDF-Belege"
 
-#: includes/givewp-addons/items-pdf-receipts.php:51
+#: includes/givewp-addons/items-pdf-receipts.php:56
 msgid "Template Builder"
 msgstr "Template Builder"
 
-#: includes/givewp-addons/items-pdf-receipts.php:55
+#: includes/givewp-addons/items-pdf-receipts.php:60
 msgid "Template Builder &amp; Settings"
 msgstr "Template Builder &amp; Einstellungen"
 
-#: includes/givewp-addons/items-pdf-receipts.php:64
+#: includes/givewp-addons/items-pdf-receipts.php:69
 msgid "Preview PDF Receipt"
 msgstr "PDF-Beleg-Vorschau"
 
-#: includes/givewp-addons/items-pdf-receipts.php:68
+#: includes/givewp-addons/items-pdf-receipts.php:73
 msgid "Preview PDF Receipt - Opens PDF File"
 msgstr "Vorschau des PDF-Belegs - Öffnet die PDF-Datei"
 
-#: includes/givewp-addons/items-recurring-donations.php:38
+#: includes/givewp-addons/items-recurring-donations.php:46
 msgid "Recurring Donations"
 msgstr "Wiederkehrende Spenden"
 
-#: includes/givewp-addons/items-recurring-donations.php:51
-#: includes/givewp-official/items-givewp-core.php:265
+#: includes/givewp-addons/items-recurring-donations.php:59
+#: includes/givewp-official/items-givewp-core.php:277
 #: includes/items-formfeat.php:201
 msgid "Subscriptions"
 msgstr "Abonnements"
 
-#: includes/givewp-addons/items-recurring-donations.php:55
+#: includes/givewp-addons/items-recurring-donations.php:63
 msgid "Subscriptions - Recurring Donations Overview"
 msgstr "Abonnements - Übersicht über wiederkehrende Spenden"
 
-#: includes/givewp-addons/items-recurring-donations.php:66
+#: includes/givewp-addons/items-recurring-donations.php:72
 msgid "Report: Renewal Donations"
 msgstr "Bericht: Wiederholte Spenden"
 
-#: includes/givewp-addons/items-recurring-donations.php:70
+#: includes/givewp-addons/items-recurring-donations.php:76
 msgid "Report: All Renewal Donations"
 msgstr "Bericht: Alle wiederholten Spenden"
 
-#: includes/givewp-addons/items-recurring-donations.php:81
-#: includes/givewp-addons/items-recurring-donations.php:85
+#: includes/givewp-addons/items-recurring-donations.php:87
+#: includes/givewp-addons/items-recurring-donations.php:91
 msgid "Logs: Recurring Emails"
 msgstr "Protokolle: Wiederkehrende E-Mails"
 
-#: includes/givewp-addons/items-recurring-donations.php:94
-#: includes/givewp-addons/items-recurring-donations.php:98
+#: includes/givewp-addons/items-recurring-donations.php:100
+#: includes/givewp-addons/items-recurring-donations.php:104
 msgid "Logs: Synchronizer"
 msgstr "Protokolle: Synchronisierung"
 
-#: includes/givewp-addons/items-recurring-donations.php:107
-#: includes/givewp-addons/items-recurring-donations.php:111
+#: includes/givewp-addons/items-recurring-donations.php:113
+#: includes/givewp-addons/items-recurring-donations.php:117
 msgid "Help Docs"
 msgstr "Hilfe-Dokumente"
 
-#: includes/givewp-addons/items-simple-social-shout.php:41
+#: includes/givewp-addons/items-simple-social-shout.php:46
 msgid "Simple Social Shout"
 msgstr "Einfacher Social-Shout"
 
-#: includes/givewp-addons/items-simple-social-shout.php:45
+#: includes/givewp-addons/items-simple-social-shout.php:50
 msgid "Simple Social Shout for GiveWP"
 msgstr "Simple Social Shout für GiveWP"
 
-#: includes/givewp-addons/items-simple-social-shout.php:67
+#: includes/givewp-addons/items-simple-social-shout.php:72
 msgid "Donation Confirmation: Preview"
 msgstr "Spendenbestätigung: Vorschau"
 
-#: includes/givewp-addons/items-simple-social-shout.php:71
+#: includes/givewp-addons/items-simple-social-shout.php:76
 msgid "Donation Confirmation: Live Preview of Page"
 msgstr "Spendenbestätigung: Live-Vorschau der Seite"
 
-#: includes/givewp-addons/items-simple-social-shout.php:80
+#: includes/givewp-addons/items-simple-social-shout.php:85
 msgid "Donation Confirmation: Edit Page"
 msgstr "Spendenbestätigung: Seite bearbeiten"
 
-#: includes/givewp-addons/items-simple-social-shout.php:84
+#: includes/givewp-addons/items-simple-social-shout.php:89
 msgid "Donation Confirmation: Edit this Page"
 msgstr "Spendenbestätigung: Diese Seite bearbeiten"
 
-#: includes/givewp-addons/items-tributes.php:38
-#: includes/givewp-addons/items-tributes.php:42
-#: includes/givewp-official/items-givewp-core.php:630
+#: includes/givewp-addons/items-tributes.php:43
+#: includes/givewp-addons/items-tributes.php:47
+#: includes/givewp-official/items-givewp-core.php:642
 msgid "Tributes"
 msgstr "Tribute"
 
-#: includes/givewp-addons/items-tributes.php:67
+#: includes/givewp-addons/items-tributes.php:72
 msgid "Report: Tribute Donations"
 msgstr "Bericht: Tribute-Spenden"
 
-#: includes/givewp-addons/items-tributes.php:71
+#: includes/givewp-addons/items-tributes.php:76
 msgid "Report: All Tribute Donations"
 msgstr "Bericht: Alle Tribute-Spenden"
 
-#: includes/givewp-addons/items-tributes.php:80
-#: includes/givewp-addons/items-tributes.php:84
+#: includes/givewp-addons/items-tributes.php:85
+#: includes/givewp-addons/items-tributes.php:89
 msgid "Report: Mail a Card"
 msgstr "Bericht: Eine Karte versenden"
 
-#: includes/givewp-addons/items-tributes.php:93
-#: includes/givewp-addons/items-tributes.php:97
+#: includes/givewp-addons/items-tributes.php:98
+#: includes/givewp-addons/items-tributes.php:102
 msgid "Report: eCards"
 msgstr "Bericht: eCards"
 
-#: includes/givewp-addons/items-zapier.php:38
+#: includes/givewp-addons/items-zapier.php:43
 msgid "Zapier Integration"
 msgstr "Zapier-Integration"
 
-#: includes/givewp-addons/items-zapier.php:42
+#: includes/givewp-addons/items-zapier.php:47
 msgid "Zapier"
 msgstr "Zapier"
 
-#: includes/givewp-addons/items-zapier.php:51
-#: includes/givewp-addons/items-zapier.php:64
+#: includes/givewp-addons/items-zapier.php:56
+#: includes/givewp-addons/items-zapier.php:69
 msgid "Setup &amp; Testing"
 msgstr "Einrichtung &amp; Prüfung"
 
-#: includes/givewp-addons/items-zapier.php:55
-#: includes/givewp-addons/items-zapier.php:68
+#: includes/givewp-addons/items-zapier.php:60
+#: includes/givewp-addons/items-zapier.php:73
 msgid "Setup Steps and Testing Triggers"
 msgstr "Einrichtungsschritte und Prüfauslöser"
 
-#: includes/givewp-addons/items-zapier.php:78
+#: includes/givewp-addons/items-zapier.php:83
 msgid "My Zapier Zaps"
 msgstr "Meine Zapier Zaps"
 
-#: includes/givewp-addons/items-zapier.php:82
+#: includes/givewp-addons/items-zapier.php:87
 msgid "My Zapier Zaps (zapier.com)"
 msgstr "Meine Zapier Zaps (zapier.com)"
 
-#: includes/givewp-addons/items-zapier.php:91
+#: includes/givewp-addons/items-zapier.php:96
 msgid "My Zapier Task History"
 msgstr "Meine Zapier Aufgabenhistorie"
 
-#: includes/givewp-addons/items-zapier.php:95
+#: includes/givewp-addons/items-zapier.php:100
 msgid "My Zapier Task History (zapier.com)"
 msgstr "Meine Zapier Aufgabenhistorie (zapier.com)"
 
-#: includes/givewp-addons/items-zapier.php:104
+#: includes/givewp-addons/items-zapier.php:109
 msgid "My Zapier Apps"
 msgstr "Meine Zapier Apps"
 
-#: includes/givewp-addons/items-zapier.php:108
+#: includes/givewp-addons/items-zapier.php:113
 msgid "My Zapier Apps/ Connections (zapier.com)"
 msgstr "Meine Zapier Apps / Verbindungen (zapier.com)"
 
-#: includes/givewp-official/items-givewp-core.php:52
+#: includes/givewp-official/items-givewp-core.php:54
 #: includes/items-formfeat.php:171
 msgid "Donation Transactions"
 msgstr "Spendentransaktionen"
 
-#: includes/givewp-official/items-givewp-core.php:56
+#: includes/givewp-official/items-givewp-core.php:58
 #: includes/items-formfeat.php:175
 msgid "Donation Transactions - Payment History"
 msgstr "Spendentransaktionen - Zahlungsverhalten"
 
-#: includes/givewp-official/items-givewp-core.php:65
-#: includes/givewp-official/items-givewp-core.php:69
+#: includes/givewp-official/items-givewp-core.php:67
+#: includes/givewp-official/items-givewp-core.php:71
 msgid "All Donations"
 msgstr "Alle Zuwendungen"
 
-#: includes/givewp-official/items-givewp-core.php:78
-#: includes/givewp-official/items-givewp-core.php:82
+#: includes/givewp-official/items-givewp-core.php:80
+#: includes/givewp-official/items-givewp-core.php:84
 msgid "Abandoned Donations"
 msgstr "Abgebrochene Vorgänge"
 
-#: includes/givewp-official/items-givewp-core.php:91
-#: includes/givewp-official/items-givewp-core.php:1669
+#: includes/givewp-official/items-givewp-core.php:95
+#: includes/givewp-official/items-givewp-core.php:1681
 msgid "Import Donations"
 msgstr "Spenden importieren"
 
-#: includes/givewp-official/items-givewp-core.php:95
-#: includes/givewp-official/items-givewp-core.php:1673
+#: includes/givewp-official/items-givewp-core.php:99
+#: includes/givewp-official/items-givewp-core.php:1685
 msgid "Import Donations from CSV File"
 msgstr "Spenden aus CSV-Datei importieren"
 
-#: includes/givewp-official/items-givewp-core.php:118
+#: includes/givewp-official/items-givewp-core.php:124
 msgid "List Donations per Form"
 msgstr "Spenden pro Formular auflisten"
 
-#: includes/givewp-official/items-givewp-core.php:122
+#: includes/givewp-official/items-givewp-core.php:128
 msgid "List all Donations per Form Campaign"
 msgstr "Liste aller Spenden pro Formularkampagne"
 
-#: includes/givewp-official/items-givewp-core.php:140
-#: includes/givewp-official/items-givewp-core.php:245
+#: includes/givewp-official/items-givewp-core.php:146
+#: includes/givewp-official/items-givewp-core.php:255
 msgid "All Donors for Form Campaign"
 msgstr "Alle Spender für Formularkampagne"
 
-#: includes/givewp-official/items-givewp-core.php:158
-#: includes/givewp-official/items-givewp-core.php:2261
+#: includes/givewp-official/items-givewp-core.php:168
+#: includes/givewp-official/items-givewp-core.php:2273
 #: includes/items-formfeat.php:185
 msgid "Donors"
 msgstr "Spender"
 
-#: includes/givewp-official/items-givewp-core.php:162
+#: includes/givewp-official/items-givewp-core.php:172
 #: includes/items-formfeat.php:189
 msgid "All Donors - User Data"
 msgstr "Alle Spender - Benutzerdaten"
 
-#: includes/givewp-official/items-givewp-core.php:172
+#: includes/givewp-official/items-givewp-core.php:182
 msgid "All Donors"
 msgstr "Alle Spender"
 
-#: includes/givewp-official/items-givewp-core.php:176
+#: includes/givewp-official/items-givewp-core.php:186
 msgid "All Donors for any Campaign - User Data"
 msgstr "Alle Spender für jede Kampagne - Benutzerdaten"
 
-#: includes/givewp-official/items-givewp-core.php:192
+#: includes/givewp-official/items-givewp-core.php:202
 msgid "Donor Users (WP)"
 msgstr "Spender (WP-Benutzer)"
 
-#: includes/givewp-official/items-givewp-core.php:196
+#: includes/givewp-official/items-givewp-core.php:206
 msgid "All Give Donors - WordPress User Accounts"
 msgstr "Alle Give-Spender - WordPress-Benutzerkonten"
 
-#: includes/givewp-official/items-givewp-core.php:223
+#: includes/givewp-official/items-givewp-core.php:233
 msgid "List Donors per Form"
 msgstr "Spender pro Formular auflisten"
 
-#: includes/givewp-official/items-givewp-core.php:227
+#: includes/givewp-official/items-givewp-core.php:237
 msgid "List all Donors per Form Campaign"
 msgstr "Liste aller Spender pro Formularkampagne"
 
-#: includes/givewp-official/items-givewp-core.php:269
+#: includes/givewp-official/items-givewp-core.php:281
 #: includes/items-formfeat.php:205
 msgid "All Subscriptions - Recurring Donations"
 msgstr "Alle Abonnements - Wiederkehrende Spenden"
 
-#: includes/givewp-official/items-givewp-core.php:278
+#: includes/givewp-official/items-givewp-core.php:290
 msgid "All Subscriptions"
 msgstr "Alle Abonnemente"
 
-#: includes/givewp-official/items-givewp-core.php:282
+#: includes/givewp-official/items-givewp-core.php:294
 msgid "All Subscriptions - Recurring Donations Overview"
 msgstr "Alle Abonnements - Übersicht über wiederkehrende Spenden"
 
-#: includes/givewp-official/items-givewp-core.php:305
+#: includes/givewp-official/items-givewp-core.php:317
 msgid "List Subscriptions per Form"
 msgstr "Abonnements pro Formular auflisten"
 
-#: includes/givewp-official/items-givewp-core.php:309
+#: includes/givewp-official/items-givewp-core.php:321
 msgid "View all Subscriptions per Form Campaign"
 msgstr "Alle Abonnements pro Formularkampagne anzeigen"
 
-#: includes/givewp-official/items-givewp-core.php:327
+#: includes/givewp-official/items-givewp-core.php:339
 msgid "All Subscriptions for Form Campaign"
 msgstr "Alle Abonnements für Formularkampagne"
 
-#: includes/givewp-official/items-givewp-core.php:346
+#: includes/givewp-official/items-givewp-core.php:358
 #: includes/items-formfeat.php:219
 msgid "Reports"
 msgstr "Berichte"
 
-#: includes/givewp-official/items-givewp-core.php:350
+#: includes/givewp-official/items-givewp-core.php:362
 #: includes/items-formfeat.php:223
 msgid "All Reports - Donation Statistics &amp; Analytics"
 msgstr "Alle Berichte - Spendenstatistik &amp; Analytik"
 
-#: includes/givewp-official/items-givewp-core.php:375
+#: includes/givewp-official/items-givewp-core.php:387
 msgid "Income"
 msgstr "Einnahmen"
 
-#: includes/givewp-official/items-givewp-core.php:379
+#: includes/givewp-official/items-givewp-core.php:391
 msgid "Income - Earnings"
 msgstr "Einnahmen - Verdienst"
 
-#: includes/givewp-official/items-givewp-core.php:388
-#: includes/givewp-official/items-givewp-core.php:392
-#: includes/givewp-official/items-givewp-core.php:440
-#: includes/givewp-official/items-givewp-core.php:444
-#: includes/givewp-official/items-givewp-core.php:522
-#: includes/givewp-official/items-givewp-core.php:526
-#: includes/givewp-official/items-givewp-core.php:571
-#: includes/givewp-official/items-givewp-core.php:575
-#: includes/givewp-official/items-givewp-core.php:734
-#: includes/givewp-official/items-givewp-core.php:738
+#: includes/givewp-official/items-givewp-core.php:400
+#: includes/givewp-official/items-givewp-core.php:404
+#: includes/givewp-official/items-givewp-core.php:452
+#: includes/givewp-official/items-givewp-core.php:456
+#: includes/givewp-official/items-givewp-core.php:534
+#: includes/givewp-official/items-givewp-core.php:538
+#: includes/givewp-official/items-givewp-core.php:583
+#: includes/givewp-official/items-givewp-core.php:587
+#: includes/givewp-official/items-givewp-core.php:746
+#: includes/givewp-official/items-givewp-core.php:750
 #: includes/items-formfeat.php:232 includes/items-formfeat.php:236
 msgid "Overview"
 msgstr "Übersicht"
 
 #. translators: %s - label of time range, for example "Yesterday"
-#: includes/givewp-official/items-givewp-core.php:410
+#: includes/givewp-official/items-givewp-core.php:422
 #: includes/items-formfeat.php:254
 #, php-format
 msgid "Income %s"
 msgstr "Einnahmen %s"
 
-#: includes/givewp-official/items-givewp-core.php:427
+#: includes/givewp-official/items-givewp-core.php:439
 msgid "Renewal Donations"
 msgstr "Wiederholte Spenden"
 
-#: includes/givewp-official/items-givewp-core.php:431
+#: includes/givewp-official/items-givewp-core.php:443
 msgid "All Renewal Donations"
 msgstr "Alle wiederholten Spenden"
 
 #. translators: %s - label of time range, for example "Yesterday"
-#: includes/givewp-official/items-givewp-core.php:462
+#: includes/givewp-official/items-givewp-core.php:474
 #, php-format
 msgid "Renewal Donations %s"
 msgstr "Wiederholte Spenden %s"
 
-#: includes/givewp-official/items-givewp-core.php:478
+#: includes/givewp-official/items-givewp-core.php:490
 msgid "Donation Methods"
 msgstr "Spendenmethoden"
 
-#: includes/givewp-official/items-givewp-core.php:482
+#: includes/givewp-official/items-givewp-core.php:494
 msgid "Donation Methods - Payment Gateways"
 msgstr "Spendenmethoden - Zahlungs-Gateways"
 
-#: includes/givewp-official/items-givewp-core.php:492
+#: includes/givewp-official/items-givewp-core.php:504
 msgid "All Forms"
 msgstr "Alle Formulare"
 
-#: includes/givewp-official/items-givewp-core.php:496
+#: includes/givewp-official/items-givewp-core.php:508
 msgid "All Forms Overview - Per Form Reports"
 msgstr "Alle Formulare im Überblick - Berichte pro Formular"
 
-#: includes/givewp-official/items-givewp-core.php:509
+#: includes/givewp-official/items-givewp-core.php:521
 msgid "Fee Recovery: Income"
 msgstr "Gebührendeckung: Einnahmen"
 
-#: includes/givewp-official/items-givewp-core.php:513
+#: includes/givewp-official/items-givewp-core.php:525
 msgid "Fee Recovery: Income Reports"
 msgstr "Gebührendeckung: Einnahmen-Berichte"
 
 #. translators: %s - label of time range, for example "Yesterday"
-#: includes/givewp-official/items-givewp-core.php:544
+#: includes/givewp-official/items-givewp-core.php:556
 #, php-format
 msgid "Fee Recovery Income %s"
 msgstr "Gebührendeckung Einnahmen %s"
 
-#: includes/givewp-official/items-givewp-core.php:558
+#: includes/givewp-official/items-givewp-core.php:570
 msgid "Fee Recovery: Conversion"
 msgstr "Gebührendeckung: Umwandlung"
 
-#: includes/givewp-official/items-givewp-core.php:562
+#: includes/givewp-official/items-givewp-core.php:574
 msgid "Fee Recovery: Conversion Reports"
 msgstr "Gebührendeckung: Umwandlungs-Berichte"
 
 #. translators: %s - label of time range, for example "Yesterday"
-#: includes/givewp-official/items-givewp-core.php:593
+#: includes/givewp-official/items-givewp-core.php:605
 #, php-format
 msgid "Fee Recovery Conversion %s"
 msgstr "Gebührendeckung Umwandlung %s"
 
-#: includes/givewp-official/items-givewp-core.php:612
+#: includes/givewp-official/items-givewp-core.php:624
 msgid "Gift Aid Donations"
 msgstr "Geschenk-Hilfe-Spenden"
 
-#: includes/givewp-official/items-givewp-core.php:616
+#: includes/givewp-official/items-givewp-core.php:628
 msgid "All Gift Aid Donations"
 msgstr "Alle Geschenk-Hilfe-Spenden"
 
-#: includes/givewp-official/items-givewp-core.php:634
+#: includes/givewp-official/items-givewp-core.php:646
 msgid "All Tributes related Reports"
 msgstr "Alle Tribute-bezogenen Berichte"
 
-#: includes/givewp-official/items-givewp-core.php:644
+#: includes/givewp-official/items-givewp-core.php:656
 msgid "Tribute Donations"
 msgstr "Tribute-Spenden"
 
-#: includes/givewp-official/items-givewp-core.php:648
+#: includes/givewp-official/items-givewp-core.php:660
 msgid "All Tribute Donations"
 msgstr "Alle Tribute-Spenden"
 
-#: includes/givewp-official/items-givewp-core.php:658
-#: includes/givewp-official/items-givewp-core.php:662
+#: includes/givewp-official/items-givewp-core.php:670
+#: includes/givewp-official/items-givewp-core.php:674
 msgid "Mail a Card"
 msgstr "Eine Karte versenden"
 
-#: includes/givewp-official/items-givewp-core.php:672
-#: includes/givewp-official/items-givewp-core.php:676
+#: includes/givewp-official/items-givewp-core.php:684
+#: includes/givewp-official/items-givewp-core.php:688
 msgid "eCards"
 msgstr "eCards"
 
-#: includes/givewp-official/items-givewp-core.php:701
+#: includes/givewp-official/items-givewp-core.php:713
 msgid "List Reports per Form"
 msgstr "Berichte pro Formular auflisten"
 
-#: includes/givewp-official/items-givewp-core.php:705
+#: includes/givewp-official/items-givewp-core.php:717
 msgid "View full Reports per Form Campaign"
 msgstr "Vollständige Berichte pro Formularkampagne anzeigen"
 
-#: includes/givewp-official/items-givewp-core.php:725
+#: includes/givewp-official/items-givewp-core.php:737
 msgid "Full Report for Form Campaign"
 msgstr "Vollständiger Bericht für Formularkampagne"
 
 #. translators: %s - label of time range, for example "Yesterday"
-#: includes/givewp-official/items-givewp-core.php:756
+#: includes/givewp-official/items-givewp-core.php:768
 #, php-format
 msgid "Income %s for"
 msgstr "Einkommen %s für"
 
-#: includes/givewp-official/items-givewp-core.php:782
+#: includes/givewp-official/items-givewp-core.php:794
 msgid "Campaigns (Forms)"
 msgstr "Kampagnen (Formulare)"
 
-#: includes/givewp-official/items-givewp-core.php:786
+#: includes/givewp-official/items-givewp-core.php:798
 msgid "Campaigns - Donation Forms"
 msgstr "Kampagnen - Spendenformulare"
 
-#: includes/givewp-official/items-givewp-core.php:797
-#: includes/givewp-official/items-givewp-core.php:801
+#: includes/givewp-official/items-givewp-core.php:809
+#: includes/givewp-official/items-givewp-core.php:813
 msgid "All Donation Forms"
 msgstr "Alle Spendenformulare"
 
-#: includes/givewp-official/items-givewp-core.php:810
-#: includes/givewp-official/items-givewp-core.php:814
+#: includes/givewp-official/items-givewp-core.php:822
+#: includes/givewp-official/items-givewp-core.php:826
 msgid "New Donation Form"
 msgstr "Neues Spendenformular"
 
-#: includes/givewp-official/items-givewp-core.php:826
-#: includes/givewp-official/items-givewp-core.php:830
+#: includes/givewp-official/items-givewp-core.php:838
+#: includes/givewp-official/items-givewp-core.php:842
 msgid "Campaign Categories"
 msgstr "Kampagnen Kategorien"
 
-#: includes/givewp-official/items-givewp-core.php:844
-#: includes/givewp-official/items-givewp-core.php:848
+#: includes/givewp-official/items-givewp-core.php:856
+#: includes/givewp-official/items-givewp-core.php:860
 msgid "Campaign Tags"
 msgstr "Kampagnen Schlagwörter"
 
-#: includes/givewp-official/items-givewp-core.php:878
+#: includes/givewp-official/items-givewp-core.php:890
 msgid "Edit Donation Forms"
 msgstr "Spendenformulare bearbeiten"
 
-#: includes/givewp-official/items-givewp-core.php:882
+#: includes/givewp-official/items-givewp-core.php:894
 msgid "Edit Give Donation Forms"
 msgstr "Give-Spendenformulare bearbeiten"
 
-#: includes/givewp-official/items-givewp-core.php:892
+#: includes/givewp-official/items-givewp-core.php:904
 msgid "Filter Per Goal"
 msgstr "Filter nach Ziel"
 
-#: includes/givewp-official/items-givewp-core.php:896
+#: includes/givewp-official/items-givewp-core.php:908
 msgid "Filter Per Campaign Goal"
 msgstr "Filter pro Kampagnenziel"
 
-#: includes/givewp-official/items-givewp-core.php:905
+#: includes/givewp-official/items-givewp-core.php:917
 msgid "Goal Achieved"
 msgstr "Ziel erreicht"
 
-#: includes/givewp-official/items-givewp-core.php:909
+#: includes/givewp-official/items-givewp-core.php:921
 msgid "Campaign Goal Achieved"
 msgstr "Kampagnenziel erreicht"
 
-#: includes/givewp-official/items-givewp-core.php:918
+#: includes/givewp-official/items-givewp-core.php:930
 msgid "Goal In Progress"
 msgstr "Ziel im Gange"
 
-#: includes/givewp-official/items-givewp-core.php:922
+#: includes/givewp-official/items-givewp-core.php:934
 msgid "Campaign Goal In Progress"
 msgstr "Kampagnenziel im Gange"
 
-#: includes/givewp-official/items-givewp-core.php:931
+#: includes/givewp-official/items-givewp-core.php:943
 msgid "Goal Not Set"
 msgstr "Ziel nicht festgelegt"
 
-#: includes/givewp-official/items-givewp-core.php:935
+#: includes/givewp-official/items-givewp-core.php:947
 msgid "Campaign Goal Not Set"
 msgstr "Kampagnenziel nicht festgelegt"
 
-#: includes/givewp-official/items-givewp-core.php:944
+#: includes/givewp-official/items-givewp-core.php:956
 msgid "Any Goal Status"
 msgstr "Jeder Zielstatus"
 
-#: includes/givewp-official/items-givewp-core.php:948
+#: includes/givewp-official/items-givewp-core.php:960
 msgid "Any Campaign Goal Status"
 msgstr "Jeder Kampagnenzielstatus"
 
-#: includes/givewp-official/items-givewp-core.php:982
 #: includes/givewp-official/items-givewp-core.php:994
+#: includes/givewp-official/items-givewp-core.php:1006
 msgid "Edit Form"
 msgstr "Formular bearbeiten"
 
-#: includes/givewp-official/items-givewp-core.php:998
+#: includes/givewp-official/items-givewp-core.php:1010
 msgid "Edit Form in Campaign Form Builder"
 msgstr "Formular im Kampagnen-Formular-Builder bearbeiten"
 
-#: includes/givewp-official/items-givewp-core.php:1012
+#: includes/givewp-official/items-givewp-core.php:1024
 #: includes/items-formfeat.php:290
 msgid "View Frontend"
 msgstr "Frontend anzeigen"
 
-#: includes/givewp-official/items-givewp-core.php:1016
+#: includes/givewp-official/items-givewp-core.php:1028
 #: includes/items-formfeat.php:294
 msgid "View Form on Frontend (Live Preview)"
 msgstr "Formular im Frontend anzeigen (Live-Vorschau)"
 
-#: includes/givewp-official/items-givewp-core.php:1028
+#: includes/givewp-official/items-givewp-core.php:1040
 msgid "Donations for this Form"
 msgstr "Spenden für dieses Formular"
 
-#: includes/givewp-official/items-givewp-core.php:1032
+#: includes/givewp-official/items-givewp-core.php:1044
 msgid "Donations for this specific Form"
 msgstr "Spenden für dieses spezielle Formular"
 
-#: includes/givewp-official/items-givewp-core.php:1042
+#: includes/givewp-official/items-givewp-core.php:1054
 msgid "Donors for this Form"
 msgstr "Spender für dieses Formular"
 
-#: includes/givewp-official/items-givewp-core.php:1046
+#: includes/givewp-official/items-givewp-core.php:1058
 msgid "Donors for this specific Form"
 msgstr "Spender für dieses spezielle Formular"
 
-#: includes/givewp-official/items-givewp-core.php:1058
+#: includes/givewp-official/items-givewp-core.php:1070
 msgid "Subscriptions for this Form"
 msgstr "Abonnements für dieses Formular"
 
-#: includes/givewp-official/items-givewp-core.php:1062
+#: includes/givewp-official/items-givewp-core.php:1074
 msgid "Subscriptions for this specific Form"
 msgstr "Abonnements für dieses spezifische Formular"
 
-#: includes/givewp-official/items-givewp-core.php:1074
+#: includes/givewp-official/items-givewp-core.php:1086
 msgid "Reports for this Form"
 msgstr "Berichte für dieses Formular"
 
-#: includes/givewp-official/items-givewp-core.php:1078
+#: includes/givewp-official/items-givewp-core.php:1090
 msgid "Reports for this specific Form"
 msgstr "Berichte für dieses spezielle Formular"
 
-#: includes/givewp-official/items-givewp-core.php:1120
+#: includes/givewp-official/items-givewp-core.php:1132
 msgid "Donation Pages"
 msgstr "Spendenseiten"
 
-#: includes/givewp-official/items-givewp-core.php:1124
+#: includes/givewp-official/items-givewp-core.php:1136
 msgid "Edit and Preview Give Donation Pages"
 msgstr "Bearbeitung und Vorschau von Spendenseiten"
 
-#: includes/givewp-official/items-givewp-core.php:1146
+#: includes/givewp-official/items-givewp-core.php:1158
 msgid "Edit and Preview Page"
 msgstr "Seitenvorschau/ -bearbeitung"
 
-#: includes/givewp-official/items-givewp-core.php:1155
+#: includes/givewp-official/items-givewp-core.php:1167
 msgid "Live Preview"
 msgstr "Live-Vorschau"
 
-#: includes/givewp-official/items-givewp-core.php:1159
+#: includes/givewp-official/items-givewp-core.php:1171
 msgid "Live Preview Page"
 msgstr "Seite-Live-Vorschau"
 
-#: includes/givewp-official/items-givewp-core.php:1168
-#: includes/givewp-official/items-givewp-core.php:1172
+#: includes/givewp-official/items-givewp-core.php:1180
+#: includes/givewp-official/items-givewp-core.php:1184
 msgid "Edit Page"
 msgstr "Seite bearbeiten"
 
-#: includes/givewp-official/items-givewp-core.php:1222
-#: includes/givewp-official/items-givewp-core.php:1226
+#: includes/givewp-official/items-givewp-core.php:1234
+#: includes/givewp-official/items-givewp-core.php:1238
 msgid "General"
 msgstr "Allgemein"
 
-#: includes/givewp-official/items-givewp-core.php:1235
-#: includes/givewp-official/items-givewp-core.php:1239
+#: includes/givewp-official/items-givewp-core.php:1247
+#: includes/givewp-official/items-givewp-core.php:1251
 msgid "General Settings"
 msgstr "Allgemeine Einstellungen"
 
-#: includes/givewp-official/items-givewp-core.php:1248
-#: includes/givewp-official/items-givewp-core.php:1252
+#: includes/givewp-official/items-givewp-core.php:1260
+#: includes/givewp-official/items-givewp-core.php:1264
 msgid "Currency Settings"
 msgstr "Währungseinstellungen"
 
-#: includes/givewp-official/items-givewp-core.php:1261
+#: includes/givewp-official/items-givewp-core.php:1273
 msgid "Access Control"
 msgstr "Zugriffskontrolle"
 
-#: includes/givewp-official/items-givewp-core.php:1265
+#: includes/givewp-official/items-givewp-core.php:1277
 msgid "Access Control Settings"
 msgstr "Zugriffseinstellungen"
 
-#: includes/givewp-official/items-givewp-core.php:1274
+#: includes/givewp-official/items-givewp-core.php:1286
 msgid "Sequential Ordering"
 msgstr "Sequentielle Bestellung"
 
-#: includes/givewp-official/items-givewp-core.php:1278
+#: includes/givewp-official/items-givewp-core.php:1290
 msgid "Sequential Ordering Settings"
 msgstr "Einstellungen für die sequentielle Bestellung"
 
-#: includes/givewp-official/items-givewp-core.php:1288
-#: includes/givewp-official/items-givewp-core.php:1292
+#: includes/givewp-official/items-givewp-core.php:1300
+#: includes/givewp-official/items-givewp-core.php:1304
 msgid "Payment Gateways"
 msgstr "Zahlungsarten"
 
-#: includes/givewp-official/items-givewp-core.php:1301
-#: includes/givewp-official/items-givewp-core.php:1305
+#: includes/givewp-official/items-givewp-core.php:1313
+#: includes/givewp-official/items-givewp-core.php:1317
 msgid "Gateways Settings"
 msgstr "Gateways Einstellungen"
 
-#: includes/givewp-official/items-givewp-core.php:1314
+#: includes/givewp-official/items-givewp-core.php:1326
 msgid "PayPal Standard"
 msgstr "PayPal Standard"
 
-#: includes/givewp-official/items-givewp-core.php:1318
+#: includes/givewp-official/items-givewp-core.php:1330
 msgid "PayPal Standard Settings"
 msgstr "PayPal Standard Einstellungen"
 
-#: includes/givewp-official/items-givewp-core.php:1327
+#: includes/givewp-official/items-givewp-core.php:1339
 msgid "Offline Donations"
 msgstr "Offline Spenden"
 
-#: includes/givewp-official/items-givewp-core.php:1331
+#: includes/givewp-official/items-givewp-core.php:1343
 msgid "Offline Donations Settings"
 msgstr "Einstellungen für Offline-Spenden"
 
-#: includes/givewp-official/items-givewp-core.php:1378
-#: includes/givewp-official/items-givewp-core.php:1382
+#: includes/givewp-official/items-givewp-core.php:1390
+#: includes/givewp-official/items-givewp-core.php:1394
 msgid "Display Options"
 msgstr "Anzeigeoptionen"
 
-#: includes/givewp-official/items-givewp-core.php:1391
-#: includes/givewp-official/items-givewp-core.php:1395
+#: includes/givewp-official/items-givewp-core.php:1403
+#: includes/givewp-official/items-givewp-core.php:1407
 msgid "Display Settings"
 msgstr "Anzeigeeinstellungen"
 
-#: includes/givewp-official/items-givewp-core.php:1404
-#: includes/givewp-official/items-givewp-core.php:1408
+#: includes/givewp-official/items-givewp-core.php:1416
+#: includes/givewp-official/items-givewp-core.php:1420
 msgid "Post Types"
 msgstr "Inhaltstypen"
 
-#: includes/givewp-official/items-givewp-core.php:1417
-#: includes/givewp-official/items-givewp-core.php:1421
+#: includes/givewp-official/items-givewp-core.php:1429
+#: includes/givewp-official/items-givewp-core.php:1433
 msgid "Taxonomies"
 msgstr "Taxonomien"
 
-#: includes/givewp-official/items-givewp-core.php:1430
-#: includes/givewp-official/items-givewp-core.php:1434
+#: includes/givewp-official/items-givewp-core.php:1442
+#: includes/givewp-official/items-givewp-core.php:1446
 msgid "Terms and Conditions"
 msgstr "Allgemeine Geschäftsbedingungen"
 
-#: includes/givewp-official/items-givewp-core.php:1444
+#: includes/givewp-official/items-givewp-core.php:1456
 msgid "Emails"
 msgstr "E-Mails"
 
-#: includes/givewp-official/items-givewp-core.php:1448
+#: includes/givewp-official/items-givewp-core.php:1460
 msgid "Edit and Customize Email Templates"
 msgstr "Bearbeiten und Anpassen von E-Mail-Vorlagen"
 
-#: includes/givewp-official/items-givewp-core.php:1457
+#: includes/givewp-official/items-givewp-core.php:1469
 msgid "Donor Emails"
 msgstr "Spender-E-Mails"
 
-#: includes/givewp-official/items-givewp-core.php:1461
+#: includes/givewp-official/items-givewp-core.php:1473
 msgid "Edit and Customize Donor Emails"
 msgstr "Bearbeiten und Anpassen von Spender-E-Mails"
 
-#: includes/givewp-official/items-givewp-core.php:1470
+#: includes/givewp-official/items-givewp-core.php:1482
 msgid "Admin Emails"
 msgstr "Admin E-Mails"
 
-#: includes/givewp-official/items-givewp-core.php:1474
+#: includes/givewp-official/items-givewp-core.php:1486
 msgid "Edit and Customize Admin Emails"
 msgstr "Bearbeiten und Anpassen von Admin-E-Mails"
 
-#: includes/givewp-official/items-givewp-core.php:1483
-#: includes/givewp-official/items-givewp-core.php:1487
+#: includes/givewp-official/items-givewp-core.php:1495
+#: includes/givewp-official/items-givewp-core.php:1499
 msgid "Email Settings"
 msgstr "E-Mail Einstellungen"
 
-#: includes/givewp-official/items-givewp-core.php:1496
-#: includes/givewp-official/items-givewp-core.php:1500
+#: includes/givewp-official/items-givewp-core.php:1508
+#: includes/givewp-official/items-givewp-core.php:1512
 msgid "Contact Information"
 msgstr "Kontaktinformationen"
 
-#: includes/givewp-official/items-givewp-core.php:1511
+#: includes/givewp-official/items-givewp-core.php:1523
 msgid "Advanced"
 msgstr "Erweitert"
 
-#: includes/givewp-official/items-givewp-core.php:1524
-#: includes/givewp-official/items-givewp-core.php:1528
+#: includes/givewp-official/items-givewp-core.php:1536
+#: includes/givewp-official/items-givewp-core.php:1540
 msgid "Advanced Options"
 msgstr "Erweiterte Optionen"
 
-#: includes/givewp-official/items-givewp-core.php:1537
-#: includes/givewp-official/items-givewp-core.php:1541
-#: includes/givewp-official/items-givewp-core.php:1748
+#: includes/givewp-official/items-givewp-core.php:1549
+#: includes/givewp-official/items-givewp-core.php:1553
+#: includes/givewp-official/items-givewp-core.php:1760
 msgid "Stripe"
 msgstr "Stripe"
 
-#: includes/givewp-official/items-givewp-core.php:1551
-#: includes/givewp-official/items-givewp-core.php:1555
+#: includes/givewp-official/items-givewp-core.php:1563
+#: includes/givewp-official/items-givewp-core.php:1567
 msgid "Licenses"
 msgstr "Lizenzen"
 
-#: includes/givewp-official/items-givewp-core.php:1567
+#: includes/givewp-official/items-givewp-core.php:1579
 msgid "Toolbar Options"
 msgstr "Toolbar-Optionen"
 
-#: includes/givewp-official/items-givewp-core.php:1571
+#: includes/givewp-official/items-givewp-core.php:1583
 msgid "Toolbar Options and Tweaks"
 msgstr "Toolbar-Optionen und -Anpassungen"
 
-#: includes/givewp-official/items-givewp-core.php:1598
-#: includes/givewp-official/items-givewp-core.php:1602
+#: includes/givewp-official/items-givewp-core.php:1610
+#: includes/givewp-official/items-givewp-core.php:1614
 msgid "Export"
 msgstr "Export"
 
-#: includes/givewp-official/items-givewp-core.php:1611
+#: includes/givewp-official/items-givewp-core.php:1623
 msgid "All Tasks"
 msgstr "Alle Aufgaben"
 
-#: includes/givewp-official/items-givewp-core.php:1615
+#: includes/givewp-official/items-givewp-core.php:1627
 msgid "All Export Tasks"
 msgstr "Alle Exportaufgaben"
 
-#: includes/givewp-official/items-givewp-core.php:1624
+#: includes/givewp-official/items-givewp-core.php:1636
 msgid "Donation History as CSV"
 msgstr "Spendenhistorie als CSV"
 
-#: includes/givewp-official/items-givewp-core.php:1628
+#: includes/givewp-official/items-givewp-core.php:1640
 msgid "Export Donation History as CSV File"
 msgstr "Spendenhistorie als CSV-Datei exportieren"
 
-#: includes/givewp-official/items-givewp-core.php:1642
+#: includes/givewp-official/items-givewp-core.php:1654
 msgid "Donations &amp; Income as PDF"
 msgstr "Spenden &amp; Einnahmen als PDF"
 
-#: includes/givewp-official/items-givewp-core.php:1646
+#: includes/givewp-official/items-givewp-core.php:1658
 msgid "Export Donations and Income as PDF File"
 msgstr "Spenden und Einnahmen als PDF-Datei exportieren"
 
-#: includes/givewp-official/items-givewp-core.php:1656
-#: includes/givewp-official/items-givewp-core.php:1660
+#: includes/givewp-official/items-givewp-core.php:1668
+#: includes/givewp-official/items-givewp-core.php:1672
 msgid "Import"
 msgstr "Import"
 
-#: includes/givewp-official/items-givewp-core.php:1682
+#: includes/givewp-official/items-givewp-core.php:1694
 msgid "Import Give Settings"
 msgstr "Give Einstellungen importieren"
 
-#: includes/givewp-official/items-givewp-core.php:1686
+#: includes/givewp-official/items-givewp-core.php:1698
 msgid "Import Give Settings from JSON File"
 msgstr "Give Einstellungen aus JSON-Datei importieren"
 
-#: includes/givewp-official/items-givewp-core.php:1696
-#: includes/givewp-official/items-givewp-core.php:1700
+#: includes/givewp-official/items-givewp-core.php:1708
+#: includes/givewp-official/items-givewp-core.php:1712
 msgid "Logs"
 msgstr "Protokolle"
 
-#: includes/givewp-official/items-givewp-core.php:1709
+#: includes/givewp-official/items-givewp-core.php:1721
 msgid "Payment Errors"
 msgstr "Zahlungsfehler"
 
-#: includes/givewp-official/items-givewp-core.php:1713
+#: includes/givewp-official/items-givewp-core.php:1725
 msgid "Logs of Payment Gateway Errors"
 msgstr "Protokolle von Fehlern des Zahlungsdienstleisters"
 
-#: includes/givewp-official/items-givewp-core.php:1722
+#: includes/givewp-official/items-givewp-core.php:1734
 msgid "API Requests"
 msgstr "API-Anfragen"
 
-#: includes/givewp-official/items-givewp-core.php:1726
+#: includes/givewp-official/items-givewp-core.php:1738
 msgid "Logs of API Requests"
 msgstr "Protokolle von API-Anfragen"
 
-#: includes/givewp-official/items-givewp-core.php:1735
-#: includes/givewp-official/items-givewp-core.php:1818
+#: includes/givewp-official/items-givewp-core.php:1747
+#: includes/givewp-official/items-givewp-core.php:1830
 msgid "Updates"
 msgstr "Updates"
 
-#: includes/givewp-official/items-givewp-core.php:1739
+#: includes/givewp-official/items-givewp-core.php:1751
 msgid "Logs of Updates"
 msgstr "Protokolle von Aktualisierungen"
 
-#: includes/givewp-official/items-givewp-core.php:1752
+#: includes/givewp-official/items-givewp-core.php:1764
 msgid "Logs of Stripe Payment Gateway"
 msgstr "Protokolle des Stripe-Zahlungsdienstleisters"
 
-#: includes/givewp-official/items-givewp-core.php:1762
-#: includes/givewp-official/items-givewp-core.php:1766
+#: includes/givewp-official/items-givewp-core.php:1774
+#: includes/givewp-official/items-givewp-core.php:1778
 msgid "Generate API Keys"
 msgstr "Generieren von API-Schlüsseln"
 
-#: includes/givewp-official/items-givewp-core.php:1776
+#: includes/givewp-official/items-givewp-core.php:1788
 msgid "Data Tools"
 msgstr "Datenwerkzeuge"
 
-#: includes/givewp-official/items-givewp-core.php:1780
+#: includes/givewp-official/items-givewp-core.php:1792
 msgid "Data Tools (Recounts etc.)"
 msgstr "Datenwerkzeuge (Zählungen etc.)"
 
-#: includes/givewp-official/items-givewp-core.php:1790
+#: includes/givewp-official/items-givewp-core.php:1802
 msgid "System Info"
 msgstr "Systeminformationen"
 
-#: includes/givewp-official/items-givewp-core.php:1794
+#: includes/givewp-official/items-givewp-core.php:1806
 msgid "Get System Report for Support and Debugging"
 msgstr "Systembericht für Support und Debugging anfordern"
 
-#: includes/givewp-official/items-givewp-core.php:1822
+#: includes/givewp-official/items-givewp-core.php:1834
 msgid "List of available Add-On Updates"
 msgstr "Liste der verfügbaren Add-On-Aktualisierungen"
 
-#: includes/givewp-official/items-givewp-core.php:1831
+#: includes/givewp-official/items-givewp-core.php:1843
 msgid "Run Updates"
 msgstr "Aktualisierungen durchführen"
 
-#: includes/givewp-official/items-givewp-core.php:1835
+#: includes/givewp-official/items-givewp-core.php:1847
 msgid "Run Add-On Updates Now"
 msgstr "Führe jetzt Add-On-Aktualisierungen durch"
 
-#: includes/givewp-official/items-givewp-core.php:1844
-#: includes/givewp-official/items-givewp-core.php:1848
+#: includes/givewp-official/items-givewp-core.php:1856
+#: includes/givewp-official/items-givewp-core.php:1860
 msgid "Update Logs"
 msgstr "Aktualisierungsprotokolle"
 
-#: includes/givewp-official/items-givewp-core.php:1857
-#: includes/givewp-official/items-givewp-core.php:1861
+#: includes/givewp-official/items-givewp-core.php:1869
+#: includes/givewp-official/items-givewp-core.php:1873
 msgid "Add-On Licenses"
 msgstr "Add-On-Lizenzen"
 
 #. translators: %s - Word "Give"
-#: includes/givewp-official/items-givewp-core.php:1920
+#: includes/givewp-official/items-givewp-core.php:1932
 #, php-format
 msgid "Getting Started - Learn %s Tutorials"
 msgstr "Erste Schritte - %s lernen Anleitungen"
 
-#: includes/givewp-official/items-givewp-core.php:1950
+#: includes/givewp-official/items-givewp-core.php:1962
 msgid "Bug Reports &amp; Feature Requests"
 msgstr "Fehlerberichte &amp; Feature-Anfragen"
 
-#: includes/givewp-official/items-givewp-core.php:1955
+#: includes/givewp-official/items-givewp-core.php:1967
 msgid "Bug Reports &amp; Feature Requests via GitHub Issues"
 msgstr "Fehlerberichte &amp; Feature-Anfragen via GitHub Issues"
 
-#: includes/givewp-official/items-givewp-core.php:1981
+#: includes/givewp-official/items-givewp-core.php:1993
 msgid "Snippet Library"
 msgstr "Snippet-Bibliothek"
 
-#: includes/givewp-official/items-givewp-core.php:1986
+#: includes/givewp-official/items-givewp-core.php:1998
 msgid "Snippet Library for Customizing Give Donations"
 msgstr "Snippet-Bibliothek zum Anpassen von Give Spenden"
 
-#: includes/givewp-official/items-givewp-core.php:2028
-#: includes/givewp-official/items-givewp-core.php:2033
+#: includes/givewp-official/items-givewp-core.php:2040
+#: includes/givewp-official/items-givewp-core.php:2045
 msgid "Give Stories"
 msgstr "Give Geschichten"
 
-#: includes/givewp-official/items-givewp-core.php:2042
-#: includes/givewp-official/items-givewp-core.php:2047
+#: includes/givewp-official/items-givewp-core.php:2054
+#: includes/givewp-official/items-givewp-core.php:2059
 msgid "Giving Tuesday"
 msgstr "Spendabler Dienstag"
 
-#: includes/givewp-official/items-givewp-core.php:2056
-#: includes/givewp-official/items-givewp-core.php:2061
+#: includes/givewp-official/items-givewp-core.php:2068
+#: includes/givewp-official/items-givewp-core.php:2073
 msgid "Nonprofit 101"
 msgstr "Gemeinnützig A-Z"
 
-#: includes/givewp-official/items-givewp-core.php:2083
+#: includes/givewp-official/items-givewp-core.php:2095
 msgid "About Give Donations"
 msgstr "Über Give Spenden"
 
-#: includes/givewp-official/items-givewp-core.php:2087
+#: includes/givewp-official/items-givewp-core.php:2099
 msgid "About Give Donations - Getting Started"
 msgstr "Über Give Spenden - Erste Schritte"
 
-#: includes/givewp-official/items-givewp-core.php:2096
+#: includes/givewp-official/items-givewp-core.php:2108
 msgid "Getting Started"
 msgstr "Erste Schritte"
 
-#: includes/givewp-official/items-givewp-core.php:2100
+#: includes/givewp-official/items-givewp-core.php:2112
 msgid "Getting Started with Give Donations"
 msgstr "Erste Schritte mit Give Spenden"
 
-#: includes/givewp-official/items-givewp-core.php:2109
+#: includes/givewp-official/items-givewp-core.php:2121
 msgid "What's New"
 msgstr "Was ist neu?"
 
-#: includes/givewp-official/items-givewp-core.php:2113
+#: includes/givewp-official/items-givewp-core.php:2125
 msgid "What's New - Changelog"
 msgstr "Was ist neu - Versionshistorie"
 
-#: includes/givewp-official/items-givewp-core.php:2122
-#: includes/givewp-official/items-givewp-core.php:2126
+#: includes/givewp-official/items-givewp-core.php:2134
+#: includes/givewp-official/items-givewp-core.php:2138
 msgid "Credits &amp; Contributors"
 msgstr "Dank &amp; Mitwirkende"
 
-#: includes/givewp-official/items-givewp-core.php:2135
+#: includes/givewp-official/items-givewp-core.php:2147
 msgid "Translations"
 msgstr "Übersetzungen"
 
-#: includes/givewp-official/items-givewp-core.php:2139
+#: includes/givewp-official/items-givewp-core.php:2151
 msgid "Help Translate Give Donations Plugin"
 msgstr "Hilf beim Übersetzen des Give Spenden-Plugins"
 
-#: includes/givewp-official/items-givewp-core.php:2168
+#: includes/givewp-official/items-givewp-core.php:2180
 msgid "Give Donation Form"
 msgstr "Give Spendenformular"
 
-#: includes/givewp-official/items-givewp-core.php:2171
+#: includes/givewp-official/items-givewp-core.php:2183
 msgid "Give Donation Form/ Campaign"
 msgstr "Give Spendenformular/ -kampagne"
 
-#: includes/givewp-official/items-givewp-core.php:2198
+#: includes/givewp-official/items-givewp-core.php:2210
 msgid "Donation Managers"
 msgstr "Spendenmanager"
 
-#: includes/givewp-official/items-givewp-core.php:2203
+#: includes/givewp-official/items-givewp-core.php:2215
 msgid "Give Donation Managers"
 msgstr "Give Spendenmanager"
 
-#: includes/givewp-official/items-givewp-core.php:2219
+#: includes/givewp-official/items-givewp-core.php:2231
 msgid "Donation Workers"
 msgstr "Spenden-Mitarbeiter"
 
-#: includes/givewp-official/items-givewp-core.php:2224
+#: includes/givewp-official/items-givewp-core.php:2236
 msgid "Give Donation Workers"
 msgstr "Give Spenden-Mitarbeiter"
 
-#: includes/givewp-official/items-givewp-core.php:2240
+#: includes/givewp-official/items-givewp-core.php:2252
 msgid "Donation Accountants"
 msgstr "Spendenbuchhalter"
 
-#: includes/givewp-official/items-givewp-core.php:2245
+#: includes/givewp-official/items-givewp-core.php:2257
 msgid "Give Donation Accountants"
 msgstr "Give Spendenbuchhalter"
 
-#: includes/givewp-official/items-givewp-core.php:2266
+#: includes/givewp-official/items-givewp-core.php:2278
 msgid "Give Donors"
 msgstr "Give Spender"
 
@@ -2115,6 +2117,13 @@ msgstr "%s Updates"
 msgid "%s Permissions &amp; Roles"
 msgstr "%s Berechtigungen &amp; Rollen"
 
+#. translators: %s - Word Give
+#: includes/tweaks.php:58
+#, php-format
+msgctxt "Admin submenu title"
+msgid "%s Changelog"
+msgstr "%s Versionshistorie"
+
 #: toolbar-extras-givewp.php:245
 #, php-format
 msgid ""
@@ -2187,6 +2196,23 @@ msgstr "David Decker - DECKERWEB"
 #. Author URI of the plugin/theme
 msgid "https://toolbarextras.com/"
 msgstr "https://toolbarextras.com/"
+
+#, fuzzy
+#~| msgctxt "Admin menu title"
+#~| msgid "Give Toolbar"
+#~ msgctxt "Admin submenu title"
+#~ msgid "Give Toolbar"
+#~ msgstr "Give Toolbar"
+
+#, fuzzy
+#~| msgid "What's New - Changelog"
+#~ msgid "Give Changelog"
+#~ msgstr "Was ist neu - Versionshistorie"
+
+#, fuzzy
+#~| msgid "All Roles"
+#~ msgid "All Modules"
+#~ msgstr "Alle Benutzerrollen"
 
 #~ msgid "Toolbar Extras for MainWP"
 #~ msgstr "Toolbar Extras für MainWP"

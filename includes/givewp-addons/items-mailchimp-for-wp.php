@@ -27,6 +27,11 @@ add_action( 'admin_bar_menu', 'ddw_tbexgive_aoitems_mailchimp_for_wp', 100 );
  */
 function ddw_tbexgive_aoitems_mailchimp_for_wp( $admin_bar ) {
 
+	/** Bail early if no proper permissions */
+	if ( ! current_user_can( 'manage_options' ) ) {
+		return $admin_bar;
+	}
+
 	/** Use Add-On hook place */
 	add_filter( 'tbexgive/filter/is_givewp_addon', '__return_empty_string' );
 

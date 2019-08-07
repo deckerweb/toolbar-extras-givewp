@@ -45,218 +45,230 @@ function ddw_tbexgive_items_givewp_core( $admin_bar ) {
 
 
 	/** 1) Donations - Payment History */
-	$admin_bar->add_node(
-		array(
-			'id'     => 'givewp-donations',
-			'parent' => 'group-donation-campaigns',
-			'title'  => esc_attr__( 'Donation Transactions', 'toolbar-extras-givewp' ),
-			'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-payment-history' ) ),
-			'meta'   => array(
-				'target' => '',
-				'title'  => esc_attr__( 'Donation Transactions - Payment History', 'toolbar-extras-givewp' ),
-			)
-		)
-	);
+	if ( current_user_can( 'edit_give_payments' ) ) {
 
 		$admin_bar->add_node(
 			array(
-				'id'     => 'givewp-donations-all',
-				'parent' => 'givewp-donations',
-				'title'  => esc_attr__( 'All Donations', 'toolbar-extras-givewp' ),
+				'id'     => 'givewp-donations',
+				'parent' => 'group-donation-campaigns',
+				'title'  => esc_attr__( 'Donation Transactions', 'toolbar-extras-givewp' ),
 				'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-payment-history' ) ),
 				'meta'   => array(
 					'target' => '',
-					'title'  => esc_attr__( 'All Donations', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'Donation Transactions - Payment History', 'toolbar-extras-givewp' ),
 				)
 			)
 		);
 
-		$admin_bar->add_node(
-			array(
-				'id'     => 'givewp-donations-abandoned',
-				'parent' => 'givewp-donations',
-				'title'  => esc_attr__( 'Abandoned Donations', 'toolbar-extras-givewp' ),
-				'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-payment-history&status=abandoned' ) ),
-				'meta'   => array(
-					'target' => '',
-					'title'  => esc_attr__( 'Abandoned Donations', 'toolbar-extras-givewp' ),
-				)
-			)
-		);
-
-		$admin_bar->add_node(
-			array(
-				'id'     => 'givewp-donations-import',
-				'parent' => 'givewp-donations',
-				'title'  => esc_attr__( 'Import Donations', 'toolbar-extras-givewp' ),
-				'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-tools&tab=import&importer-type=import_donations' ) ),
-				'meta'   => array(
-					'target' => '',
-					'title'  => esc_attr__( 'Import Donations from CSV File', 'toolbar-extras-givewp' ),
-				)
-			)
-		);
-
-		/**
-		 * Donations per Form/ Campaign.
-		 *   Proceed only if there are any Forms/ Campaigns.
-		 */
-		if ( $give_forms ) {
-
-			/** Add group */
-			$admin_bar->add_group(
+			$admin_bar->add_node(
 				array(
-					'id'     => 'group-givewp-donations-forms',
+					'id'     => 'givewp-donations-all',
 					'parent' => 'givewp-donations',
+					'title'  => esc_attr__( 'All Donations', 'toolbar-extras-givewp' ),
+					'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-payment-history' ) ),
+					'meta'   => array(
+						'target' => '',
+						'title'  => esc_attr__( 'All Donations', 'toolbar-extras-givewp' ),
+					)
 				)
 			);
 
-				$admin_bar->add_node(
-					array(
-						'id'     => 'givewp-donations-per-form',
-						'parent' => 'group-givewp-donations-forms',
-						'title'  => '<em>' . esc_attr__( 'List Donations per Form', 'toolbar-extras-givewp' ) . ':</em>',
-						'href'   => FALSE,
-						'meta'   => array(
-							'target' => '',
-							'title'  => esc_attr__( 'List all Donations per Form Campaign', 'toolbar-extras-givewp' ),
-						)
+			$admin_bar->add_node(
+				array(
+					'id'     => 'givewp-donations-abandoned',
+					'parent' => 'givewp-donations',
+					'title'  => esc_attr__( 'Abandoned Donations', 'toolbar-extras-givewp' ),
+					'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-payment-history&status=abandoned' ) ),
+					'meta'   => array(
+						'target' => '',
+						'title'  => esc_attr__( 'Abandoned Donations', 'toolbar-extras-givewp' ),
 					)
-				);
-
-				foreach ( $give_forms as $give_form ) {
-
-					$form_title = esc_attr( $give_form->post_title );
-					$form_id    = (int) $give_form->ID;
-
-					$admin_bar->add_node(
-						array(
-							'id'     => 'givewp-donations-per-form-' . $form_id,
-							'parent' => 'group-givewp-donations-forms',
-							'title'  => '&nbsp;&bull; ' . $form_title,
-							'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-payment-history&form_id=' . $form_id ) ),
-							'meta'   => array(
-								'target' => '',
-								'title'  => esc_attr__( 'All Donors for Form Campaign', 'toolbar-extras-givewp' ) . ': ' . $form_title,
-							)
-						)
-					);
-
-				}  // end foreach
-
-		}  // end if
-
-	/** Action Hook: After Give Donations (Transactions) */
-	do_action( 'tbexgive/givewp_donations/after' );
-
-
-	/** 2) Donors */
-	$admin_bar->add_node(
-		array(
-			'id'     => 'givewp-donors',
-			'parent' => 'group-donation-campaigns',
-			'title'  => esc_attr__( 'Donors', 'toolbar-extras-givewp' ),
-			'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-donors' ) ),
-			'meta'   => array(
-				'target' => '',
-				'title'  => esc_attr__( 'All Donors - User Data', 'toolbar-extras-givewp' ),
-			)
-		)
-	);
-
-		/** Donors as Give donor pages */
-		$admin_bar->add_node(
-			array(
-				'id'     => 'givewp-donors-all',
-				'parent' => 'givewp-donors',
-				'title'  => esc_attr__( 'All Donors', 'toolbar-extras-givewp' ),
-				'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-donors' ) ),
-				'meta'   => array(
-					'target' => '',
-					'title'  => esc_attr__( 'All Donors for any Campaign - User Data', 'toolbar-extras-givewp' ),
 				)
-			)
-		);
+			);
 
-		/** Donors as WP user accounts */
-		if ( current_user_can( 'edit_users' ) && current_user_can( 'delete_users' ) ) {
-
-			$give_donors = get_users( array( 'role' => 'give_donor' ) );
-
-			if ( ! empty( $give_donors ) ) {
+			if ( current_user_can( 'manage_give_settings' ) ) {
 
 				$admin_bar->add_node(
 					array(
-						'id'     => 'givewp-donors-wpaccounts',
-						'parent' => 'givewp-donors',
-						'title'  => esc_attr__( 'Donor Users (WP)', 'toolbar-extras-givewp' ),
-						'href'   => esc_url( admin_url( 'users.php?role=give_donor' ) ),
+						'id'     => 'givewp-donations-import',
+						'parent' => 'givewp-donations',
+						'title'  => esc_attr__( 'Import Donations', 'toolbar-extras-givewp' ),
+						'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-tools&tab=import&importer-type=import_donations' ) ),
 						'meta'   => array(
 							'target' => '',
-							'title'  => esc_attr__( 'All Give Donors - WordPress User Accounts', 'toolbar-extras-givewp' ),
+							'title'  => esc_attr__( 'Import Donations from CSV File', 'toolbar-extras-givewp' ),
 						)
 					)
 				);
 
 			}  // end if
 
-		}  // end if
+			/**
+			 * Donations per Form/ Campaign.
+			 *   Proceed only if there are any Forms/ Campaigns.
+			 */
+			if ( $give_forms ) {
 
-		/**
-		 * Donors per Form/ Campaign.
-		 *   Proceed only if there are any Forms/ Campaigns.
-		 */
-		if ( $give_forms ) {
-
-			/** Add group */
-			$admin_bar->add_group(
-				array(
-					'id'     => 'group-givewp-donors-forms',
-					'parent' => 'givewp-donors',
-				)
-			);
-
-				$admin_bar->add_node(
+				/** Add group */
+				$admin_bar->add_group(
 					array(
-						'id'     => 'givewp-donors-per-form',
-						'parent' => 'group-givewp-donors-forms',
-						'title'  => '<em>' . esc_attr__( 'List Donors per Form', 'toolbar-extras-givewp' ) . ':</em>',
-						'href'   => FALSE,
-						'meta'   => array(
-							'target' => '',
-							'title'  => esc_attr__( 'List all Donors per Form Campaign', 'toolbar-extras-givewp' ),
-						)
+						'id'     => 'group-givewp-donations-forms',
+						'parent' => 'givewp-donations',
 					)
 				);
 
-				foreach ( $give_forms as $give_form ) {
-
-					$form_title = esc_attr( $give_form->post_title );
-					$form_id    = (int) $give_form->ID;
-
 					$admin_bar->add_node(
 						array(
-							'id'     => 'givewp-donors-per-form-' . $form_id,
-							'parent' => 'group-givewp-donors-forms',
-							'title'  => '&nbsp;&bull; ' . $form_title,
-							'href'   => esc_url( admin_url( 'edit.php?s&form_id=' . $form_id . '&post_type=' . $type . '&page=give-donors&view=donors' ) ),
+							'id'     => 'givewp-donations-per-form',
+							'parent' => 'group-givewp-donations-forms',
+							'title'  => '<em>' . esc_attr__( 'List Donations per Form', 'toolbar-extras-givewp' ) . ':</em>',
+							'href'   => FALSE,
 							'meta'   => array(
 								'target' => '',
-								'title'  => esc_attr__( 'All Donors for Form Campaign', 'toolbar-extras-givewp' ) . ': ' . $form_title,
+								'title'  => esc_attr__( 'List all Donations per Form Campaign', 'toolbar-extras-givewp' ),
 							)
 						)
 					);
 
-				}  // end foreach
+					foreach ( $give_forms as $give_form ) {
 
-		}  // end if
+						$form_title = esc_attr( $give_form->post_title );
+						$form_id    = (int) $give_form->ID;
+
+						$admin_bar->add_node(
+							array(
+								'id'     => 'givewp-donations-per-form-' . $form_id,
+								'parent' => 'group-givewp-donations-forms',
+								'title'  => '&nbsp;&bull; ' . $form_title,
+								'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-payment-history&form_id=' . $form_id ) ),
+								'meta'   => array(
+									'target' => '',
+									'title'  => esc_attr__( 'All Donors for Form Campaign', 'toolbar-extras-givewp' ) . ': ' . $form_title,
+								)
+							)
+						);
+
+					}  // end foreach
+
+			}  // end if (forms check)
+
+	}  // end if (permission check)
+
+	/** Action Hook: After Give Donations (Transactions) */
+	do_action( 'tbexgive/givewp_donations/after' );
+
+
+	/** 2) Donors */
+	if ( current_user_can( 'view_give_reports' ) ) {
+
+		$admin_bar->add_node(
+			array(
+				'id'     => 'givewp-donors',
+				'parent' => 'group-donation-campaigns',
+				'title'  => esc_attr__( 'Donors', 'toolbar-extras-givewp' ),
+				'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-donors' ) ),
+				'meta'   => array(
+					'target' => '',
+					'title'  => esc_attr__( 'All Donors - User Data', 'toolbar-extras-givewp' ),
+				)
+			)
+		);
+
+			/** Donors as Give donor pages */
+			$admin_bar->add_node(
+				array(
+					'id'     => 'givewp-donors-all',
+					'parent' => 'givewp-donors',
+					'title'  => esc_attr__( 'All Donors', 'toolbar-extras-givewp' ),
+					'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-donors' ) ),
+					'meta'   => array(
+						'target' => '',
+						'title'  => esc_attr__( 'All Donors for any Campaign - User Data', 'toolbar-extras-givewp' ),
+					)
+				)
+			);
+
+			/** Donors as WP user accounts */
+			if ( current_user_can( 'edit_users' ) && current_user_can( 'delete_users' ) ) {
+
+				$give_donors = get_users( array( 'role' => 'give_donor' ) );
+
+				if ( ! empty( $give_donors ) ) {
+
+					$admin_bar->add_node(
+						array(
+							'id'     => 'givewp-donors-wpaccounts',
+							'parent' => 'givewp-donors',
+							'title'  => esc_attr__( 'Donor Users (WP)', 'toolbar-extras-givewp' ),
+							'href'   => esc_url( admin_url( 'users.php?role=give_donor' ) ),
+							'meta'   => array(
+								'target' => '',
+								'title'  => esc_attr__( 'All Give Donors - WordPress User Accounts', 'toolbar-extras-givewp' ),
+							)
+						)
+					);
+
+				}  // end if
+
+			}  // end if
+
+			/**
+			 * Donors per Form/ Campaign.
+			 *   Proceed only if there are any Forms/ Campaigns.
+			 */
+			if ( $give_forms ) {
+
+				/** Add group */
+				$admin_bar->add_group(
+					array(
+						'id'     => 'group-givewp-donors-forms',
+						'parent' => 'givewp-donors',
+					)
+				);
+
+					$admin_bar->add_node(
+						array(
+							'id'     => 'givewp-donors-per-form',
+							'parent' => 'group-givewp-donors-forms',
+							'title'  => '<em>' . esc_attr__( 'List Donors per Form', 'toolbar-extras-givewp' ) . ':</em>',
+							'href'   => FALSE,
+							'meta'   => array(
+								'target' => '',
+								'title'  => esc_attr__( 'List all Donors per Form Campaign', 'toolbar-extras-givewp' ),
+							)
+						)
+					);
+
+					foreach ( $give_forms as $give_form ) {
+
+						$form_title = esc_attr( $give_form->post_title );
+						$form_id    = (int) $give_form->ID;
+
+						$admin_bar->add_node(
+							array(
+								'id'     => 'givewp-donors-per-form-' . $form_id,
+								'parent' => 'group-givewp-donors-forms',
+								'title'  => '&nbsp;&bull; ' . $form_title,
+								'href'   => esc_url( admin_url( 'edit.php?s&form_id=' . $form_id . '&post_type=' . $type . '&page=give-donors&view=donors' ) ),
+								'meta'   => array(
+									'target' => '',
+									'title'  => esc_attr__( 'All Donors for Form Campaign', 'toolbar-extras-givewp' ) . ': ' . $form_title,
+								)
+							)
+						);
+
+					}  // end foreach
+
+			}  // end if (forms check)
+
+	}  // end if (permission check)
 
 	/** Action Hook: After Give Donations Donors */
 	do_action( 'tbexgive/givewp_donors/after' );
 
 
 	/** Add-On: Recurring Donations (Subscriptions) */
-	if ( ddw_tbexgive_is_givewp_recurring_donations_active() ) {
+	if ( ddw_tbexgive_is_givewp_recurring_donations_active() && current_user_can( 'view_give_reports' ) ) {
 
 		$admin_bar->add_node(
 			array(
@@ -1173,6 +1185,103 @@ function ddw_tbexgive_items_givewp_pages( $admin_bar ) {
 						)
 					)
 				);
+
+		}  // end foreach
+
+		/**
+		 * GiveWP special Shortcodes
+		 * @link https://givewp.com/documentation/core/shortcodes/
+		 */
+		$give_shortcodes = array(
+			'give_donor_wall',
+			'give_login',
+			'give_register',
+			'give_profile_editor',
+		);
+
+		$give_shortcodes_addition = array( 'give_form_grid' );
+
+		if ( 'enabled' === $give_settings[ 'forms_archives' ] ) {
+			$give_shortcodes = array_merge( $give_shortcodes_addition, $give_shortcodes );
+		}
+
+		/** Loop through all given GiveWP Shortcodes of our array */
+		foreach ( $give_shortcodes as $give_shortcode ) {
+
+			/**
+			 * Only proceed (aka add any items) if our helper function returns
+			 *   not null, that means there are pages existing with at least one
+			 *   of these special Shortcodes.
+			 */
+			if ( ! is_null( ddw_tbexgive_get_pages_with_shortcode( $give_shortcode ) ) ) {
+
+				$admin_bar->add_group(
+					array(
+						'id'     => 'group-givewp-shortcode-pages',
+						'parent' => 'givewp-pages',
+					)
+				);
+
+					$admin_bar->add_node(
+						array(
+							'id'     => 'givewp-shortcode-pages-heading',
+							'parent' => 'group-givewp-shortcode-pages',
+							'title'  => '<em>' . esc_attr__( 'Special Shortcode Pages', 'toolbar-extras-givewp' ) . ':</em>',
+							'href'   => 'https://givewp.com/documentation/core/shortcodes/',
+							'meta'   => array(
+								'target' => ddw_tbex_meta_target(),
+								'title'  => esc_attr__( 'List of Pages with Special GiveWP Shortcodes', 'toolbar-extras-givewp' ),
+							)
+						)
+					);
+
+				foreach ( ddw_tbexgive_get_pages_with_shortcode( $give_shortcode ) as $give_shorcode_page ) {
+
+					$give_shortcode_page_id    = absint( $give_shorcode_page->ID );
+					$give_shortcode_page_title = esc_attr( $give_shorcode_page->post_title );	// esc_attr( get_the_title( $give_shortcode_page_id ) );
+
+					$admin_bar->add_node(
+						array(
+							'id'     => 'givewp-shortcode-pages-' . $give_shortcode,
+							'parent' => 'group-givewp-shortcode-pages',
+							'title'  => '&nbsp;&bull; ' . $give_shortcode_page_title,
+							'href'   => esc_url( admin_url( 'post.php?post=' . $give_shortcode_page_id . '&action=edit' ) ),
+							'meta'   => array(
+								'target' => '',
+								'title'  => esc_attr__( 'Edit and Preview Page', 'toolbar-extras-givewp' ) . ': ' . $give_shortcode_page_title,
+							)
+						)
+					);
+
+						$admin_bar->add_node(
+							array(
+								'id'     => 'givewp-shortcode-pages-' . $give_shortcode . '-preview',
+								'parent' => 'givewp-shortcode-pages-' . $give_shortcode,
+								'title'  => esc_attr__( 'Live Preview', 'toolbar-extras-givewp' ),
+								'href'   => esc_url( get_permalink( $give_shortcode_page_id ) ),
+								'meta'   => array(
+									'target' => ddw_tbex_meta_target(),
+									'title'  => esc_attr__( 'Live Preview Page', 'toolbar-extras-givewp' ) . ': ' . $give_shortcode_page_title,
+								)
+							)
+						);
+
+						$admin_bar->add_node(
+							array(
+								'id'     => 'givewp-shortcode-pages-' . $give_shortcode . '-edit',
+								'parent' => 'givewp-shortcode-pages-' . $give_shortcode,
+								'title'  => esc_attr__( 'Edit Page', 'toolbar-extras-givewp' ),
+								'href'   => esc_url( admin_url( 'post.php?post=' . $give_shortcode_page_id . '&action=edit' ) ),
+								'meta'   => array(
+									'target' => ddw_tbex_meta_target(),
+									'title'  => esc_attr__( 'Edit Page', 'toolbar-extras-givewp' ) . ': ' . $give_shortcode_page_title,
+								)
+							)
+						);
+
+				}  // end foreach
+
+			}  // end if
 
 		}  // end foreach
 

@@ -134,3 +134,35 @@ function ddw_tbexgive_get_report_ranges() {
 	);
 
 }  // end function
+
+
+/**
+ * ???
+ *
+ * @since 1.0.0
+ *
+ * @link https://advent.squareonemd.co.uk/find-pages-using-given-wordpress-shortcode/
+ */
+function ddw_tbexgive_get_pages_with_shortcode( $shortcode, $args = array() ) {
+
+	$shortcode = sanitize_key( $shortcode );
+
+	/** Bail early if Shortcode was not yet registered */
+    if ( ! shortcode_exists( $shortcode ) ) {
+        return null;
+    }
+
+    $pages = get_pages( $args );
+    $list  = array();
+
+    foreach ( $pages as $page ) {
+
+        if ( has_shortcode( $page->post_content, $shortcode ) ) {
+            $list[] = $page;
+        }
+
+    }  // end foreach
+
+    return $list;
+
+}  // end function

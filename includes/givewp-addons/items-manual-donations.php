@@ -28,6 +28,11 @@ add_action( 'admin_bar_menu', 'ddw_tbexgive_aoitems_manual_donations', 100 );
  */
 function ddw_tbexgive_aoitems_manual_donations( $admin_bar ) {
 
+	/** Bail early if no proper permissions */
+	if ( ! current_user_can( 'edit_give_payments' ) ) {
+		return $admin_bar;
+	}
+
 	/** Use Add-On hook place */
 	add_filter( 'tbexgive/filter/is_givewp_addon', '__return_empty_string' );
 
@@ -93,9 +98,11 @@ add_filter( 'admin_bar_menu', 'ddw_tbexgive_items_new_content_manual_donation', 
  */
 function ddw_tbexgive_items_new_content_manual_donation( $admin_bar ) {
 
-	/** Bail early if items display is not wanted */
-	if ( ! ddw_tbex_display_items_new_content() ) {
-		return;
+	/** Bail early if items display is not wanted, or no proper permissions */
+	if ( ! ddw_tbex_display_items_new_content()
+		|| ! current_user_can( 'edit_give_payments' )
+	) {
+		return $admin_bar;
 	}
 
 	$admin_bar->add_node(
