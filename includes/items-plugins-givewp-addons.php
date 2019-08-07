@@ -126,15 +126,32 @@ if ( defined( 'GIVE_GOOGLE_ANALYTICS_VERSION' ) ) {
 
 
 /**
+ * Plugin: Give - Zapier (Premium, by GiveWP/ Impress.org, LLC)
+ * @since 1.0.0
+ */
+if ( defined( 'GIVE_ZAPIER_VERSION' ) ) {
+	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-zapier.php';
+}
+
+
+/**
+ * Plugin: Simple Social Shout for GiveWP (free, by Matt Cromwell)
+ * @since 1.0.0
+ */
+if ( class_exists( 'SIMPLE_SOCIAL_SHARE_4_GIVEWP' ) ) {
+	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-simple-social-shout.php';
+}
+
+
+/**
  * Plugin: Members - GiveWP Integration (Premium, by Justin Tadlock)
  *   (including its base plugin "Members" by the same author, but free)
- *   Note: Special case, needs to load before all other Add-Ons!
  * @since 1.0.0
  * @see plugin main file, /toolbar-extras-givewp.php
  */
-		if ( class_exists( 'Members_Plugin' ) ) {
-			require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-members-permissions.php';
-		}
+if ( class_exists( 'Members_Plugin' ) ) {
+	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-members-permissions.php';
+}
 
 
 

@@ -44,9 +44,9 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 * Fully internationalized and translateable
 * Use **all the other awesome features** of Toolbar Extras base plugin - to speed up your non-donation work as well! 😉
 
-= 🔌 Supported/ Integrated Offical Premium GiveWP Add-Ons/ Extensions =
+= 🔌 Supported/ Integrated Offical (Premium) GiveWP Add-Ons/ Extensions =
 * *All below are paid premium extensions made by GiveWP/ Impress.org, LLC!*
-* **Recurring Donations** - Subscriptions
+* **Recurring Donations** - Allows for Subscriptions
 * **PDF Receipts**
 * **Form Field Manager**
 * **Manual Donations**
@@ -62,12 +62,13 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 * **Constant Contact**
 * ***Note:** Support for more premium Add-Ons by GiveWP will be integrated/ added over time*
 
-= 🔌 Supported/ Integrated free GiveWP Add-Ons/ Extensions =
-* **Mailchimp for WP** (free, by ibericode) - *with dedicated (free) extension for GiveWP!*
-* **WP HTML Mail** (free, by Hannes Etzelstorfer/ codemiq KG) - *with dedicated (free) extension for GiveWP called **Give Donation - Email Template***
-* **Builder Template Categories** (free, by David Decker - DECKERWEB) - *categorize Give donation forms - use categories as "global" categories also with other integrations of this plugin*
-* **Members** (free, by Justin Tadlock) - *manage user roles and capabilities (permissions), including for all dedicated GiveWP roles!*
-* **Members - GiveWP Integration** (Premium, by Justin Tadlock) - *even better special GiveWP integration for the awesome Members plugin!*
+= 🔌 Supported/ Integrated Third-party GiveWP Add-Ons/ Extensions =
+* [**Mailchimp for WP**](https://wordpress.org/plugins/mailchimp-for-wp/) (free, by ibericode) - *with dedicated, built-in extension for GiveWP!*
+* [**WP HTML Mail**](https://wordpress.org/plugins/wp-html-mail/) (free, by Hannes Etzelstorfer/ codemiq KG) - *with dedicated (free) extension for GiveWP called [**Give Donation - Email Template**](https://wordpress.org/plugins/wp-html-mail-give/)*
+* [**Builder Template Categories**](https://wordpress.org/plugins/builder-template-categories/) (free, by David Decker - DECKERWEB) - *categorize Give donation forms - use categories as "global" categories also with other integrations of this plugin*
+* [**Members**](https://wordpress.org/plugins/members/) (free, by Justin Tadlock) - *manage user roles and capabilities (permissions), including for all dedicated GiveWP roles!*
+* [**Members - GiveWP Integration**](https://themehybrid.com/plugins/members-givewp-integration) (Premium, by Justin Tadlock) - *even better special GiveWP integration for the awesome Members plugin!*
+* [**Simple Social Shout for GiveWP**](https://github.com/impress-org/give-simple-social-shout) (free, by Matt Cromwell) - *adds simple social sharing buttons above your Donation Confirmation table*
 * ***Note:** Support for more free third-party Add-Ons will be added if more get released by the community*
 
 = ℹ️ Important: Required/ Recommended for plugin usage =
@@ -206,8 +207,8 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 
 = 🎉 1.0.0 - 2019-08-?? =
 * *Plugin launch. Everything's new!*
-* New: 5 Free GiveWP extensions supported/ integrated
-* New: 14 Premium GiveWP extensions supported/ integrated
+* New: 6 Free GiveWP extensions supported/ integrated
+* New: 15 Premium GiveWP extensions supported/ integrated
 
 
 = ⚡ 0.9.0 - 2019-08-06 =

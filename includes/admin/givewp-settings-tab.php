@@ -1,11 +1,4 @@
 <?php
-/**
- * Fee Recovery Settings Page/Tab
- *
- * @package    Give_Fee_Recovery
- * @subpackage Give_Fee_Recovery/admin
- * @author     GiveWP <https://givewp.com>
- */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -14,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! class_exists( 'DDW_TBEXGIVE_GiveWP_Settings_Tab' ) ) :
 
 	/**
-	 * Give_Fee_Recovery_Settings.
+	 * DDW_TBEXGIVE_GiveWP_Settings_Tab.
 	 *
 	 * @sine 1.0.0
 	 */
@@ -47,7 +40,7 @@ if ( ! class_exists( 'DDW_TBEXGIVE_GiveWP_Settings_Tab' ) ) :
 			$settings = array();
 
 			/**
-			 * Filter the Fee Recovery settings.
+			 * Filter the TBEX Give settings.
 			 *
 			 * @since  1.0.0
 			 *

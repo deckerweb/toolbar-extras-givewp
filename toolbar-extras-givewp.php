@@ -502,7 +502,6 @@ function ddw_tbexgive_setup_plugin() {
 		require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-official/items-givewp-core.php';
 
 		/** Load supported Add-Ons */
-//
 		require_once TBEXGIVE_PLUGIN_DIR . 'includes/items-plugins-givewp-addons.php';
 
 		/** Load Featured Form items */

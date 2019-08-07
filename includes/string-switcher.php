@@ -183,3 +183,28 @@ function ddw_tbexgive_string_give_updates() {
 	);
 
 }  // end function
+
+
+/**
+ * Build "Give" Permissions & Roles string.
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbexgive_string_givewp()
+ *
+ * @return string Filterable and translateable string for "Give" Permissions & Roles.
+ */
+function ddw_tbexgive_string_give_permissions_roles() {
+
+	return esc_attr(
+		apply_filters(
+			'tbexgive/filter/string/give_permission_roles',
+			sprintf(
+				/* translators: %s - Word Give */
+				__( '%s Permissions &amp; Roles', 'toolbar-extras-givewp' ),
+				ddw_tbexgive_string_givewp()
+			)
+		)
+	);
+
+}  // end function

@@ -1090,6 +1090,95 @@ function ddw_tbexgive_items_givewp_core( $admin_bar ) {
 }  // end function
 
 
+add_action( 'admin_bar_menu', 'ddw_tbexgive_items_givewp_pages', 98 );
+/**
+ * Give Donations items for Donation Pages.
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbexgive_string_give_settings()
+ * @uses ddw_tbexgive_string_give_tools()
+ * @uses ddw_tbexgive_string_give_updates()
+ *
+ * @param object $admin_bar Object of Toolbar nodes.
+ */
+function ddw_tbexgive_items_givewp_pages( $admin_bar ) {
+
+	$give_settings = get_option( 'give_settings' );
+
+	$give_pages = array(
+		'success_page',
+		'failure_page',
+		'history_page',
+		'subscriptions_page',
+	);
+
+	$admin_bar->add_node(
+		array(
+			'id'     => 'givewp-pages',
+			'parent' => 'group-donation-options',
+			'title'  => esc_attr__( 'Donation Pages', 'toolbar-extras-givewp' ),
+			'href'   => current_user_can( 'manage_give_settings' ) ? esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=general&section=general-settings' ) ) : esc_url( admin_url( 'edit.php?post_type=page' ) ),
+			'meta'   => array(
+				'target' => '',
+				'title'  => esc_attr__( 'Edit and Preview Give Donation Pages', 'toolbar-extras-givewp' ),
+			)
+		)
+	);
+
+		foreach ( $give_pages as $give_page ) {
+
+			$give_page_id    = absint( $give_settings[ $give_page ] );
+			$give_page_title = esc_attr( get_the_title( $give_page_id ) );
+
+			if ( ! ddw_tbexgive_is_givewp_recurring_donations_active() && 'subscriptions_page' === $give_page ) {
+				continue;
+			}
+
+			$admin_bar->add_node(
+				array(
+					'id'     => 'givewp-pages-' . $give_page,
+					'parent' => 'givewp-pages',
+					'title'  => $give_page_title,
+					'href'   => esc_url( admin_url( 'post.php?post=' . $give_page_id . '&action=edit' ) ),
+					'meta'   => array(
+						'target' => '',
+						'title'  => esc_attr__( 'Edit and Preview Page', 'toolbar-extras-givewp' ) . ': ' . $give_page_title,
+					)
+				)
+			);
+
+				$admin_bar->add_node(
+					array(
+						'id'     => 'givewp-pages-' . $give_page . '-preview',
+						'parent' => 'givewp-pages-' . $give_page,
+						'title'  => esc_attr__( 'Live Preview', 'toolbar-extras-givewp' ),
+						'href'   => esc_url( get_permalink( $give_page_id ) ),
+						'meta'   => array(
+							'target' => ddw_tbex_meta_target(),
+							'title'  => esc_attr__( 'Live Preview Page', 'toolbar-extras-givewp' ) . ': ' . $give_page_title,
+						)
+					)
+				);
+
+				$admin_bar->add_node(
+					array(
+						'id'     => 'givewp-pages-' . $give_page . '-edit',
+						'parent' => 'givewp-pages-' . $give_page,
+						'title'  => esc_attr__( 'Edit Page', 'toolbar-extras-givewp' ),
+						'href'   => esc_url( admin_url( 'post.php?post=' . $give_page_id . '&action=edit' ) ),
+						'meta'   => array(
+							'target' => ddw_tbex_meta_target(),
+							'title'  => esc_attr__( 'Edit Page', 'toolbar-extras-givewp' ) . ': ' . $give_page_title,
+						)
+					)
+				);
+
+		}  // end foreach
+
+}  // end function
+
+
 add_action( 'admin_bar_menu', 'ddw_tbexgive_items_givewp_options', 99 );
 /**
  * Give Donations items for "Settings", "Tools" and "Updates".
@@ -1999,19 +2088,6 @@ function ddw_tbexgive_items_givewp_about( $admin_bar ) {
 			)
 		)
 	);
-
-		$admin_bar->add_node(
-			array(
-				'id'     => 'givewp-about-getting-started',
-				'parent' => 'givewp-about',
-				'title'  => esc_attr__( 'Getting Started', 'toolbar-extras-givewp' ),
-				'href'   => esc_url( admin_url( 'index.php?page=give-getting-started' ) ),
-				'meta'   => array(
-					'target' => '',
-					'title'  => esc_attr__( 'Getting Started with Give Donations', 'toolbar-extras-givewp' ),
-				)
-			)
-		);
 
 		$admin_bar->add_node(
 			array(

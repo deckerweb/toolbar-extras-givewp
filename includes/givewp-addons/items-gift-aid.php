@@ -73,19 +73,6 @@ function ddw_tbexgive_aoitems_gift_aid( $admin_bar ) {
 			);
 
 		}  // end if
-		
-		$admin_bar->add_node(
-			array(
-				'id'     => 'ao-givewp-giftaid-info',
-				'parent' => 'ao-givewp-giftaid',
-				'title'  => esc_attr__( 'UK Gift Aid Program', 'toolbar-extras-givewp' ),
-				'href'   => 'https://www.gov.uk/donating-to-charity/gift-aid',
-				'meta'   => array(
-					'target' => ddw_tbex_meta_target(),
-					'title'  => esc_attr__( 'United Kingdom Government: Gift Aid Program Info', 'toolbar-extras-givewp' ),
-				)
-			)
-		);
 
 		/** Group: Plugin's resources */
 		if ( ddw_tbex_display_items_resources() ) {
@@ -103,6 +90,19 @@ function ddw_tbexgive_aoitems_gift_aid( $admin_bar ) {
 				'givewp-giftaid-docs',
 				'group-givewp-giftaid-resources',
 				'https://givewp.com/documentation/add-ons/gift-aid/'
+			);
+
+			$admin_bar->add_node(
+				array(
+					'id'     => 'givewp-giftaid-ukgov-info',
+					'parent' => 'group-givewp-giftaid-resources',
+					'title'  => esc_attr__( 'UK Gift Aid Program', 'toolbar-extras-givewp' ),
+					'href'   => 'https://www.gov.uk/donating-to-charity/gift-aid',
+					'meta'   => array(
+						'target' => ddw_tbex_meta_target(),
+						'title'  => esc_attr__( 'United Kingdom Government: Gift Aid Program Info', 'toolbar-extras-givewp' ),
+					)
+				)
 			);
 
 		}  // end if
