@@ -69,8 +69,8 @@ function ddw_tbexgive_item_give_test_mode( $admin_bar ) {
 		array(
 			'id'     => 'give-test-notice',
 			'parent' => 'top-secondary',
-			'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=gateways' ) ),
 			'title'  => $title,		//ddw_tbex_item_title_with_settings_icon( $title, 'givewp', 'testmode_icon' ),
+			'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=gateways' ) ),
 			'meta'   => array(
 				'class'  => 'give-test-mode-active ' . $class,
 				'target' => '',

@@ -52,7 +52,7 @@ function ddw_tbexgive_plugin_manager_givewp( $plugins ) {
 		array(
 			'name'    => _x( 'Give Donations', 'Plugin Name', 'toolbar-extras-givewp' ),
 			'slug'    => 'give',
-			'version' => '2.5.3+',
+			'version' => '2.5.4+',
 			'notice' => array(
 				'message' => ddw_tbex_pm_badge( 'required' ) .
 					$for_givewp .

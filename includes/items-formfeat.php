@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
- * ???
+ * Get the ID of the optional Featured Form Campaign, directly from our settings.
  *
  * @since 1.0.0
  *
@@ -163,51 +163,56 @@ function ddw_tbexgive_sub_items_formfeat( $admin_bar ) {
 	/** Get Give time ranges for reports */
 	$give_ranges = ddw_tbexgive_get_report_ranges();
 
-	/** Donations (Transactions) */
-	$admin_bar->add_node(
-		array(
-			'id'     => 'givewp-formfeat-donations',
-			'parent' => 'tbex-givewp-formfeat',
-			'title'  => esc_attr__( 'Donation Transactions', 'toolbar-extras-givewp' ),
-			'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-payment-history&form_id=' . ddw_tbexgive_get_formfeat_id() ) ),
-			'meta'   => array(
-				'target' => '',
-				'title'  => esc_attr__( 'Donation Transactions - Payment History', 'toolbar-extras-givewp' ),
-			)
-		)
-	);
+	/** Display items for proper permissions only */
+	if ( current_user_can( 'edit_give_payments' ) ) {
 
-	/** Donors */
-	$admin_bar->add_node(
-		array(
-			'id'     => 'givewp-formfeat-donors',
-			'parent' => 'tbex-givewp-formfeat',
-			'title'  => esc_attr__( 'Donors', 'toolbar-extras-givewp' ),
-			'href'   => esc_url( admin_url( 'edit.php?s&form_id=' . ddw_tbexgive_get_formfeat_id() . '&post_type=give_forms&page=give-donors&view=donors' ) ),
-			'meta'   => array(
-				'target' => '',
-				'title'  => esc_attr__( 'All Donors - User Data', 'toolbar-extras-givewp' ),
-			)
-		)
-	);
-
-	/** Add-On: Recurring Donations (Subscriptions) */
-	if ( ddw_tbexgive_is_givewp_recurring_donations_active() ) {
-
+		/** Donations (Transactions) */
 		$admin_bar->add_node(
 			array(
-				'id'     => 'givewp-formfeat-subscriptions',
+				'id'     => 'givewp-formfeat-donations',
 				'parent' => 'tbex-givewp-formfeat',
-				'title'  => esc_attr__( 'Subscriptions', 'toolbar-extras-givewp' ),
-				'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-subscriptions&form_id=' . ddw_tbexgive_get_formfeat_id() ) ),
+				'title'  => esc_attr__( 'Donation Transactions', 'toolbar-extras-givewp' ),
+				'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-payment-history&form_id=' . ddw_tbexgive_get_formfeat_id() ) ),
 				'meta'   => array(
 					'target' => '',
-					'title'  => esc_attr__( 'All Subscriptions - Recurring Donations', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'Donation Transactions - Payment History', 'toolbar-extras-givewp' ),
 				)
 			)
 		);
 
-	}  // end if
+		/** Donors */
+		$admin_bar->add_node(
+			array(
+				'id'     => 'givewp-formfeat-donors',
+				'parent' => 'tbex-givewp-formfeat',
+				'title'  => esc_attr__( 'Donors', 'toolbar-extras-givewp' ),
+				'href'   => esc_url( admin_url( 'edit.php?s&form_id=' . ddw_tbexgive_get_formfeat_id() . '&post_type=give_forms&page=give-donors&view=donors' ) ),
+				'meta'   => array(
+					'target' => '',
+					'title'  => esc_attr__( 'All Donors - User Data', 'toolbar-extras-givewp' ),
+				)
+			)
+		);
+
+		/** Add-On: Recurring Donations (Subscriptions) */
+		if ( ddw_tbexgive_is_givewp_recurring_donations_active() ) {
+
+			$admin_bar->add_node(
+				array(
+					'id'     => 'givewp-formfeat-subscriptions',
+					'parent' => 'tbex-givewp-formfeat',
+					'title'  => esc_attr__( 'Subscriptions', 'toolbar-extras-givewp' ),
+					'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-subscriptions&form_id=' . ddw_tbexgive_get_formfeat_id() ) ),
+					'meta'   => array(
+						'target' => '',
+						'title'  => esc_attr__( 'All Subscriptions - Recurring Donations', 'toolbar-extras-givewp' ),
+					)
+				)
+			);
+
+		}  // end if
+
+	}  // end if (permission check)
 
 	/** Reports */
 	if ( current_user_can( 'view_give_reports', ddw_tbexgive_get_formfeat_id() ) ) {

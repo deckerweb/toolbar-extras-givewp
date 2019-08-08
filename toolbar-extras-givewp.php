@@ -510,7 +510,9 @@ function ddw_tbexgive_setup_plugin() {
 		}
 
 		/** Load Test Mode item */
-		if ( ddw_tbexgive_is_give_test_mode() && ddw_tbexgive_testmode_use_tweaks() ) {
+		if ( current_user_can( 'manage_give_settings' )
+			&& ( ddw_tbexgive_is_give_test_mode() && ddw_tbexgive_testmode_use_tweaks() )
+		) {
 			require_once TBEXGIVE_PLUGIN_DIR . 'includes/items-testmode.php';
 		}
 
