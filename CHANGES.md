@@ -18,6 +18,7 @@
 * *Plugin launch. Everything's new!*
 * New: 7 Free GiveWP extensions supported/ integrated
 * New: 19 Premium GiveWP extensions supported/ integrated
+* New: 30 Settings - Toolbar-related, unique this Add-On
 
 
 ### ⚡ 0.9.0 - 2019-08-06

@@ -31,7 +31,7 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 * Quick access to Reports, including typical filter views (sub views, tabs, sections)
 * All special GiveWP pages (Give Shortcodes) at your fingertips for live preview and editing
 * Quick jump links for all Settings, Tools, even from Give Add-Ons
-* Up to 28 Toolbar Add-On settings for customizing the experience (components, features, icon, position, label, etc.)
+* Up to 30 Toolbar Add-On settings for customizing the experience (components, features, icon, position, label, etc.)
 * Give Add-On (Extensions) directly integrated where possible and useful (only when Extension is active, of course) - *for Add-On listings see below*
 * Resources - deep links to GiveWP documentation (knowledge base); also for Add-Ons
 * Additional Give Toolbar settings submenu item - for WordPress Admin Menu
@@ -215,6 +215,7 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 * *Plugin launch. Everything's new!*
 * New: 7 Free GiveWP extensions supported/ integrated
 * New: 19 Premium GiveWP extensions supported/ integrated
+* New: 30 Settings - Toolbar-related, unique this Add-On
 
 
 = ⚡ 0.9.0 - 2019-08-06 =
