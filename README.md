@@ -55,14 +55,19 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 * *All below are paid premium extensions made by GiveWP/ Impress.org, LLC!*
 * **Recurring Donations** - Allows for Subscriptions
 * **PDF Receipts**
+* **Annual Receipts**
+* **Currency Switcher**
 * **Form Field Manager**
 * **Manual Donations**
 * **Stripe** - Payment Gateway
 * **PayPal Pro** - Payment Gateway
+* **Sofort (Klarna)** - Payment Gateway
+* **Paymill** - Payment Gateway
 * **Google Analytics** - Donation Tracking
 * **Tributes**
 * **Fee Recovery** - Recover payment gateway fees
 * **Gift Aid** - for this specific program of the UK Government
+* **Zapier** - dozens of third-party integrations/ connections possible
 * **Mailchimp** - Email marketing
 * **ConvertKit** - Email marketing
 * **AWeber** - Email marketing
@@ -239,7 +244,7 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 ### 🎉 1.0.0 - 2019-08-?? 
 * *Plugin launch. Everything's new!*
 * New: 7 Free GiveWP extensions supported/ integrated
-* New: 15 Premium GiveWP extensions supported/ integrated
+* New: 19 Premium GiveWP extensions supported/ integrated
 
 
 

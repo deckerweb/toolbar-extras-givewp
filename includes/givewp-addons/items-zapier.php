@@ -84,7 +84,7 @@ function ddw_tbexgive_aoitems_zapier( $admin_bar ) {
 				'href'   => 'https://zapier.com/app/zaps',
 				'meta'   => array(
 					'target' => ddw_tbex_meta_target(),
-					'title'  => esc_attr__( 'My Zapier Zaps (zapier.com)', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'My Zapier Zaps', 'toolbar-extras-givewp' ) . ' (zapier.com)',
 				)
 			)
 		);
@@ -97,7 +97,7 @@ function ddw_tbexgive_aoitems_zapier( $admin_bar ) {
 				'href'   => 'https://zapier.com/app/history',
 				'meta'   => array(
 					'target' => ddw_tbex_meta_target(),
-					'title'  => esc_attr__( 'My Zapier Task History (zapier.com)', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'My Zapier Task History', 'toolbar-extras-givewp' ) . ' (zapier.com)',
 				)
 			)
 		);
@@ -110,7 +110,7 @@ function ddw_tbexgive_aoitems_zapier( $admin_bar ) {
 				'href'   => 'https://zapier.com/app/connections',
 				'meta'   => array(
 					'target' => ddw_tbex_meta_target(),
-					'title'  => esc_attr__( 'My Zapier Apps/ Connections (zapier.com)', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'My Zapier Apps/ Connections', 'toolbar-extras-givewp' ) . ' (zapier.com)',
 				)
 			)
 		);

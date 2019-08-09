@@ -61,6 +61,20 @@ function ddw_tbexgive_is_givewp_recurring_donations_active() {
 
 
 /**
+ * Is the Give Manual Donations Add-On plugin active or not?
+ *
+ * @since 1.0.0
+ *
+ * @return bool TRUE if Add-On plugin is active, FALSE otherwise.
+ */
+function ddw_tbexgive_is_givewp_manual_donations_active() {
+
+	return class_exists( 'Give_Manual_Donations' );
+
+}  // end function
+
+
+/**
  * Is the Give Fee Recovery Add-On plugin active or not?
  *
  * @since 1.0.0

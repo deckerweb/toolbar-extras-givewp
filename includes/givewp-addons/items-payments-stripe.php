@@ -97,7 +97,7 @@ function ddw_tbexgive_aoitems_payments_stripe( $admin_bar ) {
 				'href'   => 'https://dashboard.stripe.com/dashboard',
 				'meta'   => array(
 					'target' => ddw_tbex_meta_target(),
-					'title'  => esc_attr__( 'My Stripe Dashboard (stripe.com)', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'My Stripe Dashboard', 'toolbar-extras-givewp' ) . ' (stripe.com)',
 				)
 			)
 		);

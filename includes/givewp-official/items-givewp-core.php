@@ -19,6 +19,7 @@ add_action( 'admin_bar_menu', 'ddw_tbexgive_items_givewp_core', 99 );
  *
  * @since 1.0.0
  *
+ * @uses ddw_tbexgive_is_givewp_manual_donations_active()
  * @uses ddw_tbexgive_is_givewp_recurring_donations_active()
  * @uses ddw_tbex_is_btcplugin_active()
  * @uses ddw_btc_string_template()
@@ -85,6 +86,24 @@ function ddw_tbexgive_items_givewp_core( $admin_bar ) {
 					)
 				)
 			);
+
+			/** Add-On: Add Manual Donation */
+			if ( ddw_tbexgive_is_givewp_manual_donations_active() ) {
+
+				$admin_bar->add_node(
+					array(
+						'id'     => 'givewp-donations-add-manual-donation',
+						'parent' => 'givewp-donations',
+						'title'  => esc_attr__( 'Add Manual Donation', 'toolbar-extras-givewp' ),
+						'href'   => esc_url( admin_url( 'edit.php?post_type=' . $type . '&page=give-manual-donation' ) ),
+						'meta'   => array(
+							'target' => '',
+							'title'  => esc_attr__( 'Add new Manual Donation Payment', 'toolbar-extras-givewp' ),
+						)
+					)
+				);
+
+			}  // end if
 
 			if ( current_user_can( 'manage_give_settings' ) ) {
 

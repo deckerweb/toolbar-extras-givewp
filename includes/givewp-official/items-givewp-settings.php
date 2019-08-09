@@ -589,6 +589,13 @@ function ddw_tbexgive_items_givewp_options( $admin_bar ) {
 				)
 			);
 
+			$admin_bar->add_group(
+				array(
+					'id'     => 'group-givewp-tools-logs-misc',
+					'parent' => 'givewp-tools-logs',
+				)
+			);
+
 		/** Tab: API */
 		$admin_bar->add_node(
 			array(

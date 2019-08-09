@@ -49,7 +49,7 @@ if ( ddw_tbexgive_is_givewp_recurring_donations_active() ) {
  * Plugin: Give - Manual Donations (Premium, by GiveWP/ Impress.org, LLC)
  * @since 1.0.0
  */
-if ( class_exists( 'Give_Manual_Donations' ) ) {
+if ( ddw_tbexgive_is_givewp_manual_donations_active() ) {
 	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-manual-donations.php';
 }
 
@@ -60,6 +60,24 @@ if ( class_exists( 'Give_Manual_Donations' ) ) {
  */
 if ( ddw_tbexgive_is_givewp_fee_recovery_active() ) {
 	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-fee-recovery.php';
+}
+
+
+/**
+ * Add-On: Give - Sofort Payment Gateway (Premium, by GiveWP/ Impress.org, LLC)
+ * @since 1.0.0
+ */
+if ( defined( 'GIVE_SOFORT_VERSION' ) ) {
+	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-payments-sofort.php';
+}
+
+
+/**
+ * Add-On: Give - Paymill Payment Gateway (Premium, by GiveWP/ Impress.org, LLC)
+ * @since 1.0.0
+ */
+if ( defined( 'GIVE_PAYMILL_VERSION' ) ) {
+	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-payments-paymill.php';
 }
 
 
@@ -76,6 +94,15 @@ if ( ddw_tbexgive_is_givewp_fee_recovery_active() ) {
  */
 if ( defined( 'GIVE_PDF_PLUGIN_VERSION' ) ) {
 	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-pdf-receipts.php';
+}
+
+
+/**
+ * Plugin: Give - Annual Receipts (Premium, by GiveWP/ Impress.org, LLC)
+ * @since 1.0.0
+ */
+if ( class_exists( 'Give_Annual_Receipts' ) ) {
+	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-annual-receipts.php';
 }
 
 
@@ -103,6 +130,15 @@ if ( ddw_tbexgive_is_givewp_tributes_active() ) {
  */
 if ( class_exists( 'Give_Form_Fields_Manager' ) ) {
 	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-form-field-manager.php';
+}
+
+
+/**
+ * Plugin: Give - Currency Switcher (Premium, by GiveWP/ Impress.org, LLC)
+ * @since 1.0.0
+ */
+if ( class_exists( 'Give_Currency_Switcher' ) ) {
+	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-currency-switcher.php';
 }
 
 

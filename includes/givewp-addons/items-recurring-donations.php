@@ -119,6 +119,33 @@ function ddw_tbexgive_aoitems_recurring_donations( $admin_bar ) {
 				)
 			);
 
+			/** For GiveWP Tools */
+			$admin_bar->add_node(
+				array(
+					'id'     => 'ao-givewp-tools-logs-recurringdonations-emails',
+					'parent' => 'group-givewp-tools-logs-misc',
+					'title'  => esc_attr__( 'Recurring Emails', 'toolbar-extras-givewp' ),
+					'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-tools&tab=logs&section=recurring_email_notices' ) ),
+					'meta'   => array(
+						'target' => '',
+						'title'  => esc_attr__( 'Recurring Donations Add-On: Logs for Recurring Emails', 'toolbar-extras-givewp' ),
+					)
+				)
+			);
+
+			$admin_bar->add_node(
+				array(
+					'id'     => 'ao-givewp-tools-logs-recurringdonations-synchronizer',
+					'parent' => 'group-givewp-tools-logs-misc',
+					'title'  => esc_attr__( 'Synchronizer', 'toolbar-extras-givewp' ),
+					'href'   => esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-tools&tab=logs&section=recurring_sync_logs' ) ),
+					'meta'   => array(
+						'target' => '',
+						'title'  => esc_attr__( 'Recurring Donations Add-On: Logs for Synchronizer', 'toolbar-extras-givewp' ),
+					)
+				)
+			);
+
 		}  // end if
 
 		/** Group: Plugin's resources */

@@ -97,7 +97,7 @@ function ddw_tbexgive_aoitems_payments_paypal_pro( $admin_bar ) {
 				'href'   => 'https://www.paypal.com',
 				'meta'   => array(
 					'target' => ddw_tbex_meta_target(),
-					'title'  => esc_attr__( 'My PayPal Pro Account (paypal.com)', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'My PayPal Pro Account', 'toolbar-extras-givewp' ) . ' (paypal.com)',
 				)
 			)
 		);

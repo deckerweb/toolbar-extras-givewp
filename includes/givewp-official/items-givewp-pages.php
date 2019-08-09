@@ -20,7 +20,7 @@ add_action( 'admin_bar_menu', 'ddw_tbexgive_items_givewp_pages', 98 );
  *
  * @uses ddw_tbexgive_is_givewp_recurring_donations_active()
  * @uses ddw_tbexgive_display_shortcode_pages()
- * @uses ddw_tbexgive_get_pages_with_shortcode()
+ * @uses ddw_tbex_get_pages_with_shortcode()
  * @uses ddw_tbex_meta_target()
  *
  * @param object $admin_bar Object of Toolbar nodes.
@@ -99,6 +99,13 @@ function ddw_tbexgive_items_givewp_pages( $admin_bar ) {
 
 		}  // end foreach
 
+		$admin_bar->add_group(
+			array(
+				'id'     => 'group-givewp-pages-misc',
+				'parent' => 'givewp-pages',
+			)
+		);
+
 		/** List special GiveWP Shortcode pages if enabled in settings */
 		if ( ddw_tbexgive_display_shortcode_pages() ) {
 
@@ -127,7 +134,7 @@ function ddw_tbexgive_items_givewp_pages( $admin_bar ) {
 				 *   not null, that means there are pages existing with at least one
 				 *   of these special Shortcodes.
 				 */
-				if ( ! is_null( ddw_tbexgive_get_pages_with_shortcode( $give_shortcode ) ) ) {
+				if ( ! is_null( ddw_tbex_get_pages_with_shortcode( $give_shortcode ) ) ) {
 
 					$admin_bar->add_group(
 						array(
@@ -149,7 +156,7 @@ function ddw_tbexgive_items_givewp_pages( $admin_bar ) {
 							)
 						);
 
-					foreach ( ddw_tbexgive_get_pages_with_shortcode( $give_shortcode ) as $give_shorcode_page ) {
+					foreach ( ddw_tbex_get_pages_with_shortcode( $give_shortcode ) as $give_shorcode_page ) {
 
 						$give_shortcode_page_id    = absint( $give_shorcode_page->ID );
 						$give_shortcode_page_title = esc_attr( $give_shorcode_page->post_title );

@@ -71,7 +71,7 @@ function ddw_tbexgive_aoitems_constant_contact( $admin_bar ) {
 				'href'   => 'https://www.constantcontact.com/',
 				'meta'   => array(
 					'target' => ddw_tbex_meta_target(),
-					'title'  => esc_attr__( 'My Constant Contact Dashboard (constantcontact.com)', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'My Constant Contact Dashboard', 'toolbar-extras-givewp' ) . ' (constantcontact.com)',
 				)
 			)
 		);

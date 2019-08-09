@@ -71,7 +71,7 @@ function ddw_tbexgive_aoitems_aweber( $admin_bar ) {
 				'href'   => 'https://www.aweber.com/',
 				'meta'   => array(
 					'target' => ddw_tbex_meta_target(),
-					'title'  => esc_attr__( 'My AWeber Dashboard (aweber.com)', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'My AWeber Dashboard', 'toolbar-extras-givewp' ) . ' (aweber.com)',
 				)
 			)
 		);

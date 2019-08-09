@@ -71,7 +71,7 @@ function ddw_tbexgive_aoitems_convertkit( $admin_bar ) {
 				'href'   => 'https://app.convertkit.com/',
 				'meta'   => array(
 					'target' => ddw_tbex_meta_target(),
-					'title'  => esc_attr__( 'My ConvertKit Dashboard (app.convertkit.com)', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'My ConvertKit Dashboard', 'toolbar-extras-givewp' ) . ' (app.convertkit.com)',
 				)
 			)
 		);

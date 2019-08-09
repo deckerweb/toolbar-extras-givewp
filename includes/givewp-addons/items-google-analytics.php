@@ -71,7 +71,7 @@ function ddw_tbexgive_aoitems_google_analytics( $admin_bar ) {
 				'href'   => 'https://analytics.google.com/analytics/web/',
 				'meta'   => array(
 					'target' => ddw_tbex_meta_target(),
-					'title'  => esc_attr__( 'My Google Analytics Dashboard (analytics.google.com)', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'My Google Analytics Dashboard', 'toolbar-extras-givewp' ) . ' (analytics.google.com)',
 				)
 			)
 		);

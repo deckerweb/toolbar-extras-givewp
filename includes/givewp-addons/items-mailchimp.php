@@ -71,7 +71,7 @@ function ddw_tbexgive_aoitems_mailchimp( $admin_bar ) {
 				'href'   => 'https://us2.admin.mailchimp.com/audience/',
 				'meta'   => array(
 					'target' => ddw_tbex_meta_target(),
-					'title'  => esc_attr__( 'My Mailchimp Audience (mailchimp.com)', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'My Mailchimp Audience', 'toolbar-extras-givewp' ) . ' (mailchimp.com)',
 				)
 			)
 		);
@@ -84,7 +84,7 @@ function ddw_tbexgive_aoitems_mailchimp( $admin_bar ) {
 				'href'   => 'https://us2.admin.mailchimp.com/campaigns/',
 				'meta'   => array(
 					'target' => ddw_tbex_meta_target(),
-					'title'  => esc_attr__( 'My Mailchimp Campaigns (mailchimp.com)', 'toolbar-extras-givewp' ),
+					'title'  => esc_attr__( 'My Mailchimp Campaigns', 'toolbar-extras-givewp' ) . ' (mailchimp.com)',
 				)
 			)
 		);
