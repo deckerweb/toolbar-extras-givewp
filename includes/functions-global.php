@@ -137,3 +137,90 @@ function ddw_tbexgive_get_report_ranges() {
 	);
 
 }  // end function
+
+
+/**
+ * Get the IDs of all GiveWP Donation-specific pages which are controlled via
+ *   GiveWP settings.
+ *
+ * @since 1.0.0
+ *
+ * @return array Array of page IDs.
+ */
+function ddw_thexgive_get_givewp_donation_pages() {
+
+	$give_settings = get_option( 'give_settings' );
+
+	$give_pages = array(
+		'success_page',
+		'failure_page',
+		'history_page',
+		'subscriptions_page',
+	);
+
+	$give_pages_ids = array();
+
+	foreach ( $give_pages as $give_page ) {
+
+		$give_pages_ids[] = absint( $give_settings[ $give_page ] );
+
+	}  // end foreach
+
+	return $give_pages_ids;
+
+}  // end function
+
+
+/**
+ * Get the IDs of all pages that contain GiveWP-specific Shortcodes - beyond the
+ *   Donation-specific pages which are already controlled via GiveWP settings.
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbex_get_pages_with_shortcode()
+ */
+function ddw_tbexgive_get_givewp_shortcode_pages() {
+
+	$give_shortcodes = array(
+		'give_donor_wall',
+		'give_form_grid',
+		'give_login',
+		'give_register',
+		'give_profile_editor',
+	);
+
+	$give_shorcode_pages_ids = array();
+
+	foreach ( $give_shortcodes as $give_shortcode ) {
+
+		if ( ! is_null( ddw_tbex_get_pages_with_shortcode( $give_shortcode ) ) ) {
+
+			foreach ( ddw_tbex_get_pages_with_shortcode( $give_shortcode ) as $give_shorcode_page ) {
+
+				$give_shorcode_pages_ids[] = absint( $give_shorcode_page->ID );
+
+			}  // end foreach
+
+		}  // end if
+
+	}  // end foreach
+
+	return $give_shorcode_pages_ids;
+
+}  // end function
+
+
+/**
+ * Get the IDs of pages that are either a Donation-specific GiveWP page
+ *   (settings controlled) or contain a GiveWP-specific Shortcode.
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_thexgive_get_givewp_donation_pages()
+ * @uses ddw_tbexgive_get_givewp_shortcode_pages()
+ */
+function ddw_tbexgive_get_all_givewp_pages() {
+
+	return array_merge( ddw_thexgive_get_givewp_donation_pages(), ddw_tbexgive_get_givewp_shortcode_pages() );
+
+}  // end function

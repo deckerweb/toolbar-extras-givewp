@@ -409,6 +409,62 @@ function ddw_tbexgive_settings_cb_givewp_shortcode_pages() {
 
 
 /**
+ * Setting (Select): Display Post State for GiveWP Shortcode Pages?
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbex_string_yes()
+ * @uses ddw_tbex_string_no()
+ */
+function ddw_tbexgive_settings_cb_givewp_shortcode_state() {
+
+	$tbexgive_options = get_option( 'tbex-options-givewp' );
+
+	?>
+		<select name="tbex-options-givewp[givewp_shortcode_state]" id="tbex-options-givewp-givewp_shortcode_state">
+			<option value="yes" <?php selected( sanitize_key( $tbexgive_options[ 'givewp_shortcode_state' ] ), 'yes' ); ?>><?php ddw_tbex_string_yes( 'echo' ); ?></option>
+			<option value="no" <?php selected( sanitize_key( $tbexgive_options[ 'givewp_shortcode_state' ] ), 'no' ); ?>><?php ddw_tbex_string_no( 'echo' ); ?></option>
+		</select>
+		<label for="tbex-options-givewp[givewp_shortcode_state]">
+			<span class="description"><?php echo sprintf(
+				__( 'Default: %s', 'toolbar-extras-givewp' ),
+				ddw_tbex_string_yes( 'return', 'code' )
+			); ?></span>
+		</label>
+	<?php
+
+}  // end function
+
+
+/**
+ * Setting (Select): Display Views filter for GiveWP Pages?
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbex_string_yes()
+ * @uses ddw_tbex_string_no()
+ */
+function ddw_tbexgive_settings_cb_givewp_pages_views_filter() {
+
+	$tbexgive_options = get_option( 'tbex-options-givewp' );
+
+	?>
+		<select name="tbex-options-givewp[givewp_pages_views_filter]" id="tbex-options-givewp-givewp_pages_views_filter">
+			<option value="yes" <?php selected( sanitize_key( $tbexgive_options[ 'givewp_pages_views_filter' ] ), 'yes' ); ?>><?php ddw_tbex_string_yes( 'echo' ); ?></option>
+			<option value="no" <?php selected( sanitize_key( $tbexgive_options[ 'givewp_pages_views_filter' ] ), 'no' ); ?>><?php ddw_tbex_string_no( 'echo' ); ?></option>
+		</select>
+		<label for="tbex-options-givewp[givewp_pages_views_filter]">
+			<span class="description"><?php echo sprintf(
+				__( 'Default: %s', 'toolbar-extras-givewp' ),
+				ddw_tbex_string_yes( 'return', 'code' )
+			); ?></span>
+		</label>
+	<?php
+
+}  // end function
+
+
+/**
  * Setting (Select): Use Admin submenu tweak?
  *
  * @since 1.0.0

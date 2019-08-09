@@ -168,6 +168,38 @@ function ddw_tbexgive_display_shortcode_pages() {
 
 
 /**
+ * Display optional post state for pages with GiveWP-specific Shortcodes?
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbex_get_option()
+ *
+ * @return bool TRUE if setting is on 'yes', FALSE otherwise.
+ */
+function ddw_tbexgive_display_shortcode_post_state() {
+
+	return ( 'yes' === ddw_tbex_get_option( 'givewp', 'givewp_shortcode_state' ) );
+
+}  // end function
+
+
+/**
+ * Display optional Pages Views filter for all GiveWP Pages?
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbex_get_option()
+ *
+ * @return bool TRUE if setting is on 'yes', FALSE otherwise.
+ */
+function ddw_tbexgive_display_givewp_pages_views_filter() {
+
+	return ( 'yes' === ddw_tbex_get_option( 'givewp', 'givewp_pages_views_filter' ) );
+
+}  // end function
+
+
+/**
  * Use GiveWP Admin menu tweak at all or not (Add-Ons vs. Changelog)?
  *
  * @since 1.0.0

@@ -30,43 +30,45 @@ function ddw_tbexgive_default_options_givewp() {
 		array(
 
 			/** "Donations" top-level item */
-			'donations_tl_name'       => esc_attr_x( 'Donations', 'Toolbar item label', 'toolbar-extras-givewp' ),	// "Donations"
-			'donations_tl_use_icon'   => 'givewp',			// use GiveWP icon by default
-			'donations_tl_icon'       => 'dashicons-heart',
-			'donations_tl_priority'   => 72,
-			'donations_tl_url'        => '',
-			'donations_tl_target'     => '_self',
+			'donations_tl_name'         => esc_attr_x( 'Donations', 'Toolbar item label', 'toolbar-extras-givewp' ),	// "Donations"
+			'donations_tl_use_icon'     => 'givewp',			// use GiveWP icon by default
+			'donations_tl_icon'         => 'dashicons-heart',
+			'donations_tl_priority'     => 72,
+			'donations_tl_url'          => '',
+			'donations_tl_target'       => '_self',
 
 			/** GiveWP "Give" specific */
-			'givewp_name'             => esc_attr_x( 'Give', 'Toolbar item label', 'toolbar-extras-givewp' ),		// "Give"
-			'givewp_shortcode_pages'  => 'yes',
-			'givewp_admin_menu_tweak' => 'yes',
+			'givewp_name'               => esc_attr_x( 'Give', 'Toolbar item label', 'toolbar-extras-givewp' ),		// "Give"
+			'givewp_shortcode_pages'    => 'yes',
+			'givewp_shortcodes_state'   => 'yes',
+			'givewp_pages_views_filter' => 'yes',
+			'givewp_admin_menu_tweak'   => 'yes',
 
 			/** Featured Give Form/ Campaign item */
-			'formfeat_display'        => 'no',
-			'formfeat_form_id'        => '',
-			'formfeat_title'          => 'form_title',		// defaults to the title of the form
-			'formfeat_name'           => '',
-			'formfeat_income'         => 'yes',
-			'formfeat_use_icon'       => 'givewp',			// use GiveWP icon by default
-			'formfeat_icon'           => 'dashicons-star-filled',
-			'formfeat_priority'       => '1000',
-			'formfeat_bgcolor'        => '',
-			'formfeat_use_url'        => 'form_default',
-			'formfeat_url'			  => '',
-			'formfeat_target'         => '_self',
+			'formfeat_display'          => 'no',
+			'formfeat_form_id'          => '',
+			'formfeat_title'            => 'form_title',		// defaults to the title of the form
+			'formfeat_name'             => '',
+			'formfeat_income'           => 'yes',
+			'formfeat_use_icon'         => 'givewp',			// use GiveWP icon by default
+			'formfeat_icon'             => 'dashicons-star-filled',
+			'formfeat_priority'         => '1000',
+			'formfeat_bgcolor'          => '',
+			'formfeat_use_url'          => 'form_default',
+			'formfeat_url'			    => '',
+			'formfeat_target'           => '_self',
 
 			/** Give Test Mode item */
-			'testmode_use_tweaks'     => 'yes',
-			'testmode_name'           => esc_attr_x( 'Give Test Mode Active', 'Toolbar item label', 'toolbar-extras-givewp' ),		// "Give Test Mode Active"
-			'testmode_use_icon'       => 'none',
-			'testmode_icon'           => 'dashicons-info',
+			'testmode_use_tweaks'       => 'yes',
+			'testmode_name'             => esc_attr_x( 'Give Test Mode Active', 'Toolbar item label', 'toolbar-extras-givewp' ),		// "Give Test Mode Active"
+			'testmode_use_icon'         => 'none',
+			'testmode_icon'             => 'dashicons-info',
 
 			/** Various tweaks */
-			'note_for_coloring'       => '',				// Only for user note/guidance, just a "virtual setting"
-			'remove_tbex_build_group' => 'no',
-			'unload_td_givewp'        => 'no',
-			'unload_td_tbexgive'      => 'no',
+			'note_for_coloring'         => '',				// Only for user note/guidance, just a "virtual setting"
+			'remove_tbex_build_group'   => 'no',
+			'unload_td_givewp'          => 'no',
+			'unload_td_tbexgive'        => 'no',
 
 		)  // end of array
 	);
@@ -185,7 +187,7 @@ function ddw_tbexgive_register_settings_givewp() {
 			);
 
 
-		/** GiveWP: 2nd section (Give name) */
+		/** GiveWP: 2nd section (Give specific) */
 		add_settings_section(
 			'tbexgive-section-givewp',
 			'<h3 class="tbex-settings-section">' . __( 'For GiveWP', 'toolbar-extras-givewp' ) . '</h3>',
@@ -209,6 +211,24 @@ function ddw_tbexgive_register_settings_givewp() {
 				'tbexgive_group_givewp',
 				'tbexgive-section-givewp',
 				array( 'class' => 'tbexgive-setting-givewp-shortcode-pages' )
+			);
+
+			add_settings_field(
+				'givewp_shortcode_state',
+				__( 'Add Post State for special GiveWP Shortcode Pages?', 'toolbar-extras-givewp' ),
+				'ddw_tbexgive_settings_cb_givewp_shortcode_state',
+				'tbexgive_group_givewp',
+				'tbexgive-section-givewp',
+				array( 'class' => 'tbexgive-setting-givewp-shortcode-state' )
+			);
+
+			add_settings_field(
+				'givewp_pages_views_filter',
+				__( 'Add Views filter for all GiveWP Pages?', 'toolbar-extras-givewp' ),
+				'ddw_tbexgive_settings_cb_givewp_pages_views_filter',
+				'tbexgive_group_givewp',
+				'tbexgive-section-givewp',
+				array( 'class' => 'tbexgive-setting-givewp-pages-views-filter' )
 			);
 
 			$heading_addons_changelog = sprintf(
@@ -519,6 +539,8 @@ function ddw_tbexgive_validate_settings_givewp( $input ) {
 		'donations_tl_use_icon',
 		'donations_tl_target',
 		'givewp_shortcode_pages',
+		'givewp_shortcodes_state',
+		'givewp_pages_views_filter',
 		'givewp_admin_menu_tweak',
 		'formfeat_display',
 		'formfeat_title',

@@ -18,6 +18,7 @@ add_action( 'admin_bar_menu', 'ddw_tbexgive_items_givewp_pages', 98 );
  *
  * @since 1.0.0
  *
+ * @uses ddw_tbexgive_display_givewp_pages_views_filter()
  * @uses ddw_tbexgive_is_givewp_recurring_donations_active()
  * @uses ddw_tbexgive_display_shortcode_pages()
  * @uses ddw_tbex_get_pages_with_shortcode()
@@ -41,7 +42,7 @@ function ddw_tbexgive_items_givewp_pages( $admin_bar ) {
 			'id'     => 'givewp-pages',
 			'parent' => 'group-donation-options',
 			'title'  => esc_attr__( 'Donation Pages', 'toolbar-extras-givewp' ),
-			'href'   => current_user_can( 'manage_give_settings' ) ? esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=general&section=general-settings' ) ) : esc_url( admin_url( 'edit.php?post_type=page' ) ),
+			'href'   => ddw_tbexgive_display_givewp_pages_views_filter() ? esc_url( admin_url( 'edit.php?post_type=page&donation-pages=givewp' ) ) : esc_url( admin_url( 'edit.php?post_type=page' ) ),		// current_user_can( 'manage_give_settings' ) ? esc_url( admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=general&section=general-settings' ) ) : esc_url( admin_url( 'edit.php?post_type=page' ) ),
 			'meta'   => array(
 				'target' => '',
 				'title'  => esc_attr__( 'Edit and Preview Give Donation Pages', 'toolbar-extras-givewp' ),
@@ -148,9 +149,9 @@ function ddw_tbexgive_items_givewp_pages( $admin_bar ) {
 								'id'     => 'givewp-shortcode-pages-heading',
 								'parent' => 'group-givewp-shortcode-pages',
 								'title'  => '<em>' . esc_attr__( 'Special Shortcode Pages', 'toolbar-extras-givewp' ) . ':</em>',
-								'href'   => ddw_tbex_get_info_url( 'url_give_shortcodes', 'givewp' ),
+								'href'   => ddw_tbexgive_display_givewp_pages_views_filter() ? esc_url( admin_url( 'edit.php?post_type=page&donation-pages=givewp' ) ) : ddw_tbex_get_info_url( 'url_give_shortcodes', 'givewp' ),
 								'meta'   => array(
-									'target' => ddw_tbex_meta_target(),
+									'target' => ddw_tbexgive_display_givewp_pages_views_filter() ? '' : ddw_tbex_meta_target(),
 									'title'  => esc_attr__( 'List of Pages with Special GiveWP Shortcodes', 'toolbar-extras-givewp' ),
 								)
 							)

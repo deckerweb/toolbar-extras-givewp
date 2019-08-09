@@ -12,6 +12,125 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
+add_filter( 'parse_query', 'ddw_tbexgive_filter_all_givewp_pages' );
+/**
+ * Modify the query for our edit Page views filter (donation-pages=givewp).
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbexgive_display_givewp_pages_views_filter()
+ * @uses ddw_tbexgive_get_all_givewp_pages()
+ *
+ * @param object $query
+ */
+function ddw_tbexgive_filter_all_givewp_pages( $query ) {
+
+	if ( is_admin()
+		&& 'page' === $query->query[ 'post_type' ]
+		&& current_user_can( 'manage_give_settings' )
+		&& ddw_tbexgive_display_givewp_pages_views_filter()
+	) {
+
+		if ( isset( $_GET[ 'donation-pages' ] ) && 'givewp' === sanitize_key( wp_unslash( $_GET[ 'donation-pages' ] ) ) ) {
+
+			$query->set( 'post__in', ddw_tbexgive_get_all_givewp_pages() );
+
+		}  // end if
+
+	}  // end if
+
+}  // end function
+
+
+add_filter( 'views_edit-page', 'ddw_tbexgive_pages_givewp_views_filter', 10, 1 );
+/**
+ * Add a new Views filter on edit Page screen:
+ *   Lists all GiveWP-specific pages, which are controlled via GiveWP settings
+ *   or contain a GiveWP-specific Shortcode.
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbexgive_display_givewp_pages_views_filter()
+ * @uses ddw_tbexgive_get_all_givewp_pages()
+ * @uses ddw_tbexgive_string_givewp()
+ *
+ * @param array $views Holds all views of Page states (post states).
+ * @return array Modified array of views.
+ */
+function ddw_tbexgive_pages_givewp_views_filter( $views ) {
+
+	/** Bail early if no proper permissions */
+	if ( ! current_user_can( 'manage_give_settings' )
+		|| ! ddw_tbexgive_display_givewp_pages_views_filter()
+	) {
+		return $views;
+	}
+
+	$result = count( ddw_tbexgive_get_all_givewp_pages() );
+	$class  = ( isset( $_GET[ 'donation-pages' ] ) && 'givewp' == sanitize_key( wp_unslash( $_GET[ 'donation-pages' ] ) ) ) ? ' class="current"' : '';
+  
+	$admin_url = add_query_arg(
+		'donation-pages',
+		'givewp',
+		admin_url( 'edit.php?post_type=page' )
+	);
+
+	$views[ 'donation-pages' ] = sprintf(
+		'<a href="%1$s"%2$s>%3$s <span class="count">(%4$d)</span></a>',
+		esc_url( $admin_url ),
+	  	$class,
+		ddw_tbexgive_string_givewp(),
+		absint( $result )
+	);
+
+	return $views;
+
+}  // end function
+
+
+add_filter( 'display_post_states', 'ddw_tbexgive_add_post_state_givewp_shortcode_pages', 10, 2 );
+/**
+ * Adds a new post state "Give Shortcode" to all pages which contain a
+ *   GiveWP-specific Shortcode.
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbexgive_display_shortcode_post_state()
+ * @uses ddw_tbexgive_get_givewp_shortcode_pages()
+ * @uses ddw_tbexgive_string_givewp()
+ *
+ * @param array  $post_states Array holding all post states.
+ * @param object $post        Object of the current post type item.
+ * @return array Modified array of post states.
+ */
+function ddw_tbexgive_add_post_state_givewp_shortcode_pages( $post_states, $post ) {
+
+	/** Bail early if no Post State wanted */
+	if ( ! ddw_tbexgive_display_shortcode_post_state() ) {
+		return $post_states;
+	}
+
+	/** Conditionally add post state where wanted */
+	if ( 'page' === $post->post_type ) {
+
+		/** Only add row action if we have a Oxygen-enabled item */
+		if ( in_array( $post->ID, ddw_tbexgive_get_givewp_shortcode_pages() ) ) {
+
+			$post_states[ 'givewp_shortcode_page' ] = sprintf(
+				/* translators: %s - label, "Give" */
+				__( '%s Shortcode', 'Label for Post State', 'toolbar-extras-oxygen' ),
+				ddw_tbexgive_string_givewp()
+			);
+
+		}  // end if
+
+	}  // end if
+
+	return $post_states;
+
+}  // end function
+
+
 add_action( 'wp_before_admin_bar_render', 'ddw_tbexgive_maybe_remove_toolbar_items' );
 /**
  * Optionally remove original items from Toolbar Extras that may not be needed
@@ -19,6 +138,7 @@ add_action( 'wp_before_admin_bar_render', 'ddw_tbexgive_maybe_remove_toolbar_ite
  *
  * @since 1.0.0
  *
+ * @uses ddw_tbexgive_use_tweak_tbex_build_group()
  * @uses ddw_tbex_id_main_item()
  *
  * @global mixed $GLOBALS[ 'wp_admin_bar' ]
@@ -73,6 +193,48 @@ function ddw_tbexgive_add_submenu_for_givewp_changelog() {
 }  // end function
 
 
+add_action( 'admin_menu', 'ddw_tbexgive_add_submenu_for_givewp_pages', 1000 );
+/**
+ * Add additional admin menu items to make Toolbar settings more accessable.
+ *
+ * @since 1.0.0
+ *
+ * @uses ddw_tbexgive_display_givewp_pages_views_filter()
+ * @uses ddw_tbexgive_string_givewp()
+ * @uses add_submenu_page()
+ */
+function ddw_tbexgive_add_submenu_for_givewp_pages() {
+
+	/** Bail early if no proper permissions or not wanted */
+	if ( ! current_user_can( 'manage_give_settings' )
+		|| ! ddw_tbexgive_display_givewp_pages_views_filter()
+	) {
+		return;
+	}
+
+	$admin_url = add_query_arg(
+		'donation-pages',
+		'givewp',
+		admin_url( 'edit.php?post_type=page' )
+	);
+
+	$menu_title = sprintf(
+		/* translators: %s - label, "Give" */
+		esc_attr__( '%s Pages', 'toolbar-extras-givewp' ),
+		ddw_tbexgive_string_givewp()
+	);
+
+	add_submenu_page(
+		'edit.php?post_type=page',
+		$menu_title,
+		$menu_title,
+		'manage_give_settings',
+		esc_url( $admin_url )
+	);
+
+}  // end function
+
+
 add_filter( 'parent_file', 'ddw_tbexgive_parent_submenu_tweaks' );
 /**
  * When editing an Oxygen template within the Admin, properly highlight it as
@@ -116,30 +278,17 @@ function ddw_tbexgive_submenu_file_tweaks( $submenu_file, $parent_file ){
 	}  // end if
 
 	return $submenu_file;
-}
 
-
-//add_action( 'admin_footer', 'ddw_debugging_admin_20190807_1526', 100000 );
-function ddw_debugging_admin_20190807_1526() {
-
-	echo '<div class="admin notice error"><p>';
-
-	echo 'Debugging: ' . '';
-
-	echo '<br /><br />Array-Inhalt:<br />';
-	print_r( $GLOBALS[ 'submenu' ][ 'edit.php?post_type=give_forms' ] );
-
-	echo '</p></div>';
-
-}  // end debugging function
+}  // end function
 
 
 /**
- * Array with all GiveWP textdomains - base plugin, and all supported extensions.
+ * Get an array with all known GiveWP textdomains - base plugin, and all
+ *   supported Add-Ons.
  *
  * @since 1.0.0
  *
- * @return array Array of all textdomains for GiveWP + Add-Ons.
+ * @return array Array of all known textdomains for GiveWP + Add-Ons.
  */
 function ddw_tbexgive_get_givewp_textdomains() {
 
@@ -207,8 +356,6 @@ function ddw_tbexgive_tweak_unload_textdomain_givewp( $textdomains ) {
 	if ( ! ddw_tbexgive_use_tweak_unload_translations_givewp() ) {
 		return $textdomains;
 	}
-
-	//$givewp_domains = array( 'give', );
 
 	return array_merge( $textdomains, ddw_tbexgive_get_givewp_textdomains() );
 
