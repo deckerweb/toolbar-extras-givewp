@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Toolbar Extras for Give Donations\n"
-"POT-Creation-Date: 2019-08-10 09:42+0200\n"
+"POT-Creation-Date: 2019-08-10 23:17+0200\n"
 "PO-Revision-Date: 2019-07-31 17:17+0200\n"
 "Last-Translator: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language-Team: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
@@ -1082,49 +1082,44 @@ msgstr ""
 msgid "Add new Manual Donation Payment"
 msgstr ""
 
-#: includes/givewp-addons/items-manual-donations.php:111
+#: includes/givewp-addons/items-manual-donations.php:112
 msgid "Manual Donation"
 msgstr ""
 
-#: includes/givewp-addons/items-manual-donations.php:113
+#: includes/givewp-addons/items-manual-donations.php:114
 msgid "Give Manual Donation Payment"
 msgstr ""
 
-#: includes/givewp-addons/items-members-permissions.php:58
-#: includes/givewp-addons/items-members-permissions.php:62
-msgid "Give Permission &amp; Roles"
-msgstr ""
-
-#: includes/givewp-addons/items-members-permissions.php:113
-#: includes/givewp-addons/items-members-permissions.php:126
+#: includes/givewp-addons/items-members-permissions.php:114
+#: includes/givewp-addons/items-members-permissions.php:127
 msgid "Edit Capabilities for this User Role"
 msgstr ""
 
-#: includes/givewp-addons/items-members-permissions.php:122
+#: includes/givewp-addons/items-members-permissions.php:123
 msgid "Edit Capabilities"
 msgstr ""
 
-#: includes/givewp-addons/items-members-permissions.php:135
+#: includes/givewp-addons/items-members-permissions.php:136
 msgid "List Users"
 msgstr ""
 
-#: includes/givewp-addons/items-members-permissions.php:139
+#: includes/givewp-addons/items-members-permissions.php:140
 msgid "List all registered Users for this User Role"
 msgstr ""
 
-#: includes/givewp-addons/items-members-permissions.php:154
+#: includes/givewp-addons/items-members-permissions.php:155
 msgid "All Roles"
 msgstr ""
 
-#: includes/givewp-addons/items-members-permissions.php:158
+#: includes/givewp-addons/items-members-permissions.php:159
 msgid "All User Roles"
 msgstr ""
 
-#: includes/givewp-addons/items-members-permissions.php:167
+#: includes/givewp-addons/items-members-permissions.php:168
 msgid "New Role"
 msgstr ""
 
-#: includes/givewp-addons/items-members-permissions.php:171
+#: includes/givewp-addons/items-members-permissions.php:172
 msgid "Add New User Role"
 msgstr ""
 
@@ -1260,7 +1255,7 @@ msgstr ""
 
 #: includes/givewp-addons/items-recurring-donations.php:59
 #: includes/givewp-official/items-givewp-core.php:296
-#: includes/items-formfeat.php:204
+#: includes/items-formfeat.php:205
 msgid "Subscriptions"
 msgstr ""
 
@@ -1429,12 +1424,12 @@ msgid "Help Translate Give Donations Plugin"
 msgstr ""
 
 #: includes/givewp-official/items-givewp-core.php:55
-#: includes/items-formfeat.php:174
+#: includes/items-formfeat.php:175
 msgid "Donation Transactions"
 msgstr ""
 
 #: includes/givewp-official/items-givewp-core.php:59
-#: includes/items-formfeat.php:178
+#: includes/items-formfeat.php:179
 msgid "Donation Transactions - Payment History"
 msgstr ""
 
@@ -1477,12 +1472,12 @@ msgstr ""
 
 #: includes/givewp-official/items-givewp-core.php:187
 #: includes/givewp-official/items-givewp-user-roles.php:97
-#: includes/items-formfeat.php:188
+#: includes/items-formfeat.php:189
 msgid "Donors"
 msgstr ""
 
 #: includes/givewp-official/items-givewp-core.php:191
-#: includes/items-formfeat.php:192
+#: includes/items-formfeat.php:193
 msgid "All Donors - User Data"
 msgstr ""
 
@@ -1511,7 +1506,7 @@ msgid "List all Donors per Form Campaign"
 msgstr ""
 
 #: includes/givewp-official/items-givewp-core.php:300
-#: includes/items-formfeat.php:208
+#: includes/items-formfeat.php:209
 msgid "All Subscriptions - Recurring Donations"
 msgstr ""
 
@@ -1536,12 +1531,12 @@ msgid "All Subscriptions for Form Campaign"
 msgstr ""
 
 #: includes/givewp-official/items-givewp-core.php:377
-#: includes/items-formfeat.php:224
+#: includes/items-formfeat.php:225
 msgid "Reports"
 msgstr ""
 
 #: includes/givewp-official/items-givewp-core.php:381
-#: includes/items-formfeat.php:228
+#: includes/items-formfeat.php:229
 msgid "All Reports - Donation Statistics &amp; Analytics"
 msgstr ""
 
@@ -1563,13 +1558,13 @@ msgstr ""
 #: includes/givewp-official/items-givewp-core.php:606
 #: includes/givewp-official/items-givewp-core.php:765
 #: includes/givewp-official/items-givewp-core.php:769
-#: includes/items-formfeat.php:237 includes/items-formfeat.php:241
+#: includes/items-formfeat.php:238 includes/items-formfeat.php:242
 msgid "Overview"
 msgstr ""
 
 #. translators: %s - label of time range, for example "Yesterday"
 #: includes/givewp-official/items-givewp-core.php:441
-#: includes/items-formfeat.php:259
+#: includes/items-formfeat.php:260
 #, php-format
 msgid "Income %s"
 msgstr ""
@@ -1766,12 +1761,12 @@ msgid "Edit Form in Campaign Form Builder"
 msgstr ""
 
 #: includes/givewp-official/items-givewp-core.php:1043
-#: includes/items-formfeat.php:295
+#: includes/items-formfeat.php:296
 msgid "View Frontend"
 msgstr ""
 
 #: includes/givewp-official/items-givewp-core.php:1047
-#: includes/items-formfeat.php:299
+#: includes/items-formfeat.php:300
 msgid "View Form on Frontend (Live Preview)"
 msgstr ""
 
@@ -1807,11 +1802,11 @@ msgstr ""
 msgid "Reports for this specific Form"
 msgstr ""
 
-#: includes/givewp-official/items-givewp-new-content.php:38
+#: includes/givewp-official/items-givewp-new-content.php:37
 msgid "Give Donation Form"
 msgstr ""
 
-#: includes/givewp-official/items-givewp-new-content.php:41
+#: includes/givewp-official/items-givewp-new-content.php:39
 msgid "Give Donation Form/ Campaign"
 msgstr ""
 
@@ -2161,12 +2156,12 @@ msgid "%1$s %2$s Management"
 msgstr ""
 
 #. translators: %s - label, form title or custom text
-#: includes/items-formfeat.php:99
+#: includes/items-formfeat.php:100
 #, php-format
 msgid "Featured Donation Form Campaign: %s"
 msgstr ""
 
-#: includes/items-formfeat.php:277 includes/items-formfeat.php:281
+#: includes/items-formfeat.php:278 includes/items-formfeat.php:282
 msgid "Edit Form Campaign"
 msgstr ""
 

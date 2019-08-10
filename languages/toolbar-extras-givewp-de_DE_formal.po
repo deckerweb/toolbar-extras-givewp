@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Toolbar Extras for Give Donations\n"
-"POT-Creation-Date: 2019-08-10 09:41+0200\n"
-"PO-Revision-Date: 2019-08-10 09:41+0200\n"
+"POT-Creation-Date: 2019-08-10 23:16+0200\n"
+"PO-Revision-Date: 2019-08-10 23:16+0200\n"
 "Last-Translator: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language-Team: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language: de_DE@formal\n"
@@ -1143,49 +1143,44 @@ msgstr "Neue manuelle Spende"
 msgid "Add new Manual Donation Payment"
 msgstr "Neue manuelle Spendenzahlung hinzufügen"
 
-#: includes/givewp-addons/items-manual-donations.php:111
+#: includes/givewp-addons/items-manual-donations.php:112
 msgid "Manual Donation"
 msgstr "Manuelle Spende"
 
-#: includes/givewp-addons/items-manual-donations.php:113
+#: includes/givewp-addons/items-manual-donations.php:114
 msgid "Give Manual Donation Payment"
 msgstr "Give Manuelle Spendenzahlung"
 
-#: includes/givewp-addons/items-members-permissions.php:58
-#: includes/givewp-addons/items-members-permissions.php:62
-msgid "Give Permission &amp; Roles"
-msgstr "Give Berechtigungen &amp; Rollen"
-
-#: includes/givewp-addons/items-members-permissions.php:113
-#: includes/givewp-addons/items-members-permissions.php:126
+#: includes/givewp-addons/items-members-permissions.php:114
+#: includes/givewp-addons/items-members-permissions.php:127
 msgid "Edit Capabilities for this User Role"
 msgstr "Berechtigungen für diese Benutzerrolle bearbeiten"
 
-#: includes/givewp-addons/items-members-permissions.php:122
+#: includes/givewp-addons/items-members-permissions.php:123
 msgid "Edit Capabilities"
 msgstr "Berechtigungen bearbeiten"
 
-#: includes/givewp-addons/items-members-permissions.php:135
+#: includes/givewp-addons/items-members-permissions.php:136
 msgid "List Users"
 msgstr "Benutzer auflisten"
 
-#: includes/givewp-addons/items-members-permissions.php:139
+#: includes/givewp-addons/items-members-permissions.php:140
 msgid "List all registered Users for this User Role"
 msgstr "Alle registrierten Benutzer für diese Benutzerrolle auflisten"
 
-#: includes/givewp-addons/items-members-permissions.php:154
+#: includes/givewp-addons/items-members-permissions.php:155
 msgid "All Roles"
 msgstr "Alle Benutzerrollen"
 
-#: includes/givewp-addons/items-members-permissions.php:158
+#: includes/givewp-addons/items-members-permissions.php:159
 msgid "All User Roles"
 msgstr "Alle Benutzerrollen"
 
-#: includes/givewp-addons/items-members-permissions.php:167
+#: includes/givewp-addons/items-members-permissions.php:168
 msgid "New Role"
 msgstr "Neue Benutzerrolle"
 
-#: includes/givewp-addons/items-members-permissions.php:171
+#: includes/givewp-addons/items-members-permissions.php:172
 msgid "Add New User Role"
 msgstr "Neue Benutzerrolle hinzufügen"
 
@@ -1321,7 +1316,7 @@ msgstr "Wiederkehrende Spenden"
 
 #: includes/givewp-addons/items-recurring-donations.php:59
 #: includes/givewp-official/items-givewp-core.php:296
-#: includes/items-formfeat.php:204
+#: includes/items-formfeat.php:205
 msgid "Subscriptions"
 msgstr "Abonnements"
 
@@ -1491,12 +1486,12 @@ msgid "Help Translate Give Donations Plugin"
 msgstr "Helfen Sie beim Übersetzen des Give Spenden-Plugins"
 
 #: includes/givewp-official/items-givewp-core.php:55
-#: includes/items-formfeat.php:174
+#: includes/items-formfeat.php:175
 msgid "Donation Transactions"
 msgstr "Spendentransaktionen"
 
 #: includes/givewp-official/items-givewp-core.php:59
-#: includes/items-formfeat.php:178
+#: includes/items-formfeat.php:179
 msgid "Donation Transactions - Payment History"
 msgstr "Spendentransaktionen - Zahlungsverhalten"
 
@@ -1539,12 +1534,12 @@ msgstr "Alle Spender für Formularkampagne"
 
 #: includes/givewp-official/items-givewp-core.php:187
 #: includes/givewp-official/items-givewp-user-roles.php:97
-#: includes/items-formfeat.php:188
+#: includes/items-formfeat.php:189
 msgid "Donors"
 msgstr "Spender"
 
 #: includes/givewp-official/items-givewp-core.php:191
-#: includes/items-formfeat.php:192
+#: includes/items-formfeat.php:193
 msgid "All Donors - User Data"
 msgstr "Alle Spender - Benutzerdaten"
 
@@ -1573,7 +1568,7 @@ msgid "List all Donors per Form Campaign"
 msgstr "Liste aller Spender pro Formularkampagne"
 
 #: includes/givewp-official/items-givewp-core.php:300
-#: includes/items-formfeat.php:208
+#: includes/items-formfeat.php:209
 msgid "All Subscriptions - Recurring Donations"
 msgstr "Alle Abonnements - Wiederkehrende Spenden"
 
@@ -1598,12 +1593,12 @@ msgid "All Subscriptions for Form Campaign"
 msgstr "Alle Abonnements für Formularkampagne"
 
 #: includes/givewp-official/items-givewp-core.php:377
-#: includes/items-formfeat.php:224
+#: includes/items-formfeat.php:225
 msgid "Reports"
 msgstr "Berichte"
 
 #: includes/givewp-official/items-givewp-core.php:381
-#: includes/items-formfeat.php:228
+#: includes/items-formfeat.php:229
 msgid "All Reports - Donation Statistics &amp; Analytics"
 msgstr "Alle Berichte - Spendenstatistik &amp; Analytik"
 
@@ -1625,13 +1620,13 @@ msgstr "Einnahmen - Verdienst"
 #: includes/givewp-official/items-givewp-core.php:606
 #: includes/givewp-official/items-givewp-core.php:765
 #: includes/givewp-official/items-givewp-core.php:769
-#: includes/items-formfeat.php:237 includes/items-formfeat.php:241
+#: includes/items-formfeat.php:238 includes/items-formfeat.php:242
 msgid "Overview"
 msgstr "Übersicht"
 
 #. translators: %s - label of time range, for example "Yesterday"
 #: includes/givewp-official/items-givewp-core.php:441
-#: includes/items-formfeat.php:259
+#: includes/items-formfeat.php:260
 #, php-format
 msgid "Income %s"
 msgstr "Einnahmen %s"
@@ -1828,12 +1823,12 @@ msgid "Edit Form in Campaign Form Builder"
 msgstr "Formular im Kampagnen-Formular-Builder bearbeiten"
 
 #: includes/givewp-official/items-givewp-core.php:1043
-#: includes/items-formfeat.php:295
+#: includes/items-formfeat.php:296
 msgid "View Frontend"
 msgstr "Frontend anzeigen"
 
 #: includes/givewp-official/items-givewp-core.php:1047
-#: includes/items-formfeat.php:299
+#: includes/items-formfeat.php:300
 msgid "View Form on Frontend (Live Preview)"
 msgstr "Formular im Frontend anzeigen (Live-Vorschau)"
 
@@ -1869,11 +1864,11 @@ msgstr "Berichte für dieses Formular"
 msgid "Reports for this specific Form"
 msgstr "Berichte für dieses spezielle Formular"
 
-#: includes/givewp-official/items-givewp-new-content.php:38
+#: includes/givewp-official/items-givewp-new-content.php:37
 msgid "Give Donation Form"
 msgstr "Give Spendenformular"
 
-#: includes/givewp-official/items-givewp-new-content.php:41
+#: includes/givewp-official/items-givewp-new-content.php:39
 msgid "Give Donation Form/ Campaign"
 msgstr "Give Spendenformular/ -kampagne"
 
@@ -2223,12 +2218,12 @@ msgid "%1$s %2$s Management"
 msgstr "Verwaltung von %1$s %2$s"
 
 #. translators: %s - label, form title or custom text
-#: includes/items-formfeat.php:99
+#: includes/items-formfeat.php:100
 #, php-format
 msgid "Featured Donation Form Campaign: %s"
 msgstr "Ausgewählte Formularkampagne: %s"
 
-#: includes/items-formfeat.php:277 includes/items-formfeat.php:281
+#: includes/items-formfeat.php:278 includes/items-formfeat.php:282
 msgid "Edit Form Campaign"
 msgstr "Formularkampagne bearbeiten"
 
@@ -2410,6 +2405,9 @@ msgstr "David Decker - DECKERWEB"
 #. Author URI of the plugin/theme
 msgid "https://toolbarextras.com/"
 msgstr "https://toolbarextras.com/"
+
+#~ msgid "Give Permission &amp; Roles"
+#~ msgstr "Give Berechtigungen &amp; Rollen"
 
 #~ msgid "Edit PAge"
 #~ msgstr "Seite bearbeiten"
