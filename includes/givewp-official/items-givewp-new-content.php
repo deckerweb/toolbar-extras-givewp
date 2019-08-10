@@ -34,9 +34,7 @@ function ddw_tbexgive_items_new_content_give_form( $admin_bar ) {
 	$admin_bar->add_node(
 		array(
 			'id'     => 'new-give_forms',		// same as original!
-			//'parent' => 'givewp-about',
 			'title'  => esc_attr__( 'Give Donation Form', 'toolbar-extras-givewp' ),
-			//'href'   => esc_url( admin_url( 'index.php?page=give-credits' ) ),
 			'meta'   => array(
 				'title'  => esc_attr__( 'Give Donation Form/ Campaign', 'toolbar-extras-givewp' ),
 			)

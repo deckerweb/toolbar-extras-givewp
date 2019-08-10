@@ -20,10 +20,6 @@ Managing Donations with GiveWP? Here's to easier & faster fundraising with this 
 
 Perfect for non-profit organisations and private donation fundraising campaigns: This smart WordPress plugin just adds missed and **very useful admin links** for Give Donations to your Toolbar / Admin Bar. Save mouse travel and scrolling time. Get more productive - and focus on your campaigns instead of searching for settings ... 😉
 
-https://www.youtube.com/watch?v=SWBucl9EJBM
-
-[Video direct link](https://www.youtube.com/watch?v=SWBucl9EJBM) | [Long version video (full walkthrough)](https://www.youtube.com/watch?v=7CRivf7uRE0) | [Install & setup video](https://www.youtube.com/watch?v=B-Xg3jDhqRs)
-
 ℹ️ **Essential:** Toolbar Extras for Give Donations is an **Add-On** plugin, it **requires** the base plugin "Toolbar Extras".  
 ℹ️ **Important:** "Give Donations" (GiveWP) is a **free** plugin for WordPress by GiveWP/ Impress.org, LLC.  
 ℹ️ **Disclaimer:** Toolbar Extras for Give Donations is an **independent** free plugin by David Decker from DECKERWEB. It does **not** represent GiveWP/ Impress.org, LLC.
@@ -34,6 +30,7 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 * Bring all GiveWP Components into your Toolbar: Donation Payments, Donors, Reports, Form Campaigns, Settings, Add-Ons
 * Quick access to Reports, including typical filter views (sub views, tabs, sections)
 * All special GiveWP pages (Give Shortcodes) at your fingertips for live preview and editing
+* Optional Views Filter for filtering all GiveWP-specific pages on the Page Edit screen
 * Quick jump links for all Settings, Tools, even from Give Add-Ons
 * Up to 30 Add-On settings for customizing the experience (components, features, icon, position, label, etc.)
 * Give Add-On (Extensions) directly integrated where possible and useful (only when Extension is active, of course) - *for Add-On listings see below*
@@ -41,10 +38,11 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 * Additional Give Toolbar settings submenu item - for WordPress Admin Menu
 
 
+
 ### 👍 More Benefits 
 * Non-bloated, already familiar interface (the WP Toolbar)
 * Customizeable: make it pretty with your favorite icons and use custom titles and URLs for the top-level items
-* Get more focused, save mouse travel and scrolling time, be more productive with donation management!
+* Get more focused on your mission, save mouse travel and scrolling time, be more productive with donation management!
 * Perfect for non-profit organisations and private donation campaigns - let the Toolbar work for you!
 * Any items are only loaded when needed
 * Fully internationalized and translateable (but can be disabled if ever needed)
@@ -205,7 +203,7 @@ For more background info on this topic have look on our website:
 
 
 ### Will this Plugin slow down my site? 
-Absolutely not. The plugin will only do its stuff for logged-in Administrator, and optionally a few things for other Give-specific users who have certain permissions. The regular visitors will not see, or "feel" this plugin! Even a registered "Donor" basic user account won't see or "feel" this plugin at all -- it won't even load in these scenarios.
+Absolutely not. The plugin will only do its stuff for logged-in Administrator, and optionally a few things for other Give-specific user roles who have certain permissions. The regular visitors will not see, or "feel" this plugin! Even a registered "Donor" basic user account won't see or "feel" this plugin at all -- it won't even load in these scenarios.
 
 
 

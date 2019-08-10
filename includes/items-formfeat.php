@@ -83,12 +83,13 @@ function ddw_tbexgive_main_item_formfeat( $admin_bar ) {
 	$income = '';
 
 	if ( ddw_tbexgive_display_featured_form_income()
+		&& current_user_can( 'view_give_reports', ddw_tbexgive_get_formfeat_id() )
 		&& ( function_exists( 'give_currency_filter' ) && function_exists( 'give_format_amount' ) && function_exists( 'give_get_form_earnings_stats' ) )
 	) {
 
 		$income = sprintf(
 			' (%s)',
-			give_currency_filter( give_format_amount( give_get_form_earnings_stats( ddw_tbexgive_get_formfeat_id() ) /*, array( 'sanitize' => false ) */ ) )
+			give_currency_filter( give_format_amount( give_get_form_earnings_stats( ddw_tbexgive_get_formfeat_id() ) ) )
 		);
 
 	}  // end if

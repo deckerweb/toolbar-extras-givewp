@@ -1161,7 +1161,7 @@ if ( current_user_can( 'manage_options' ) ) {
  * Load GiveWP New Content items
  * @since 1.0.0
  */
-if ( ddw_tbex_display_items_new_content() ) {
+if ( ddw_tbex_display_items_new_content() && ! is_network_admin() ) {
 	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-official/items-givewp-new-content.php';
 }
 

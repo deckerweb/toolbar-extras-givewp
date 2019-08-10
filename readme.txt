@@ -35,11 +35,12 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 * Give Add-On (Extensions) directly integrated where possible and useful (only when Extension is active, of course) - *for Add-On listings see below*
 * Resources - deep links to GiveWP documentation (knowledge base); also for Add-Ons
 * Additional Give Toolbar settings submenu item - for WordPress Admin Menu
+* Integration in WordPress *Site Health* feature (WP 5.2+), on the *Info* screen
 
 = 👍 More Benefits =
 * Non-bloated, already familiar interface (the WP Toolbar)
 * Customizeable: make it pretty with your favorite icons and use custom titles and URLs for the top-level items
-* Get more focused, save mouse travel and scrolling time, be more productive with donation management!
+* Get more focused on your mission, save mouse travel and scrolling time, be more productive with donation management!
 * Perfect for non-profit organisations and private donation campaigns - let the Toolbar work for you!
 * Any items are only loaded when needed
 * Fully internationalized and translateable (but can be disabled if ever needed)
@@ -180,7 +181,7 @@ For more background info on this topic have look on our website:
 
 
 = Will this Plugin slow down my site? =
-Absolutely not. The plugin will only do its stuff for logged-in Administrator, and optionally a few things for other Give-specific users who have certain permissions. The regular visitors will not see, or "feel" this plugin! Even a registered "Donor" basic user account won't see or "feel" this plugin at all -- it won't even load in these scenarios.
+Absolutely not. The plugin will only do its stuff for logged-in Administrator, and optionally a few things for other Give-specific user roles who have certain permissions. The regular visitors will not see, or "feel" this plugin! Even a registered "Donor" basic user account won't see or "feel" this plugin at all -- it won't even load in these scenarios.
 
 
 = Does the Plugin work with Multisite? =

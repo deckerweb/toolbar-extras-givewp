@@ -101,6 +101,7 @@ function ddw_tbexgive_items_new_content_manual_donation( $admin_bar ) {
 	/** Bail early if items display is not wanted, or no proper permissions */
 	if ( ! ddw_tbex_display_items_new_content()
 		|| ! current_user_can( 'edit_give_payments' )
+		|| is_network_admin()
 	) {
 		return $admin_bar;
 	}

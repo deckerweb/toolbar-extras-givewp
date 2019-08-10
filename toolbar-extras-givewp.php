@@ -493,7 +493,9 @@ function ddw_tbexgive_setup_plugin() {
 	require_once TBEXGIVE_PLUGIN_DIR . 'includes/admin/tbexgive-settings.php';
 
 	/** Load needed files if required plugins are active */
-	if ( ddw_tbexgive_is_toolbar_extras_active() && ddw_tbexgive_is_givewp_active() ) {
+	if ( ( ddw_tbexgive_is_toolbar_extras_active() && ddw_tbexgive_is_givewp_active() )
+		&& current_user_can( 'edit_give_forms' )
+	) {
 
 		/** Load all Give items, resources, Toolbar styles */
 		require_once TBEXGIVE_PLUGIN_DIR . 'includes/tbexgive-styles.php';
