@@ -204,7 +204,45 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 
 1. Donations item - the main Toolbar item for your donation management
 
-2. Optional Featured Donation Form Campaign as top-level Toolbar item
+2. Focus on Donation Transactions (Payments)
+
+3. Focus on Donors - also per Form
+
+4. Focus on Reports and Analysis - Income and more
+
+5. Focus on Your Campaigns (Give Forms) - Preview and Edit
+
+6. Focus on all GiveWP-specific Pages
+
+7. Additional View for all GiveWP Pages, plus Optional Post State for Shortcode Pages
+
+8. Focus on GiveWP Settings items
+
+9. Focus on GiveWP Tools items
+
+10. Focus on Updates (from Add-Ons), Licenses etc.
+
+11. Focus on active Add-Ons - only if any supported Add-On is installed & activated
+
+12. Optional: Support for "Members" plugin baked right in, including its additional GiveWP Integration Add-On
+
+13. Useful external Resources for GiveWP
+
+14. Community-oriented Resources, plus tips for Donation management and missions
+
+15. Also, integration in Toolbar Extras "Users" Group for GiveWP Roles
+
+16. Optional: Totally awesome "Featured Form" Campaign as extra top-level Toolbar item
+
+17. Plugin settings for the optional "Featured Form" item
+
+18. Up to 3 Frontend Items (top-level) for the Toolbar: Donations (Main item, on the left), Featured Form (in the middle, violett background), and GiveWP Test Mode (on the right, orange background)
+
+19. This Add-On plugin with its GiveWP-specific Settings page for the Toolbar
+
+20. Help tab for this Add-On plugin
+
+21. Integration in Site Health Debug Info screen - for WP 5.2 or higher -- very useful for Support ;-)
 
 
 == Changelog ==

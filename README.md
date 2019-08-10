@@ -230,9 +230,88 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 
 ## Screenshots 
 
-### 1. ????
-[missing image]
+### 1. Donations item - the main Toolbar item for your donation management
+![Donations item - the main Toolbar item for your donation management](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-1.png)
 
+
+### 2. Focus on Donation Transactions (Payments)
+![Focus on Donation Transactions (Payments)](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-2.png)
+
+
+### 3. Focus on Donors - also per Form
+![Focus on Donors - also per Form](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-3.png)
+
+
+### 4. Focus on Reports and Analysis - Income and more
+![Focus on Reports and Analysis - Income and more](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-4.png)
+
+
+### 5. Focus on Your Campaigns (Give Forms) - Preview and Edit
+![Focus on Your Campaigns (Give Forms) - Preview and Edit](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-5.png)
+
+
+### 6. Focus on all GiveWP-specific Pages
+![Focus on all GiveWP-specific Pages](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-6.png)
+
+
+### 7. Additional View for all GiveWP Pages, plus Optional Post State for Shortcode Pages
+![Additional View for all GiveWP Pages, plus Optional Post State for Shortcode Pages](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-7.png)
+
+
+### 8. Focus on GiveWP Settings items
+![Focus on GiveWP Settings items](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-8.png)
+
+
+### 9. Focus on GiveWP Tools items
+![Focus on GiveWP Tools items](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-9.png)
+
+
+### 10. Focus on Updates (from Add-Ons), Licenses etc.
+![Focus on Updates (from Add-Ons), Licenses etc.](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-10.png)
+
+
+### 11. Focus on active Add-Ons - only if any supported Add-On is installed & activated
+![Focus on active Add-Ons - only if any supported Add-On is installed & activated](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-11.png)
+
+
+### 12. Optional: Support for "Members" plugin baked right in, including its additional GiveWP Integration Add-On
+![Optional: Support for "Members" plugin baked right in, including its additional GiveWP Integration Add-On](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-12.png)
+
+
+### 13. Useful external Resources for GiveWP
+![Useful external Resources for GiveWP](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-13.png)
+
+
+### 14. Community-oriented Resources, plus tips for Donation management and missions
+![Community-oriented Resources, plus tips for Donation management and missions](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-14.png)
+
+
+### 15. Also, integration in Toolbar Extras "Users" Group for GiveWP Roles
+![Also, integration in Toolbar Extras "Users" Group for GiveWP Roles](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-15.png)
+
+
+### 16. Optional: Totally awesome "Featured Form" Campaign as extra top-level Toolbar item
+![Optional: Totally awesome "Featured Form" Campaign as extra top-level Toolbar item](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-16.png)
+
+
+### 17. Plugin settings for the optional "Featured Form" item
+![Plugin settings for the optional "Featured Form" item](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-17.png)
+
+
+### 18. Up to 3 Frontend Items (top-level) for the Toolbar: Donations (Main item, on the left), Featured Form (in the middle, violett background), and GiveWP Test Mode (on the right, orange background)
+![Up to 3 Frontend Items (top-level) for the Toolbar: Donations (Main item, on the left), Featured Form (in the middle, violett background), and GiveWP Test Mode (on the right, orange background)](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-18.png)
+
+
+### 19. This Add-On plugin with its GiveWP-specific Settings page for the Toolbar
+![This Add-On plugin with its GiveWP-specific Settings page for the Toolbar](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-19.png)
+
+
+### 20. Help tab for this Add-On plugin
+![Help tab for this Add-On plugin](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-20.png)
+
+
+### 21. Integration in Site Health Debug Info screen - for WP 5.2 or higher -- very useful for Support ;-)
+![Integration in Site Health Debug Info screen - for WP 5.2 or higher -- very useful for Support ;-)](https://raw.githubusercontent.com/deckerweb/toolbar-extras-givewp/master/assets-repos/wordpress-org/screenshot-21.png)
 
 
 
