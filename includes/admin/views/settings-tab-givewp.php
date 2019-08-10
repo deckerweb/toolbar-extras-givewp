@@ -431,6 +431,9 @@ function ddw_tbexgive_settings_cb_givewp_shortcode_state() {
 				ddw_tbex_string_yes( 'return', 'code' )
 			); ?></span>
 		</label>
+		<p class="description">
+			<?php _e( 'If enabled this will add a Post State label to these Shortcode Pages in the Page list view overview table (Edit Screen).', 'toolbar-extras-givewp' ); ?>
+		</p>
 	<?php
 
 }  // end function
@@ -459,6 +462,9 @@ function ddw_tbexgive_settings_cb_givewp_pages_views_filter() {
 				ddw_tbex_string_yes( 'return', 'code' )
 			); ?></span>
 		</label>
+		<p class="description">
+			<?php _e( 'If enabled this will add an additional Views Filter for Pages (like a status) to only list all GiveWP-specific Pages. This can speed up your donation campaign setup and management tasks.', 'toolbar-extras-givewp' ); ?>
+		</p>
 	<?php
 
 }  // end function

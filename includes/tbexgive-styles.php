@@ -41,14 +41,17 @@ function ddw_tbexgive_styles_givewp_logo() {
 				height: 18px;
 				content: "\e800";
 			}
-			
+			/* #d59e0a // rgba(203, 144, 0, 1) */
 			#wpadminbar .give-test-mode-active > .ab-item {
-				color: #fff;
-				background-color: #ffba00 !important;
+				background-color: #ff8c00 !important;
 			}
 			#wpadminbar .give-test-mode-active:hover > .ab-item {
-				background-color: rgba(203, 144, 0, 1) !important;
-				color: #fff !important;
+				background-color: #d59e0a !important;
+			}
+			#wpadminbar .give-test-mode-active:hover .ab-item,
+			#wpadminbar .give-test-mode-active:hover .ab-icon:before,
+			#wpadminbar .give-test-mode-active:hover .ab-label {
+				color: inherit !important;
 			}
 
 			<?php if ( '' !== $bgcolor ) {

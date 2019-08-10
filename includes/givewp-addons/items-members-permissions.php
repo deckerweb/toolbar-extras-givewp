@@ -34,6 +34,7 @@ add_action( 'admin_bar_menu', 'ddw_tbexgive_aoitems_members_permissions', 100 );
  *
  * @since 1.0.0
  *
+ * @uses ddw_tbexgive_string_give_permissions_roles()
  * @uses ddw_tbexgive_is_members_givewp_integration_active()
  * @uses ddw_tbex_string_addon_title_attr()
  * @uses \Members\Integration\GiveWP\givewp_roles()
@@ -55,11 +56,11 @@ function ddw_tbexgive_aoitems_members_permissions( $admin_bar ) {
 		array(
 			'id'     => 'ao-givewp-permissions',
 			'parent' => 'group-donation-options',
-			'title'  => esc_attr__( 'Give Permission &amp; Roles', 'toolbar-extras-givewp' ),
+			'title'  => ddw_tbexgive_string_give_permissions_roles(),	// esc_attr__( 'Give Permission &amp; Roles', 'toolbar-extras-givewp' ),
 			'href'   => ddw_tbexgive_is_members_givewp_integration_active() ? esc_url( admin_url( 'users.php?page=roles&view=group-plugin-givewp' ) ) : esc_url( admin_url( 'users.php?page=roles' ) ),
 			'meta'   => array(
 				'target' => '',
-				'title'  => ddw_tbex_string_addon_title_attr( __( 'Give Permission &amp; Roles', 'toolbar-extras-givewp' ) ),
+				'title'  => ddw_tbex_string_addon_title_attr( ddw_tbexgive_string_give_permissions_roles() ),
 			)
 		)
 	);

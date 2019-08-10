@@ -28,7 +28,7 @@ function ddw_tbexgive_string_givewp() {
 	return esc_attr(
 		apply_filters(
 			'tbexgive/filter/string/givewp',
-			$give	//get_option( 'tbex-options-givewp', $give )[ 'givewp_name' ]
+			get_option( 'tbex-options-givewp', $give )[ 'givewp_name' ]
 		)
 	);
 
