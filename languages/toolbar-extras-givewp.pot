@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Toolbar Extras for Give Donations\n"
-"POT-Creation-Date: 2019-08-10 23:17+0200\n"
+"POT-Creation-Date: 2019-08-11 08:35+0200\n"
 "PO-Revision-Date: 2019-07-31 17:17+0200\n"
 "Last-Translator: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language-Team: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
@@ -223,7 +223,7 @@ msgstr ""
 
 #: includes/admin/tbexgive-settings.php:237
 #: includes/admin/views/settings-tab-givewp.php:500
-#: includes/items-plugins-givewp-addons.php:270
+#: includes/items-plugins-givewp-addons.php:279
 msgid "Add-Ons"
 msgstr ""
 
@@ -1092,18 +1092,23 @@ msgstr ""
 
 #: includes/givewp-addons/items-members-permissions.php:114
 #: includes/givewp-addons/items-members-permissions.php:127
+#: includes/givewp-addons/items-ure-permissions.php:87
+#: includes/givewp-addons/items-ure-permissions.php:100
 msgid "Edit Capabilities for this User Role"
 msgstr ""
 
 #: includes/givewp-addons/items-members-permissions.php:123
+#: includes/givewp-addons/items-ure-permissions.php:96
 msgid "Edit Capabilities"
 msgstr ""
 
 #: includes/givewp-addons/items-members-permissions.php:136
+#: includes/givewp-addons/items-ure-permissions.php:109
 msgid "List Users"
 msgstr ""
 
 #: includes/givewp-addons/items-members-permissions.php:140
+#: includes/givewp-addons/items-ure-permissions.php:113
 msgid "List all registered Users for this User Role"
 msgstr ""
 
@@ -1348,6 +1353,11 @@ msgstr ""
 #: includes/givewp-addons/items-tributes.php:98
 #: includes/givewp-addons/items-tributes.php:102
 msgid "Report: eCards"
+msgstr ""
+
+#: includes/givewp-addons/items-ure-permissions.php:128
+#: includes/givewp-addons/items-ure-permissions.php:132
+msgid "User Role Editor Settings"
 msgstr ""
 
 #: includes/givewp-addons/items-zapier.php:43
@@ -2165,7 +2175,7 @@ msgstr ""
 msgid "Edit Form Campaign"
 msgstr ""
 
-#: includes/items-plugins-givewp-addons.php:274
+#: includes/items-plugins-givewp-addons.php:283
 msgid "Settings from Add-On Plugins"
 msgstr ""
 

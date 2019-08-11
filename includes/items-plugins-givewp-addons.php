@@ -185,8 +185,17 @@ if ( class_exists( 'SIMPLE_SOCIAL_SHARE_4_GIVEWP' ) ) {
  * @since 1.0.0
  * @see plugin main file, /toolbar-extras-givewp.php
  */
-if ( class_exists( 'Members_Plugin' ) ) {
+if ( ddw_tbexgive_is_members_plugin_active() ) {
 	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-members-permissions.php';
+}
+
+
+/**
+ * Plugin: User Role Editor (free, by Vladimir Garagulya)
+ * @since 1.0.0
+ */
+if ( defined( 'URE_VERSION' ) &&  ! ddw_tbexgive_is_members_plugin_active() ) {
+	require_once TBEXGIVE_PLUGIN_DIR . 'includes/givewp-addons/items-ure-permissions.php';
 }
 
 

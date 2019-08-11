@@ -80,6 +80,7 @@ Perfect for non-profit organisations and private donation fundraising campaigns:
 * [**Members**](https://wordpress.org/plugins/members/) (free, by Justin Tadlock) - *manage user roles and capabilities (permissions), including for all dedicated GiveWP roles!*
 * [**Members - GiveWP Integration**](https://themehybrid.com/plugins/members-givewp-integration) (Premium, by Justin Tadlock) - *even better special GiveWP integration for the awesome Members plugin!*
 * [**Simple Social Shout for GiveWP**](https://github.com/impress-org/give-simple-social-shout) (free, by Matt Cromwell) - *adds simple social sharing buttons above your Donation Confirmation table*
+* [**User Role Editor**](https://wordpress.org/plugins/user-role-editor/) (free, by Vladimir Garagulya) - *another popular role editor/ permissions plugin*
 * ***Note:** Support for more free third-party Add-Ons will be added if more get released by the community*
 
 
@@ -320,7 +321,7 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 
 ### 🎉 1.0.0 - 2019-08-?? 
 * *Plugin launch. Everything's new!*
-* New: 7 Free GiveWP extensions supported/ integrated
+* New: 8 Free GiveWP extensions supported/ integrated
 * New: 19 Premium GiveWP extensions supported/ integrated
 * New: 30 Settings - Toolbar-related, unique this Add-On
 

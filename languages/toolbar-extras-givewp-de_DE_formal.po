@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Toolbar Extras for Give Donations\n"
-"POT-Creation-Date: 2019-08-10 23:16+0200\n"
-"PO-Revision-Date: 2019-08-10 23:16+0200\n"
+"POT-Creation-Date: 2019-08-11 12:28+0200\n"
+"PO-Revision-Date: 2019-08-11 12:28+0200\n"
 "Last-Translator: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language-Team: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language: de_DE@formal\n"
@@ -225,7 +225,7 @@ msgstr "Untermenü %1$s ausblenden, stattdessen Untermenü %2$s hinzufügen?"
 
 #: includes/admin/tbexgive-settings.php:237
 #: includes/admin/views/settings-tab-givewp.php:500
-#: includes/items-plugins-givewp-addons.php:270
+#: includes/items-plugins-givewp-addons.php:279
 msgid "Add-Ons"
 msgstr "Add-Ons"
 
@@ -1153,18 +1153,23 @@ msgstr "Give Manuelle Spendenzahlung"
 
 #: includes/givewp-addons/items-members-permissions.php:114
 #: includes/givewp-addons/items-members-permissions.php:127
+#: includes/givewp-addons/items-ure-permissions.php:87
+#: includes/givewp-addons/items-ure-permissions.php:100
 msgid "Edit Capabilities for this User Role"
 msgstr "Berechtigungen für diese Benutzerrolle bearbeiten"
 
 #: includes/givewp-addons/items-members-permissions.php:123
+#: includes/givewp-addons/items-ure-permissions.php:96
 msgid "Edit Capabilities"
 msgstr "Berechtigungen bearbeiten"
 
 #: includes/givewp-addons/items-members-permissions.php:136
+#: includes/givewp-addons/items-ure-permissions.php:109
 msgid "List Users"
 msgstr "Benutzer auflisten"
 
 #: includes/givewp-addons/items-members-permissions.php:140
+#: includes/givewp-addons/items-ure-permissions.php:113
 msgid "List all registered Users for this User Role"
 msgstr "Alle registrierten Benutzer für diese Benutzerrolle auflisten"
 
@@ -1411,6 +1416,11 @@ msgstr "Bericht: Eine Karte versenden"
 #: includes/givewp-addons/items-tributes.php:102
 msgid "Report: eCards"
 msgstr "Bericht: eCards"
+
+#: includes/givewp-addons/items-ure-permissions.php:128
+#: includes/givewp-addons/items-ure-permissions.php:132
+msgid "User Role Editor Settings"
+msgstr "Benutzerrollen bearbeiten Einstellungen"
 
 #: includes/givewp-addons/items-zapier.php:43
 msgid "Zapier Integration"
@@ -2227,7 +2237,7 @@ msgstr "Ausgewählte Formularkampagne: %s"
 msgid "Edit Form Campaign"
 msgstr "Formularkampagne bearbeiten"
 
-#: includes/items-plugins-givewp-addons.php:274
+#: includes/items-plugins-givewp-addons.php:283
 msgid "Settings from Add-On Plugins"
 msgstr "Einstellungen von Add-On-Plugins"
 

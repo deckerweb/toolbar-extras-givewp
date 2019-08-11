@@ -95,7 +95,7 @@ function ddw_tbexgive_aoitems_members_permissions( $admin_bar ) {
 
 			foreach ( $give_roles as $give_role ) {
 
-				if ( ! empty( $give_role ) ) {
+				if ( ! empty( $give_role ) && ! is_null( get_role( $give_role ) ) ) {
 
 					if ( ! ddw_tbexgive_is_givewp_recurring_donations_active() && 'give_subscriber' === $give_role ) {
 						continue;

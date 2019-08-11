@@ -144,6 +144,20 @@ function ddw_tbexgive_is_give_test_mode() {
 }  // end function
 
 
+/**
+ * Is the Members plugin active or not?
+ *
+ * @since 1.0.0
+ *
+ * @return bool TRUE if plugin is active, FALSE otherwise.
+ */
+function ddw_tbexgive_is_members_plugin_active() {
+
+	return class_exists( 'Members_Plugin' );
+
+}  // end function
+
+
 
 /**
  * 2nd GROUP: Settings (Checks)
