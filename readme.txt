@@ -123,7 +123,8 @@ You can also contribute code-wise via our [Toolbar Extras for Give Donations Git
 * WordPress version 4.7 or higher
 * PHP version 5.6 or higher
 * MySQL version 5.0 or higher
-* Administrator user with capabilities `manage_options` and `manage_give_settings` who is logged-in and has the Toolbar (Admin Bar) enabled (user profile)
+* Logged-in user that at least has the capability of `edit_give_forms`, and for whom the Toolbar (Admin Bar) enabled (user profile)
+* Recommended: Administrator user with capabilities `manage_options` and `manage_give_settings` plus the other GiveWP-specific capabilities, and, who is logged-in and has the Toolbar (Admin Bar) is enabled (user profile)
 
 = We Recommend Your Host Supports at least: =
 

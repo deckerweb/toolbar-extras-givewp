@@ -192,6 +192,8 @@ if ( ddw_tbexgive_is_members_plugin_active() ) {
 
 /**
  * Plugin: User Role Editor (free, by Vladimir Garagulya)
+ *   Note: If both, "Members" and "User Role Editor" are active at the same time,
+ *         we give "Members" the higher priority and will only display that.
  * @since 1.0.0
  */
 if ( defined( 'URE_VERSION' ) &&  ! ddw_tbexgive_is_members_plugin_active() ) {
