@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 define( 'TBEXGIVE_PLUGIN_VERSION', '1.0.0' );
 
 /** Required base plugin version */
-define( 'TBEXGIVE_REQUIRED_BASE_PLUGIN_VERSION', '1.4.4' );
+define( 'TBEXGIVE_REQUIRED_BASE_PLUGIN_VERSION', '1.4.6' );
 
 /** Plugin directory */
 define( 'TBEXGIVE_PLUGIN_DIR', trailingslashit( dirname( __FILE__ ) ) );

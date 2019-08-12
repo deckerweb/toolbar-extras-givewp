@@ -131,7 +131,7 @@ You can also contribute code-wise via our [Toolbar Extras for Give Donations Git
 
 ### Minimum Requirements 
 
-* **Base plugin:** [Toolbar Extras](https://wordpress.org/plugins/toolbar-extras/), version 1.4.5 or higher
+* **Base plugin:** [Toolbar Extras](https://wordpress.org/plugins/toolbar-extras/), version 1.4.6 or higher
 * WordPress version 4.7 or higher
 * PHP version 5.6 or higher
 * MySQL version 5.0 or higher
@@ -318,7 +318,7 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 ([For the full changelog of this plugin visit its website at ToolbarExtras.com](https://toolbarextras.com/changelog/))
 
 
-### 🎉 1.0.0 - 2019-08-?? 
+### 🎉 1.0.0 - 2019-08-12 
 * *Plugin launch. Everything's new!*
 * New: 8 Free GiveWP extensions supported/ integrated
 * New: 19 Premium GiveWP extensions supported/ integrated
