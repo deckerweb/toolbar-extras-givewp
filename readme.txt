@@ -17,10 +17,6 @@ Managing Donations with GiveWP? Here's to easier & faster fundraising with this 
 
 Perfect for non-profit organisations and private donation fundraising campaigns: This smart WordPress plugin just adds missed and **very useful admin links** for Give Donations to your Toolbar / Admin Bar. Save mouse travel and scrolling time. Get more productive - and focus on your campaigns instead of searching for settings ... 😉
 
-https://www.youtube.com/watch?v=SWBucl9EJBM
-
-[Video direct link](https://www.youtube.com/watch?v=SWBucl9EJBM) | [Long version video (full walkthrough)](https://www.youtube.com/watch?v=7CRivf7uRE0) | [Install & setup video](https://www.youtube.com/watch?v=B-Xg3jDhqRs)
-
 ℹ️ **Essential:** Toolbar Extras for Give Donations is an **Add-On** plugin, it **requires** the base plugin "Toolbar Extras".  
 ℹ️ **Important:** "Give Donations" (GiveWP) is a **free** plugin for WordPress by GiveWP/ Impress.org, LLC.  
 ℹ️ **Disclaimer:** Toolbar Extras for Give Donations is an **independent** free plugin by David Decker from DECKERWEB. It does **not** represent GiveWP/ Impress.org, LLC.
@@ -43,7 +39,7 @@ https://www.youtube.com/watch?v=SWBucl9EJBM
 * Get more focused on your mission, save mouse travel and scrolling time, be more productive with donation management!
 * Perfect for non-profit organisations and private donation campaigns - let the Toolbar work for you!
 * Any items are only loaded when needed
-* Fully internationalized and translateable (but can be disabled if ever needed)
+* Fully internationalized and translatable (but can be disabled if ever needed)
 * Use **all the other awesome features** of Toolbar Extras base plugin - to speed up your *non-donation work* as well! 😉
 
 = 🔌 Supported/ Integrated Offical (Premium) GiveWP Add-Ons/ Extensions =
@@ -133,8 +129,6 @@ You can also contribute code-wise via our [Toolbar Extras for Give Donations Git
 
 = Installation =
 
-https://www.youtube.com/watch?v=B-Xg3jDhqRs
-
 1. Install using the WordPress built-in Plugin installer (via **Plugins > Add New** - search for `toolbar extras give`), or extract the ZIP file and drop the contents in the `wp-content/plugins/` directory of your WordPress installation.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Go to **Settings > Toolbar Extras** to adjust any options for this plugin ("GiveWP" settings tab)
@@ -200,7 +194,7 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 
 **Easy WordPress.org plugin translation platform with GlotPress platform:** [**Translate "Toolbar Extras for Give Donations"...**](https://translate.wordpress.org/projects/wp-plugins/toolbar-extras-givewp)
 
-*Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating and validating I recommend the awesome ["Poedit Editor"](https://www.poedit.net/), which works fine on Windows, macOS and Linux.
+*Note:* All my plugins are internationalized/ translatable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating and validating I recommend the awesome ["Poedit Editor"](https://www.poedit.net/), which works fine on Windows, macOS and Linux.
 
 
 == Screenshots ==

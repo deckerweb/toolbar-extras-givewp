@@ -42,7 +42,7 @@ function ddw_tbexgive_string_givewp() {
  *
  * @uses ddw_tbexgive_string_givewp()
  *
- * @return string Filterable and translateable string for "Give" Donations.
+ * @return string Filterable and translatable string for "Give" Donations.
  */
 function ddw_tbexgive_string_give_donations() {
 
@@ -67,7 +67,7 @@ function ddw_tbexgive_string_give_donations() {
  *
  * @uses ddw_tbexgive_string_givewp()
  *
- * @return string Filterable and translateable string for "Give" Resources.
+ * @return string Filterable and translatable string for "Give" Resources.
  */
 function ddw_tbexgive_string_give_resources() {
 
@@ -92,7 +92,7 @@ function ddw_tbexgive_string_give_resources() {
  *
  * @uses ddw_tbexgive_string_givewp()
  *
- * @return string Filterable and translateable string for "Give" Community.
+ * @return string Filterable and translatable string for "Give" Community.
  */
 function ddw_tbexgive_string_give_community() {
 
@@ -117,7 +117,7 @@ function ddw_tbexgive_string_give_community() {
  *
  * @uses ddw_tbexgive_string_givewp()
  *
- * @return string Filterable and translateable string for "Give" Settings.
+ * @return string Filterable and translatable string for "Give" Settings.
  */
 function ddw_tbexgive_string_give_settings() {
 
@@ -142,7 +142,7 @@ function ddw_tbexgive_string_give_settings() {
  *
  * @uses ddw_tbexgive_string_givewp()
  *
- * @return string Filterable and translateable string for "Give" Tools.
+ * @return string Filterable and translatable string for "Give" Tools.
  */
 function ddw_tbexgive_string_give_tools() {
 
@@ -167,7 +167,7 @@ function ddw_tbexgive_string_give_tools() {
  *
  * @uses ddw_tbexgive_string_givewp()
  *
- * @return string Filterable and translateable string for "Give" Updates.
+ * @return string Filterable and translatable string for "Give" Updates.
  */
 function ddw_tbexgive_string_give_updates() {
 
@@ -192,7 +192,7 @@ function ddw_tbexgive_string_give_updates() {
  *
  * @uses ddw_tbexgive_string_givewp()
  *
- * @return string Filterable and translateable string for "Give" Permissions & Roles.
+ * @return string Filterable and translatable string for "Give" Permissions & Roles.
  */
 function ddw_tbexgive_string_give_permissions_roles() {
 

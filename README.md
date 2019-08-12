@@ -45,7 +45,7 @@ Perfect for non-profit organisations and private donation fundraising campaigns:
 * Get more focused on your mission, save mouse travel and scrolling time, be more productive with donation management!
 * Perfect for non-profit organisations and private donation campaigns - let the Toolbar work for you!
 * Any items are only loaded when needed
-* Fully internationalized and translateable (but can be disabled if ever needed)
+* Fully internationalized and translatable (but can be disabled if ever needed)
 * Use **all the other awesome features** of Toolbar Extras base plugin - to speed up your *non-donation work* as well! 😉
 
 
@@ -222,7 +222,7 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 
 **Easy WordPress.org plugin translation platform with GlotPress platform:** [**Translate "Toolbar Extras for Give Donations"...**](https://translate.wordpress.org/projects/wp-plugins/toolbar-extras-givewp)
 
-*Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating and validating I recommend the awesome ["Poedit Editor"](https://www.poedit.net/), which works fine on Windows, macOS and Linux.
+*Note:* All my plugins are internationalized/ translatable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating and validating I recommend the awesome ["Poedit Editor"](https://www.poedit.net/), which works fine on Windows, macOS and Linux.
 
 
 
