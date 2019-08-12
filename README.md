@@ -5,7 +5,7 @@
 **Requires at least:** 4.7  
 **Tested up to:** 5.2  
 **Requires PHP:** 5.6  
-**Stable tag:** 1.0.0  
+**Stable tag:** 1.0.1  
 **License:** GPL-2.0-or-later  
 **License URI:** https://opensource.org/licenses/GPL-2.0  
 
@@ -318,11 +318,18 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 ([For the full changelog of this plugin visit its website at ToolbarExtras.com](https://toolbarextras.com/changelog/))
 
 
+### ⚡ 1.0.1 - 2019-08-13 
+* Tweak: Updated `.pot` file plus all German translations (formal, informal) and language packs
+* Tweak: Enhanced, improved and corrected Readme.txt file here
+* Fix: Fixed fatal error on activation (sorry!)
+
+
+
 ### 🎉 1.0.0 - 2019-08-12 
 * *Plugin launch. Everything's new!*
 * New: 8 Free GiveWP extensions supported/ integrated
 * New: 19 Premium GiveWP extensions supported/ integrated
-* New: 30 Settings - Toolbar-related, unique this Add-On
+* New: 30 Settings - Toolbar-related, unique for this Add-On
 
 
 
@@ -335,6 +342,10 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 
 
 ## Upgrade Notice 
+
+
+### 1.0.1 
+Plugin launch. Everything's new! First tweaks and improvements. - **Update highly recommended.**
 
 
 ### 1.0.0 

@@ -109,7 +109,7 @@ function ddw_tbexgive_register_settings_givewp() {
 	//$status_testmode = ddw_tbexgive_is_give_test_mode() ? ' plugin-give-test-mode' : $plugin_inactive;
 	$status_testmode = ! ddw_tbexgive_is_give_test_mode() ? ' tbex-remove-settings-field' : '';
 
-	$formfeat_status = ddw_tbex_get_option( 'givewp', 'formfeat_display' );
+	$formfeat_status = get_option( 'tbex-options-givewp', 'no' )[ 'formfeat_display' ];		//ddw_tbex_get_option( 'givewp', 'formfeat_display' );
 
 	/** Status for special sub settings */
 	$status_special_subsettings = ( 'no' === $formfeat_status ) ? $plugin_inactive : '';

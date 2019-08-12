@@ -11,7 +11,7 @@
  * Plugin Name:       Toolbar Extras for Give Donations
  * Plugin URI:        https://toolbarextras.com/addons/give-donations/
  * Description:       WordPress plugin to leverage the Toolbar for managing your donations and donors with the Give Donations (GiveWP) plugin. - This is an Add-On plugin for Toolbar Extras.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            David Decker - DECKERWEB
  * Author URI:        https://toolbarextras.com/
  * License:           GPL-2.0-or-later
@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 1.0.0
  */
 /** Plugin version */
-define( 'TBEXGIVE_PLUGIN_VERSION', '1.0.0' );
+define( 'TBEXGIVE_PLUGIN_VERSION', '1.0.1' );
 
 /** Required base plugin version */
 define( 'TBEXGIVE_REQUIRED_BASE_PLUGIN_VERSION', '1.4.6' );

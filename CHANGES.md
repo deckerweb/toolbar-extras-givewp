@@ -13,12 +13,19 @@
 
 ## Changelog of the Plugin
 
+### ⚡ 1.0.1 - 2019-08-13
+
+* Tweak: Updated `.pot` file plus all German translations (formal, informal) and language packs
+* Tweak: Enhanced, improved and corrected Readme.txt file here
+* Fix: Fixed fatal error on activation (sorry!)
+
+
 ### 🎉 1.0.0 - 2019-08-12
 
 * *Plugin launch. Everything's new!*
 * New: 8 Free GiveWP extensions supported/ integrated
 * New: 19 Premium GiveWP extensions supported/ integrated
-* New: 30 Settings - Toolbar-related, unique this Add-On
+* New: 30 Settings - Toolbar-related, unique for this Add-On
 
 
 ### ⚡ 0.9.0 - 2019-08-06
