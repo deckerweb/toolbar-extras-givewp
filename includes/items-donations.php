@@ -109,7 +109,7 @@ function ddw_tbexgive_donation_items_base_groups( $admin_bar ) {
 		)
 	);
 
-	do_action( 'tbexgive/donation_campaigns/after_group' );
+	do_action( 'tbexgive/donation_campaigns/after_group', $admin_bar );
 
 	/** Group: Donation Options (Settings, Tools, Add-Ons) */
 	$admin_bar->add_group(
@@ -130,6 +130,6 @@ function ddw_tbexgive_donation_items_base_groups( $admin_bar ) {
 		)
 	);
 
-	do_action( 'tbexgive/donation_resources/after_group' );
+	do_action( 'tbexgive/donation_resources/after_group', $admin_bar );
 
 }  // end function

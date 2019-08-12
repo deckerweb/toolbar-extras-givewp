@@ -151,11 +151,14 @@ function ddw_thexgive_get_givewp_donation_pages() {
 
 	$give_settings = get_option( 'give_settings' );
 
-	$give_pages = array(
-		'success_page',
-		'failure_page',
-		'history_page',
-		'subscriptions_page',
+	$give_pages = apply_filters(
+		'tbexgive/filter/givewp_pages/settings_based',
+		array(
+			'success_page',
+			'failure_page',
+			'history_page',
+			'subscriptions_page',
+		)
 	);
 
 	$give_pages_ids = array();
@@ -181,12 +184,15 @@ function ddw_thexgive_get_givewp_donation_pages() {
  */
 function ddw_tbexgive_get_givewp_shortcode_pages() {
 
-	$give_shortcodes = array(
-		'give_donor_wall',
-		'give_form_grid',
-		'give_login',
-		'give_register',
-		'give_profile_editor',
+	$give_shortcodes = apply_filters(
+		'tbexgive/filter/givewp_pages/shortcode_based',
+		array(
+			'give_donor_wall',
+			'give_form_grid',
+			'give_login',
+			'give_register',
+			'give_profile_editor',
+		)
 	);
 
 	$give_shorcode_pages_ids = array();
@@ -219,8 +225,11 @@ function ddw_tbexgive_get_givewp_shortcode_pages() {
  * @uses ddw_thexgive_get_givewp_donation_pages()
  * @uses ddw_tbexgive_get_givewp_shortcode_pages()
  */
-function ddw_tbexgive_get_all_givewp_pages() {
+function ddw_tbexgive_get_all_givewp_pages_ids() {
 
-	return array_merge( ddw_thexgive_get_givewp_donation_pages(), ddw_tbexgive_get_givewp_shortcode_pages() );
+	return apply_filters(
+		'tbexgive/filter/givewp_pages/ids',
+		array_merge( ddw_thexgive_get_givewp_donation_pages(), ddw_tbexgive_get_givewp_shortcode_pages() )
+	);
 
 }  // end function

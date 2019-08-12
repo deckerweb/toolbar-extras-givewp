@@ -30,11 +30,14 @@ function ddw_tbexgive_items_givewp_pages( $admin_bar ) {
 
 	$give_settings = get_option( 'give_settings' );
 
-	$give_pages = array(
-		'success_page',
-		'failure_page',
-		'history_page',
-		'subscriptions_page',
+	$give_pages = apply_filters(
+		'tbexgive/filter/givewp_pages/settings_based',
+		array(
+			'success_page',
+			'failure_page',
+			'history_page',
+			'subscriptions_page',
+		)
 	);
 
 	$admin_bar->add_node(
@@ -126,6 +129,8 @@ function ddw_tbexgive_items_givewp_pages( $admin_bar ) {
 			if ( 'enabled' === $give_settings[ 'forms_archives' ] ) {
 				$give_shortcodes = array_merge( $give_shortcodes_addition, $give_shortcodes );
 			}
+
+			$give_shortcodes = apply_filters( 'tbexgive/filter/givewp_pages/shortcode_based', $give_shortcodes );
 
 			/** Loop through all given GiveWP Shortcodes of our array */
 			foreach ( $give_shortcodes as $give_shortcode ) {

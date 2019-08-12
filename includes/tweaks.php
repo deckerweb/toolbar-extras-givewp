@@ -19,7 +19,7 @@ add_filter( 'parse_query', 'ddw_tbexgive_filter_all_givewp_pages' );
  * @since 1.0.0
  *
  * @uses ddw_tbexgive_display_givewp_pages_views_filter()
- * @uses ddw_tbexgive_get_all_givewp_pages()
+ * @uses ddw_tbexgive_get_all_givewp_pages_ids()
  *
  * @param object $query
  */
@@ -33,7 +33,7 @@ function ddw_tbexgive_filter_all_givewp_pages( $query ) {
 
 		if ( isset( $_GET[ 'donation-pages' ] ) && 'givewp' === sanitize_key( wp_unslash( $_GET[ 'donation-pages' ] ) ) ) {
 
-			$query->set( 'post__in', ddw_tbexgive_get_all_givewp_pages() );
+			$query->set( 'post__in', ddw_tbexgive_get_all_givewp_pages_ids() );
 
 		}  // end if
 
@@ -51,7 +51,7 @@ add_filter( 'views_edit-page', 'ddw_tbexgive_pages_givewp_views_filter', 10, 1 )
  * @since 1.0.0
  *
  * @uses ddw_tbexgive_display_givewp_pages_views_filter()
- * @uses ddw_tbexgive_get_all_givewp_pages()
+ * @uses ddw_tbexgive_get_all_givewp_pages_ids()
  * @uses ddw_tbexgive_string_givewp()
  *
  * @param array $views Holds all views of Page states (post states).
@@ -66,7 +66,7 @@ function ddw_tbexgive_pages_givewp_views_filter( $views ) {
 		return $views;
 	}
 
-	$result = count( ddw_tbexgive_get_all_givewp_pages() );
+	$result = count( ddw_tbexgive_get_all_givewp_pages_ids() );
 	$class  = ( isset( $_GET[ 'donation-pages' ] ) && 'givewp' == sanitize_key( wp_unslash( $_GET[ 'donation-pages' ] ) ) ) ? ' class="current"' : '';
   
 	$admin_url = add_query_arg(
@@ -237,8 +237,7 @@ function ddw_tbexgive_add_submenu_for_givewp_pages() {
 
 add_filter( 'parent_file', 'ddw_tbexgive_parent_submenu_tweaks' );
 /**
- * When editing an Oxygen template within the Admin, properly highlight it as
- *   the 'submenu' of Oxygen.
+ * Tweak Give Changelog parent file/ submenu file.
  *
  * @since 1.0.0
  * @since 1.1.0 Simplified and tweaked for Oxygen 2.3 or higher.
@@ -264,15 +263,19 @@ function ddw_tbexgive_parent_submenu_tweaks( $parent_file ) {
 
 add_filter( 'submenu_file', 'ddw_tbexgive_submenu_file_tweaks', 10, 2 );
 /**
- * ???
+ * Tweak submenu file.
  *
  * @since 1.0.0
+ *
+ * @param string $submenu_file The filename of the submenu.
+ * @param string $parent_file  The filename of the parent menu.
+ * @return string $submenu_file The modified string for submenu.
  */
 function ddw_tbexgive_submenu_file_tweaks( $submenu_file, $parent_file ){
 
 	if ( 'dashboard_page_give-changelog' === get_current_screen()->id ) {
 
-		$parent_file = 'edit.php?post_type=give_forms';
+		$parent_file  = 'edit.php?post_type=give_forms';
 		$submenu_file = 'index.php?page=give-changelog';
 
 	}  // end if

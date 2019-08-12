@@ -378,6 +378,8 @@ register_activation_hook( __FILE__, 'ddw_tbexgive_run_addon_activation', 10, 1 )
  * @link https://leaves-and-love.net/blog/making-plugin-multisite-compatible/
  *
  * @uses ddw_tbexgive_addon_activation_routine()
+ *
+ * @param bool $network_wide
  */
 function ddw_tbexgive_run_addon_activation( $network_wide ) {
 

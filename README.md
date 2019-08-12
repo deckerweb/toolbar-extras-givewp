@@ -147,8 +147,6 @@ You can also contribute code-wise via our [Toolbar Extras for Give Donations Git
 
 ### Installation 
 
-https://www.youtube.com/watch?v=B-Xg3jDhqRs
-
 1. Install using the WordPress built-in Plugin installer (via **Plugins > Add New** - search for `toolbar extras give`), or extract the ZIP file and drop the contents in the `wp-content/plugins/` directory of your WordPress installation.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Go to **Settings > Toolbar Extras** to adjust any options for this plugin ("GiveWP" settings tab)

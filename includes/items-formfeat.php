@@ -146,17 +146,8 @@ function ddw_tbexgive_sub_items_formfeat( $admin_bar ) {
 
 	/** Bail early if no proper form ID */
 	if ( 0 >= ddw_tbexgive_get_formfeat_id() ) {
-		return;
+		return $admin_bar;
 	}
-
-	/** Set post type arguments for WP_Query */
-	$givewp_posttype_args = array(
-		'post_type'      => 'give_forms',
-		'posts_per_page' => -1,
-	);
-
-	/** Query GiveWP Forms (Campaigns) */
-	$give_forms = get_posts( $givewp_posttype_args );
 
 	/** Get Give Options from DB */
 	$give_options = get_option( 'give_settings' );

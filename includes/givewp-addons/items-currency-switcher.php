@@ -37,10 +37,6 @@ function ddw_tbexgive_aoitems_currency_switcher( $admin_bar ) {
 	/** Use Add-On hook place */
 	add_filter( 'tbexgive/filter/is_givewp_addon', '__return_empty_string' );
 
-	$give_settings   = get_option( 'give_settings' );
-	$history_page_id = $give_settings[ 'history_page' ];
-	$donor           = function_exists( 'give_annual_receipts_get_donor_object' ) ? give_annual_receipts_get_donor_object() : '';
-
 	/** Plugin's Settings */
 	$admin_bar->add_node(
 		array(

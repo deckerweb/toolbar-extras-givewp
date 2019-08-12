@@ -174,7 +174,7 @@ function ddw_tbexgive_items_givewp_core( $admin_bar ) {
 	}  // end if (permission check)
 
 	/** Action Hook: After Give Donations (Transactions) */
-	do_action( 'tbexgive/givewp_donations/after' );
+	do_action( 'tbexgive/givewp_donations/after', $admin_bar );
 
 
 	/** 2) Donors */
@@ -283,7 +283,7 @@ function ddw_tbexgive_items_givewp_core( $admin_bar ) {
 	}  // end if (permission check)
 
 	/** Action Hook: After Give Donations Donors */
-	do_action( 'tbexgive/givewp_donors/after' );
+	do_action( 'tbexgive/givewp_donors/after', $admin_bar );
 
 
 	/** Add-On: Recurring Donations (Subscriptions) */
@@ -382,19 +382,6 @@ function ddw_tbexgive_items_givewp_core( $admin_bar ) {
 				)
 			)
 		);
-
-			$give_ranges__test = array(
-				'today'        => _x( 'Today', 'Time range for filtering', 'toolbar-extras-givewp' ),
-				'yesterday'    => _x( 'Yesterday', 'Time range for filtering', 'toolbar-extras-givewp' ),
-				'this_week'    => _x( 'This Week', 'Time range for filtering', 'toolbar-extras-givewp' ),
-				'last_week'    => _x( 'Last Week', 'Time range for filtering', 'toolbar-extras-givewp' ),
-				'this_month'   => _x( 'This Month', 'Time range for filtering', 'toolbar-extras-givewp' ),
-				'last_month'   => _x( 'Last Month', 'Time range for filtering', 'toolbar-extras-givewp' ),
-				'this_quarter' => _x( 'This Quarter', 'Time range for filtering', 'toolbar-extras-givewp' ),
-				'last_quarter' => _x( 'Last Quarter', 'Time range for filtering', 'toolbar-extras-givewp' ),
-				'this_year'    => _x( 'This Year', 'Time range for filtering', 'toolbar-extras-givewp' ),
-				'last_year'    => _x( 'Last Year', 'Time range for filtering', 'toolbar-extras-givewp' ),
-			);
 
 			$give_ranges = ddw_tbexgive_get_report_ranges();
 
@@ -802,7 +789,7 @@ function ddw_tbexgive_items_givewp_core( $admin_bar ) {
 	}  // end if (permission check)
 
 	/** Action Hook: After Give Donations Reports */
-	do_action( 'tbexgive/givewp_reports/after' );
+	do_action( 'tbexgive/givewp_reports/after', $admin_bar );
 
 
 	/** 4) Forms - Campaigns */
@@ -1116,7 +1103,7 @@ function ddw_tbexgive_items_givewp_core( $admin_bar ) {
 		}  // end if
 
 	/** Action Hook: After Give Donations Campaigns */
-	do_action( 'tbexgive/givewp_campaigns/after' );
+	do_action( 'tbexgive/givewp_campaigns/after', $admin_bar );
 
 }  // end function
 

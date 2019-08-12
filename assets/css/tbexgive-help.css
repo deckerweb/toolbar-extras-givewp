@@ -77,5 +77,5 @@
 .noitalic {
 	color: #000;
 	/* font-style: initial; */
-	font-weight: 450;
+	font-weight: 500;  /* 450; */
 }
