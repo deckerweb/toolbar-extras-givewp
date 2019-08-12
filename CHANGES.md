@@ -13,7 +13,7 @@
 
 ## Changelog of the Plugin
 
-### 🎉 1.0.0 - 2019-08-??
+### 🎉 1.0.0 - 2019-08-12
 
 * *Plugin launch. Everything's new!*
 * New: 8 Free GiveWP extensions supported/ integrated
