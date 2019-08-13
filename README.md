@@ -165,7 +165,7 @@ In general it will make your donation management with Give Donations easier and 
 **1st Example: Non-profit Organisation**  
 
 * You have a team, including 5 Donation Managers (User role: give_manager)
-* You have lots of donation form campaigns, for example 20 different active campagins (forms)
+* You have lots of donation form campaigns, for example 20 different active campaigns (forms)
 * Set your most important/current campaign as a featured top-level item in the Toolbar -- logged in Admins & Give Managers see the current income and can access all stuff related to this specific form with 1 (ONE!) mouse click!
 * From the top-level "Donations" item: access all Donation related payments, donors, reports (filters etc.), settings, tools and Add-Ons directly from the Toolbar
 * This helps your team get more focussed, save time (less mouse travel and searching for settings...) -- you gain more time for the things that really matter!
@@ -187,7 +187,7 @@ Toolbar Extras is the "base" or "main" plugin. It provides a lot of functionalit
 
 
 ### Why is Give Donation (GiveWP) plugin required? 
-While technically the GiveWP Dashboard plugin is not "required", this Add-On here makes absolutely no sense without it.
+While technically the GiveWP Donations plugin is not "required", this Add-On here makes absolutely no sense without it.
 
 
 
