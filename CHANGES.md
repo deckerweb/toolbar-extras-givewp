@@ -15,6 +15,8 @@
 
 ### ⚡ 1.0.1 - 2019-08-13
 
+* New: [Video of plugin feature walkthrough and live demo](https://www.youtube.com/watch?v=al56-yuHBfc)
+* New: [Video of Add-On installation & setup](https://www.youtube.com/watch?v=eUdrpwdfCi8)
 * Tweak: Updated `.pot` file plus all German translations (formal, informal) and language packs
 * Tweak: Enhanced, improved and corrected Readme.txt file here
 * Fix: Fixed fatal error on activation (sorry!)

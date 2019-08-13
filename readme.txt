@@ -15,6 +15,10 @@ Managing Donations with GiveWP? Here's to easier & faster fundraising with this 
 
 🚀 Quick Access to Your Donation Campaigns with Give directly from your Toolbar. View and edit your donation transactions, donors and form campaigns. Access reports and typical filter views directly from the Admin Bar - within the Admin or from the frontend of your site.  
 
+https://www.youtube.com/watch?v=al56-yuHBfc
+
+[Video direct link](https://www.youtube.com/watch?v=al56-yuHBfc) | [Long version video (full walkthrough)](https://www.youtube.com/watch?v=swA4yJURxvs) | [Install & setup video](https://www.youtube.com/watch?v=eUdrpwdfCi8)
+
 Perfect for non-profit organisations and private donation fundraising campaigns: This smart WordPress plugin just adds missed and **very useful admin links** for Give Donations to your Toolbar / Admin Bar. Save mouse travel and scrolling time. Get more productive - and focus on your campaigns instead of searching for settings ... 😉
 
 ℹ️ **Essential:** Toolbar Extras for Give Donations is an **Add-On** plugin, it **requires** the base plugin "Toolbar Extras".  
@@ -41,6 +45,7 @@ Perfect for non-profit organisations and private donation fundraising campaigns:
 * Any items are only loaded when needed
 * Fully internationalized and translatable (but can be disabled if ever needed)
 * Use **all the other awesome features** of Toolbar Extras base plugin - to speed up your *non-donation work* as well! 😉
+* Even a developer-friendly plugin with lots of filters and hooks
 
 = 🔌 Supported/ Integrated Offical (Premium) GiveWP Add-Ons/ Extensions =
 * *All below are paid premium extensions made by GiveWP/ Impress.org, LLC!*
@@ -128,6 +133,8 @@ You can also contribute code-wise via our [Toolbar Extras for Give Donations Git
 * MySQL version 5.6 or higher / or MariaDB 10 or higher
 
 = Installation =
+
+https://www.youtube.com/watch?v=eUdrpwdfCi8
 
 1. Install using the WordPress built-in Plugin installer (via **Plugins > Add New** - search for `toolbar extras give`), or extract the ZIP file and drop the contents in the `wp-content/plugins/` directory of your WordPress installation.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
@@ -247,6 +254,8 @@ The normal use case is a single WordPress install with Toolbar Extras, plus Give
 ([For the full changelog of this plugin visit its website at ToolbarExtras.com](https://toolbarextras.com/changelog/))
 
 = ⚡ 1.0.1 - 2019-08-13 =
+* New: [Video of plugin feature walkthrough and live demo](https://www.youtube.com/watch?v=al56-yuHBfc)
+* New: [Video of Add-On installation & setup](https://www.youtube.com/watch?v=eUdrpwdfCi8)
 * Tweak: Updated `.pot` file plus all German translations (formal, informal) and language packs
 * Tweak: Enhanced, improved and corrected Readme.txt file here
 * Fix: Fixed fatal error on activation (sorry!)
