@@ -94,7 +94,7 @@ Perfect for non-profit organisations and private donation fundraising campaigns:
 
 
 ### ℹ️ Important: Required/ Recommended for plugin usage 
-* Required: User has role `Administrator` (needed capabilities `manage_options` and `manage_give_settings`)
+* Required: User has role `Administrator` (needed capabilities `manage_options` and `manage_give_settings`) OR has a GiveWP-specific user role with appropriate capabilities (permissions)
 * Required: Toolbar/ Admin Bar is enabled (user profile settings in WordPress)
 * Required: User is logged in (of course)
 * Recommended: Plugin's settings are enabled to show the wanted links (or any filter/ constant in code)
@@ -144,7 +144,7 @@ You can also contribute code-wise via our [Toolbar Extras for Give Donations Git
 * WordPress version 4.7 or higher
 * PHP version 5.6 or higher
 * MySQL version 5.0 or higher
-* Logged-in user that at least has the capability of `edit_give_forms`, and for whom the Toolbar (Admin Bar) enabled (user profile)
+* Logged-in user that at least has the capability of `edit_give_forms`, and for whom the Toolbar (Admin Bar) is enabled (user profile)
 * Recommended: Administrator user with capabilities `manage_options` and `manage_give_settings` plus the other GiveWP-specific capabilities, and, who is logged-in and has the Toolbar (Admin Bar) enabled (user profile)
 
 
