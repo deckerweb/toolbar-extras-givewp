@@ -125,18 +125,19 @@ You can also contribute code-wise via our [Toolbar Extras for Give Donations Git
 * PHP version 5.6 or higher
 * MySQL version 5.0 or higher
 * Logged-in user that at least has the capability of `edit_give_forms`, and for whom the Toolbar (Admin Bar) enabled (user profile)
-* Recommended: Administrator user with capabilities `manage_options` and `manage_give_settings` plus the other GiveWP-specific capabilities, and, who is logged-in and has the Toolbar (Admin Bar) is enabled (user profile)
+* Recommended: Administrator user with capabilities `manage_options` and `manage_give_settings` plus the other GiveWP-specific capabilities, and, who is logged-in and has the Toolbar (Admin Bar) enabled (user profile)
 
 = We Recommend Your Host Supports at least: =
 
 * PHP version 7.2 or higher
-* MySQL version 5.6 or higher / or MariaDB 10 or higher
+* MySQL version 5.6 or higher / OR MariaDB 10.1 or higher
+* HTTPS support
 
 = Installation =
 
 https://www.youtube.com/watch?v=eUdrpwdfCi8
 
-1. Install using the WordPress built-in Plugin installer (via **Plugins > Add New** - search for `toolbar extras give`), or extract the ZIP file and drop the contents in the `wp-content/plugins/` directory of your WordPress installation.
+1. Install using the WordPress built-in Plugin installer (via **Plugins > Add New** - search for `toolbar extras givewp`), or extract the ZIP file and drop the contents in the `wp-content/plugins/` directory of your WordPress installation.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Go to **Settings > Toolbar Extras** to adjust any options for this plugin ("GiveWP" settings tab)
 4. Now enjoy managing your donation campaigns even faster with GiveWP - and let the Toolbar work for you ;-)
