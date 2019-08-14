@@ -23,7 +23,7 @@ Managing Donations with GiveWP? Here's to easier & faster fundraising with this 
 
 🚀 Quick Access to Your Donation Campaigns with Give directly from your Toolbar. View and edit your donation transactions, donors and form campaigns. Access reports and typical filter views directly from the Admin Bar - within the Admin or from the frontend of your site.  
 
-[![Video of Plugin's Live Demo and Walkthrough](https://img.youtube.com/vi/al56-yuHBfc/0.jpg)](https://www.youtube.com/watch?v=al56-yuHBfc)
+[![Video of Plugin's Live Demo and Walkthrough](https://img.youtube.com/vi/al56-yuHBfc/0.jpg)](https://www.youtube.com/watch?v=al56-yuHBfc)  
 [**original video link**](https://www.youtube.com/watch?v=al56-yuHBfc) *by plugin developer David Decker*  
 [Long version video (full walkthrough)](https://www.youtube.com/watch?v=swA4yJURxvs) // [Install & setup video](https://www.youtube.com/watch?v=eUdrpwdfCi8)
 
@@ -157,7 +157,7 @@ You can also contribute code-wise via our [Toolbar Extras for Give Donations Git
 
 ### Installation 
 
-[![Video of how to Install & Setup this Add-On and set the first important recommended settings - Live Walkthrough](https://img.youtube.com/vi/B-Xg3jDhqRs/0.jpg)](https://www.youtube.com/watch?v=eUdrpwdfCi8)
+[![Video of how to Install & Setup this Add-On and set the first important recommended settings - Live Walkthrough](https://img.youtube.com/vi/eUdrpwdfCi8/0.jpg)](https://www.youtube.com/watch?v=eUdrpwdfCi8)  
 [**original video link**](https://www.youtube.com/watch?v=eUdrpwdfCi8) *by plugin developer David Decker*
 
 1. Install using the WordPress built-in Plugin installer (via **Plugins > Add New** - search for `toolbar extras givewp`), or extract the ZIP file and drop the contents in the `wp-content/plugins/` directory of your WordPress installation.
